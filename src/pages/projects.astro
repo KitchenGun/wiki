@@ -17,6 +17,7 @@ import { projects } from '../data/projects';
           {(project.role || project.period) && (
             <p class="mt-1 text-xs text-zinc-500">{[project.role, project.period].filter(Boolean).join(' · ')}</p>
           )}
+          {project.platform && <p class="mt-1 text-xs text-zinc-500">{project.platform}</p>}
           <p class="mt-2 text-sm leading-6 text-zinc-600">{project.description}</p>
           <div class="mt-4 flex flex-wrap gap-2">
             {project.tags.map((tag) => <span class="text-xs text-zinc-500">#{tag}</span>)}

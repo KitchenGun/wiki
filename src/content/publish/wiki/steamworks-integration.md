@@ -10,9 +10,12 @@ aliases: [steam sdk, steamworks]
 
 Steamworks 작업은 게임 기능과 출시 운영 사이에 있다.
 
-경력기술서 기준 공개 가능한 경험:
+포트폴리오 기준 공개 가능한 경험:
 
+- Steamworks SDK 프로젝트 통합
 - Steam 도전과제 구현
+- 도전과제 등록과 API 호출
+- 도전과제 갱신 문제 반복 검증
 - Depot 관리
 - 빌드 업데이트와 업로드
 - 출시 후 빌드 운영 대응

@@ -11,6 +11,6 @@ visibility: public
 
 기준은 단순하다. 공개 가능한 내용만 남기고, 회사 내부 정보나 개인 정보는 제외한다.
 
-주요 관심사는 [[unreal-client-programming]], [[unreal-ai-behavior-tree-eqs]], [[common-ui-workflow]], [[unreal-mcp]]다.
+주요 관심사는 [[unreal-client-programming]], [[unreal-ai-behavior-tree-eqs]], [[common-ui-workflow]], [[inventory-system]], [[interaction-component-architecture]], [[audio-visual-sequencer]], [[unreal-mcp]]다.
 
 앞으로는 프로젝트 회고, 구현 노트, 도구 실험을 짧은 문서로 쌓고 `graph-data.json`을 통해 LLM/Graphify 연동 가능성을 열어둔다.
