@@ -34,4 +34,4 @@ Good public note types:
 - learning notes from public sources
 - shipped project retrospectives
 
-Use `[[wikilink]]` for concepts that should become wiki pages, such as [[combat-feel]] or [[input-buffering]].
+Use `[[wikilink]]` for concepts that should become wiki pages, such as [[unreal-client-programming]] or [[unreal-mcp]].
