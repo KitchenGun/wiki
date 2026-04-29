@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+import EntryList from '../../components/EntryList.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { byDateDesc, collectTags, isPublicEntry } from '../../lib/content';
+
+const notes = (await getCollection('wiki')).filter(isPublicEntry).sort(byDateDesc);
+const topics = collectTags(notes);
+---
+
+<BaseLayout title="Wiki" description="Public wiki notes.">
+  <section>
+    <p class="text-sm font-medium text-blue-700">Wiki</p>
+    <h1 class="mt-3 text-4xl font-semibold">Public knowledge base</h1>
+
+    <div class="mt-8 grid gap-10 lg:grid-cols-[1fr_18rem]">
+      <div>
+        <EntryList entries={notes} />
+      </div>
+      <aside>
+        <h2 class="text-sm font-semibold uppercase tracking-[0.16em] text-zinc-500">Topics</h2>
+        <div class="mt-4 flex flex-wrap gap-2">
+          {topics.map((tag) => <span class="rounded-sm border border-zinc-200 px-2 py-1 text-sm text-zinc-700">#{tag}</span>)}
+        </div>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

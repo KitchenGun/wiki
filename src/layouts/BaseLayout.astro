@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+import { site } from '../lib/site';
+import { withBase } from '../lib/url';
+
+const { title = site.title, description = site.description } = Astro.props;
+const pageTitle = title === site.title ? site.title : `${title} | ${site.title}`;
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={withBase('/favicon.svg')} />
+    <link rel="icon" href={withBase('/favicon.ico')} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <div class="mx-auto flex min-h-screen max-w-6xl flex-col px-5 sm:px-6">
+      <header class="flex flex-col gap-4 border-b border-zinc-200 py-6 sm:flex-row sm:items-center sm:justify-between">
+        <a class="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-950 no-underline" href={withBase('/')}>
+          {site.title}
+        </a>
+        <nav class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-zinc-600">
+          {site.nav.map((item) => (
+            <a class="hover:text-blue-700" href={withBase(item.href)}>{item.label}</a>
+          ))}
+        </nav>
+      </header>
+      <main class="flex-1 py-10">
+        <slot />
+      </main>
+      <footer class="border-t border-zinc-200 py-8 text-sm text-zinc-500">
+        Public notes only. Private vault material stays outside this repo.
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content';
+import EntryList from '../components/EntryList.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { projects } from '../data/projects';
+import { byDateDesc, collectTags, isPublicEntry } from '../lib/content';
+import { site } from '../lib/site';
+import { withBase } from '../lib/url';
+
+const posts = (await getCollection('blog')).filter(isPublicEntry).sort(byDateDesc);
+const wiki = (await getCollection('wiki')).filter(isPublicEntry).sort(byDateDesc);
+const topics = collectTags(wiki).slice(0, 10);
+---
+
+<BaseLayout title={site.title} description={site.description}>
+  <section class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+    <div>
+      <p class="text-sm font-medium text-blue-700">{site.role} / public notebook</p>
+      <h1 class="mt-3 max-w-3xl text-4xl font-semibold leading-tight text-zinc-950 sm:text-5xl">
+        강건의 Unreal client programming portfolio and public knowledge base.
+      </h1>
+      <p class="mt-5 max-w-2xl text-base leading-7 text-zinc-600">
+        Gameplay, UI, AI, localization, Steamworks, Unreal MCP, and LLM tooling notes. Draft, private, and internal material stay out of the published build.
+      </p>
+    </div>
+
+    <aside class="border-l border-zinc-200 pl-6">
+      <h2 class="text-sm font-semibold uppercase tracking-[0.16em] text-zinc-500">About</h2>
+      <p class="mt-3 text-sm leading-6 text-zinc-600">
+        Unreal Engine client programmer at AIXLAB. Shipping and maintaining horror/adventure gameplay systems while experimenting with AI-assisted tools.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-3 text-sm">
+        {site.contacts.map((contact) => <a class="text-blue-700" href={contact.href}>{contact.label}</a>)}
+      </div>
+      <a class="mt-4 inline-block text-sm font-medium text-blue-700" href={withBase('/about/')}>Read more</a>
+    </aside>
+  </section>
+
+  <section class="mt-14 grid gap-10 lg:grid-cols-[1fr_18rem]">
+    <div>
+      <div class="mb-4 flex items-end justify-between gap-4">
+        <h2 class="text-xl font-semibold">Latest Posts</h2>
+        <a class="text-sm text-blue-700" href={withBase('/blog/')}>All posts</a>
+      </div>
+      <EntryList entries={posts.slice(0, 3)} />
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold">Wiki Topics</h2>
+      <div class="mt-4 flex flex-wrap gap-2">
+        {topics.map((tag) => <a class="rounded-sm border border-zinc-200 px-2 py-1 text-sm text-zinc-700 hover:border-blue-500 hover:text-blue-700" href={withBase('/wiki/')}>#{tag}</a>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-14">
+    <div class="mb-4 flex items-end justify-between gap-4">
+      <h2 class="text-xl font-semibold">Projects</h2>
+      <a class="text-sm text-blue-700" href={withBase('/projects/')}>All projects</a>
+    </div>
+    <div class="grid gap-4 md:grid-cols-3">
+      {projects.slice(0, 3).map((project) => (
+        <article class="border border-zinc-200 bg-white/45 p-4">
+          <p class="text-xs font-medium uppercase text-zinc-500">{project.status}</p>
+          <h3 class="mt-2 font-semibold">{project.title}</h3>
+          <p class="mt-2 text-sm leading-6 text-zinc-600">{project.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

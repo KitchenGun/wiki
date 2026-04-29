@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../lib/site';
+---
+
+<BaseLayout title="About" description="About the author and public wiki.">
+  <section class="max-w-3xl">
+    <p class="text-sm font-medium text-blue-700">About</p>
+    <h1 class="mt-3 text-4xl font-semibold">강건 / KitchenGun</h1>
+    <div class="prose prose-zinc mt-8">
+      <p>
+        Unreal Engine client programmer focused on gameplay systems, UI, AI, options, localization, Steamworks, and production tooling.
+      </p>
+      <p>
+        Public work includes released projects at AIXLAB, Unreal MCP tooling, LLM agent experiments, and C++/C# game programming studies.
+      </p>
+      <ul>
+        <li>Current: AIXLAB, client programmer</li>
+        <li>Location: Seoul, Republic of Korea</li>
+        <li>Recommended title: Unreal Client Programmer</li>
+      </ul>
+    </div>
+    <div class="mt-6 flex flex-wrap gap-3 text-sm">
+      {site.contacts.map((contact) => <a class="text-blue-700" href={contact.href}>{contact.label}</a>)}
+    </div>
+  </section>
+</BaseLayout>
