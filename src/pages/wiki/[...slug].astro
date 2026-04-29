@@ -2,12 +2,12 @@
 import { getCollection, render } from 'astro:content';
 import TagList from '../../components/TagList.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { backlinkEntries, byDateDesc, entryHref, formatDate, isPublicEntry, relatedEntries } from '../../lib/content';
+import { backlinkEntries, byDateDesc, entryHref, entrySlug, formatDate, isPublicEntry, relatedEntries } from '../../lib/content';
 import { withBase } from '../../lib/url';
 
 export async function getStaticPaths() {
   const notes = (await getCollection('wiki')).filter(isPublicEntry);
-  return notes.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+  return notes.map((entry) => ({ params: { slug: entrySlug(entry) }, props: { entry } }));
 }
 
 const { entry } = Astro.props;

@@ -29,14 +29,16 @@ for (const file of files) {
     .replace(`${collection}/`, '')
     .replace(/\.(md|mdx)$/i, '')
     .toLowerCase();
+  const slug = parsed.data.slug ?? id;
 
   entries.push({
-    id,
+    id: slug,
+    sourceId: id,
     collection,
     title: parsed.data.title ?? id,
     description: parsed.data.description ?? '',
     tags: parsed.data.tags ?? [],
-    url: `/${collection}/${id}/`,
+    url: `/${collection}/${slug}/`,
     links: extractWikiLinks(parsed.content),
   });
 }

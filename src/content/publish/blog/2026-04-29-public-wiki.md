@@ -1,13 +1,17 @@
 ---
-title: 공개 포트폴리오 위키를 만든 이유
+title: 공개 위키를 만든 이유
 description: 이력서, GitHub, Obsidian 노트를 하나의 공개 지식 베이스로 정리하는 기준.
 date: 2026-04-29
-tags: [portfolio, obsidian, publishing]
+slug: 2026-04-29-public-wiki
+tags:
+  - portfolio
+  - obsidian
+  - publishing
 draft: false
 visibility: public
 ---
 
-이 사이트는 이력서, GitHub 프로젝트, Obsidian 공개 노트를 한곳에 모으기 위한 포트폴리오 위키다.
+이 사이트는 이력서, GitHub 프로젝트, Obsidian 공개 노트를 한곳에 모으기 위한 위키다.
 
 기준은 단순하다. 공개 가능한 내용만 남기고, 회사 내부 정보나 개인 정보는 제외한다.
 

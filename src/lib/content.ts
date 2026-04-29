@@ -20,7 +20,11 @@ export function formatDate(date?: Date) {
 }
 
 export function entryHref(entry: PublishEntry) {
-  return `/${entry.collection}/${entry.id}/`;
+  return `/${entry.collection}/${entrySlug(entry)}/`;
+}
+
+export function entrySlug(entry: PublishEntry) {
+  return entry.data.slug ?? entry.id;
 }
 
 export function collectTags(entries: PublishEntry[]) {
@@ -45,7 +49,7 @@ export function relatedEntries(current: PublishEntry, entries: PublishEntry[], l
 }
 
 export function backlinkEntries(current: PublishEntry, entries: PublishEntry[], limit = 8) {
-  const targets = [current.id, current.data.title, ...current.data.aliases].map(normalizeTarget);
+  const targets = [current.id, entrySlug(current), current.data.title, ...current.data.aliases].map(normalizeTarget);
 
   return entries
     .filter((entry) => entry.id !== current.id)

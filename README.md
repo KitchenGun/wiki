@@ -35,6 +35,7 @@ date: 2026-04-29
 tags: [tag]
 draft: false
 visibility: public
+slug: stable-url-slug
 ```
 
 빌드/목록/graph-data 대상은 `draft: false`, `visibility: public`뿐이다. 비공개 Vault, private, internal, drafts 폴더는 repo에 넣지 않는다.
