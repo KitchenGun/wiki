@@ -25,6 +25,13 @@ const topics = collectTags(wiki).slice(0, 10);
     </div>
 
     <aside class="border-l border-zinc-200 pl-6">
+      <img
+        src={withBase('/profile.jpg')}
+        alt="강건 프로필 사진"
+        class="mb-6 aspect-[3/4] w-full max-w-xs object-cover object-[52%_45%]"
+        decoding="async"
+        loading="eager"
+      />
       <h2 class="text-sm font-semibold uppercase tracking-[0.16em] text-zinc-500">About</h2>
       <p class="mt-3 text-sm leading-6 text-zinc-600">
         Unreal Engine client programmer at AIXLAB. Shipping and maintaining horror/adventure gameplay systems while experimenting with AI-assisted tools.
