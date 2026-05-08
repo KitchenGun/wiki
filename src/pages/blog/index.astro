@@ -9,7 +9,7 @@ const posts = (await getCollection('blog')).filter(isPublicEntry).sort(byDateDes
 
 <BaseLayout title="Blog" description="Public development logs and essays.">
   <section>
-    <p class="text-sm font-medium text-blue-700">Blog</p>
+    <p class="text-sm font-medium text-sky-400">Blog</p>
     <h1 class="mt-3 text-4xl font-semibold">Development logs and notes</h1>
     <div class="mt-8">
       <EntryList entries={posts} />

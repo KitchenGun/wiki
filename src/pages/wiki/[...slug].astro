@@ -20,7 +20,7 @@ const { Content } = await render(entry);
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
   <article class="mx-auto max-w-3xl">
-    <a class="text-sm text-blue-700" href={withBase('/wiki/')}>Wiki</a>
+    <a class="text-sm text-sky-400 hover:text-sky-300" href={withBase('/wiki/')}>Wiki</a>
     <h1 class="mt-3 text-4xl font-semibold leading-tight">{entry.data.title}</h1>
     <div class="mt-4 flex flex-col gap-3 text-sm text-zinc-500">
       <time>{formatDate(entry.data.date)}</time>
@@ -32,12 +32,12 @@ const { Content } = await render(entry);
   </article>
 
   {(related.length > 0 || backlinks.length > 0) && (
-    <aside class="mx-auto mt-12 grid max-w-3xl gap-8 border-t border-zinc-200 pt-6 sm:grid-cols-2">
+    <aside class="mx-auto mt-12 grid max-w-3xl gap-8 border-t border-zinc-800 pt-6 sm:grid-cols-2">
       {related.length > 0 && (
         <section>
           <h2 class="text-sm font-semibold uppercase tracking-[0.16em] text-zinc-500">Related</h2>
           <ul class="mt-3 space-y-2">
-            {related.map((item) => <li><a class="text-blue-700" href={withBase(entryHref(item))}>{item.data.title}</a></li>)}
+            {related.map((item) => <li><a class="text-sky-400 hover:text-sky-300" href={withBase(entryHref(item))}>{item.data.title}</a></li>)}
           </ul>
         </section>
       )}
@@ -46,7 +46,7 @@ const { Content } = await render(entry);
         <section>
           <h2 class="text-sm font-semibold uppercase tracking-[0.16em] text-zinc-500">Backlinks</h2>
           <ul class="mt-3 space-y-2">
-            {backlinks.map((item) => <li><a class="text-blue-700" href={withBase(entryHref(item))}>{item.data.title}</a></li>)}
+            {backlinks.map((item) => <li><a class="text-sky-400 hover:text-sky-300" href={withBase(entryHref(item))}>{item.data.title}</a></li>)}
           </ul>
         </section>
       )}

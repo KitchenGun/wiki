@@ -18,22 +18,22 @@ const pageTitle = title === site.title ? site.title : `${title} | ${site.title}`
     <link rel="icon" href={withBase('/favicon.ico')} />
     <title>{pageTitle}</title>
   </head>
-  <body>
+  <body class="bg-zinc-950 text-zinc-200">
     <div class="mx-auto flex min-h-screen max-w-6xl flex-col px-5 sm:px-6">
-      <header class="flex flex-col gap-4 border-b border-zinc-200 py-6 sm:flex-row sm:items-center sm:justify-between">
-        <a class="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-950 no-underline" href={withBase('/')}>
+      <header class="flex flex-col gap-4 border-b border-zinc-800 py-6 sm:flex-row sm:items-center sm:justify-between">
+        <a class="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-100 no-underline" href={withBase('/')}>
           {site.title}
         </a>
-        <nav class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-zinc-600">
+        <nav class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-zinc-400">
           {site.nav.map((item) => (
-            <a class="hover:text-blue-700" href={withBase(item.href)}>{item.label}</a>
+            <a class="hover:text-sky-300" href={withBase(item.href)}>{item.label}</a>
           ))}
         </nav>
       </header>
       <main class="flex-1 py-10">
         <slot />
       </main>
-      <footer class="border-t border-zinc-200 py-8 text-sm text-zinc-500">
+      <footer class="border-t border-zinc-800 py-8 text-sm text-zinc-500">
         Public notes only. Private vault material stays outside this repo.
       </footer>
     </div>

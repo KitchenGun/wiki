@@ -19,14 +19,14 @@ const { Content } = await render(cv);
         loading="eager"
       />
       <div>
-        <p class="text-sm font-medium text-blue-700">{cv.data.eyebrow || cv.data.title}</p>
+        <p class="text-sm font-medium text-sky-400">{cv.data.eyebrow || cv.data.title}</p>
         <h1 class="mt-3 text-4xl font-semibold">{cv.data.heading ?? cv.data.title}</h1>
-        <p class="mt-4 text-sm leading-6 text-zinc-600">
+        <p class="mt-4 text-sm leading-6 text-zinc-400">
           {cv.data.summary}
         </p>
       </div>
     </div>
-    <div class="prose prose-zinc mt-8 border-y border-zinc-200 py-5">
+    <div class="prose prose-zinc mt-8 border-y border-zinc-800 py-5">
       <Content />
     </div>
   </section>
