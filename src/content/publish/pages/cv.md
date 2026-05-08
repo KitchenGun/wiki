@@ -1,8 +1,8 @@
 ---
 title: CV
-description: Short CV and focus areas.
+description: 강건의 이력서.
 eyebrow: CV
-heading: 강건 / Unreal Client Programmer
+heading: 강건 (Keon Kang) / Unreal Client Programmer
 summary: Unreal Engine client programmer focused on gameplay systems, UI, AI, localization, release operations, and AI-assisted tooling.
 imageAlt: 강건 프로필 사진
 draft: false
@@ -12,36 +12,44 @@ aliases: []
 related: []
 ---
 
-## Contact
+## 인적사항
 
-[kangkk9714@gmail.com](mailto:kangkk9714@gmail.com) / [GitHub](https://github.com/KitchenGun)
+| 항목 | 값 |
+|---|---|
+| 성명 | 강건 (Keon Kang) |
+| 생년월일 | 1998-01-24 (만 28세) |
+| 성별 | 남 |
+| 거주지 | 서울특별시 (상세주소 NEEDS_REVIEW) |
+| 휴대전화 | 010-5331-5896 |
+| 이메일 | [kangkk9714@gmail.com](mailto:kangkk9714@gmail.com) |
 
-## Experience
+## 학력사항
 
-**AIXLAB** / Client Programmer / 2023.04 - Present
+| 기간 | 학교 | 전공 | 학위 |
+|---|---|---|---|
+| 2016.03 ~ 2023.02 | 우송대학교 | 게임멀티미디어공학과 | 졸업 (학사) |
+| 학점 | 3.94/4.5 |||
 
-**Ribbon Games** / Unreal Client Programmer / 2022.10 - 2022.12
+## 경력사항
 
-## Stack
+### AIXLAB
 
-C++, C#, Python, Verse, Unreal Engine 4/5, Unity, Behavior Tree, EQS, Common UI, Enhanced Input, Animation Blueprint, Sequencer, Steamworks, DLSS/FSR, MetaSound, Localization, Perforce, GitHub, SVN.
+**클라이언트 프로그래머 (Unreal)** / 2023.04 ~ 2026.05 (약 3년 1개월, 권고사직)
 
-## Projects
+담당:
 
-**골목길: 귀흔** / AI, UI, options, inventory, localization, audio, sequencer, puzzle/content systems.
+- **골목길: 귀흔** (PC/STOVE, 2024.04~): AI, UI, 옵션, 인벤토리, 로컬라이제이션, 오디오(MetaSound), 시퀀서, 퍼즐/콘텐츠
+- **Forbidden Art** (PC VR/Steam/STOVE, 2023.04~2024.05): 퍼즐 로직, 입력, 인벤토리, Steam 도전과제, AI, 로컬라이제이션, 옵션
 
-**Forbidden Art** / puzzle logic, input, inventory, Steam achievements, AI, localization, sound options.
+수상:
 
-**UnrealMCP** / natural-language Unreal workflow experiment with MCP, Claude Skill, Codex, and Discord bot.
+- 2024 하반기 이달의 우수게임(금지된 예술) / 문화체육관광부 / 2024.11.01
+- 2025 스토브인디 어워즈 Top 10(골목길 : 귀흔) / 스마일게이트 / 2026.02.11
 
-## Awards
+### Ribbon Games
 
-2024 하반기 이달의 우수게임 / Forbidden Art.
+**Unreal 클라이언트 프로그래머** / 2022.10 ~ 2022.12 (3개월)
 
-2025 Stove Indie Awards Top 10 / 골목길: 귀흔.
+담당:
 
-콘텐츠 공모전 및 창업 아이디어 경진대회 수상 이력.
-
-## Education
-
-우송대학교 게임멀티미디어공학과 / 2016.03 - 2023.02.
+- 미 출시 프로젝트 언리얼 클라이언트 개발자
