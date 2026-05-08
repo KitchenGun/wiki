@@ -1,7 +1,8 @@
-# Graph Report - .  (2026-05-08)
+# Graph Report - Wiki  (2026-05-08)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 29 files · ~10,035 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 - 92 nodes · 86 edges · 25 communities (23 shown, 2 thin omitted)
@@ -9,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4bf73ded`
+- Built from commit: `c90bccec`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
