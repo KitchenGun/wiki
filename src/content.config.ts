@@ -23,4 +23,14 @@ const wiki = defineCollection({
   schema: publicNoteSchema,
 });
 
-export const collections = { blog, wiki };
+const pages = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/publish/pages' }),
+  schema: publicNoteSchema.extend({
+    eyebrow: z.string().default(''),
+    heading: z.string().optional(),
+    summary: z.string().default(''),
+    imageAlt: z.string().default(''),
+  }),
+});
+
+export const collections = { blog, wiki, pages };

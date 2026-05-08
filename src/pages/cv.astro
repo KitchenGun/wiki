@@ -1,68 +1,33 @@
 ---
+import { getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { site } from '../lib/site';
 import { withBase } from '../lib/url';
+
+const cv = (await getCollection('pages')).find((entry) => entry.id === 'cv' && entry.data.visibility === 'public' && !entry.data.draft);
+if (!cv) throw new Error('Missing public page: cv');
+const { Content } = await render(cv);
 ---
 
-<BaseLayout title="CV" description="Short CV and focus areas.">
+<BaseLayout title={cv.data.title} description={cv.data.description}>
   <section class="max-w-4xl">
     <div class="grid gap-8 md:grid-cols-[14rem_1fr] md:items-end">
       <img
         src={withBase('/profile.jpg')}
-        alt="강건 프로필 사진"
+        alt={cv.data.imageAlt || cv.data.heading || cv.data.title}
         class="aspect-[3/4] w-56 object-cover object-[52%_45%]"
         decoding="async"
         loading="eager"
       />
       <div>
-        <p class="text-sm font-medium text-blue-700">CV</p>
-        <h1 class="mt-3 text-4xl font-semibold">강건 — {site.role}</h1>
+        <p class="text-sm font-medium text-blue-700">{cv.data.eyebrow || cv.data.title}</p>
+        <h1 class="mt-3 text-4xl font-semibold">{cv.data.heading ?? cv.data.title}</h1>
         <p class="mt-4 text-sm leading-6 text-zinc-600">
-          Unreal Engine client programmer focused on gameplay systems, UI, AI, localization, release operations, and AI-assisted tooling.
+          {cv.data.summary}
         </p>
       </div>
     </div>
-    <div class="mt-8 divide-y divide-zinc-200 border-y border-zinc-200">
-      <section class="grid gap-2 py-5 sm:grid-cols-[9rem_1fr]">
-        <h2 class="text-sm font-semibold text-zinc-500">Contact</h2>
-        <p class="text-sm leading-6 text-zinc-700">
-          <a class="text-blue-700" href="mailto:kangkk9714@gmail.com">kangkk9714@gmail.com</a> ·
-          <a class="text-blue-700" href="https://github.com/KitchenGun">GitHub</a>
-        </p>
-      </section>
-      <section class="grid gap-2 py-5 sm:grid-cols-[9rem_1fr]">
-        <h2 class="text-sm font-semibold text-zinc-500">Experience</h2>
-        <div class="space-y-3 text-sm leading-6 text-zinc-700">
-          <p><strong>AIXLAB</strong> · Client Programmer · 2023.04 - Present</p>
-          <p><strong>Ribbon Games</strong> · Unreal Client Programmer · 2022.10 - 2022.12</p>
-        </div>
-      </section>
-      <section class="grid gap-2 py-5 sm:grid-cols-[9rem_1fr]">
-        <h2 class="text-sm font-semibold text-zinc-500">Stack</h2>
-        <p class="text-sm leading-6 text-zinc-700">
-          C++, C#, Python, Verse, Unreal Engine 4/5, Unity, Behavior Tree, EQS, Common UI, Enhanced Input, Animation Blueprint, Sequencer, Steamworks, DLSS/FSR, MetaSound, Localization, Perforce, GitHub, SVN.
-        </p>
-      </section>
-      <section class="grid gap-2 py-5 sm:grid-cols-[9rem_1fr]">
-        <h2 class="text-sm font-semibold text-zinc-500">Projects</h2>
-        <div class="space-y-3 text-sm leading-6 text-zinc-700">
-          <p><strong>골목길: 귀흔</strong> · AI, UI, options, inventory, localization, audio, sequencer, puzzle/content systems.</p>
-          <p><strong>Forbidden Art</strong> · puzzle logic, input, inventory, Steam achievements, AI, localization, sound options.</p>
-          <p><strong>UnrealMCP</strong> · natural-language Unreal workflow experiment with MCP, Claude Skill, Codex, and Discord bot.</p>
-        </div>
-      </section>
-      <section class="grid gap-2 py-5 sm:grid-cols-[9rem_1fr]">
-        <h2 class="text-sm font-semibold text-zinc-500">Awards</h2>
-        <div class="space-y-2 text-sm leading-6 text-zinc-700">
-          <p>2024 하반기 이달의 우수게임 — Forbidden Art.</p>
-          <p>2025 Stove Indie Awards Top 10 — 골목길: 귀흔.</p>
-          <p>대전스마트 콘텐츠 공모전, WSU 창업아이디어 경진대회, SGA 강철포폴 공모전 등.</p>
-        </div>
-      </section>
-      <section class="grid gap-2 py-5 sm:grid-cols-[9rem_1fr]">
-        <h2 class="text-sm font-semibold text-zinc-500">Education</h2>
-        <p class="text-sm leading-6 text-zinc-700">우송대학교 게임 멀티미디어 공학사, 2016.03 - 2023.02.</p>
-      </section>
+    <div class="prose prose-zinc mt-8 border-y border-zinc-200 py-5">
+      <Content />
     </div>
   </section>
 </BaseLayout>

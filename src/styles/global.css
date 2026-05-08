@@ -8,13 +8,13 @@
 
 @layer base {
   html {
-    color-scheme: light;
+    color-scheme: dark;
   }
 
   body {
     margin: 0;
-    background: #fafaf7;
-    color: #18181b;
+    background: #09090b;
+    color: #e4e4e7;
     font-family: var(--font-sans);
   }
 
@@ -26,10 +26,27 @@
 
 .prose {
   max-width: none;
+  color: #d4d4d8;
+  --tw-prose-body: #d4d4d8;
+  --tw-prose-headings: #f4f4f5;
+  --tw-prose-lead: #d4d4d8;
+  --tw-prose-links: #38bdf8;
+  --tw-prose-bold: #f4f4f5;
+  --tw-prose-counters: #a1a1aa;
+  --tw-prose-bullets: #71717a;
+  --tw-prose-hr: #27272a;
+  --tw-prose-quotes: #f4f4f5;
+  --tw-prose-quote-borders: #3f3f46;
+  --tw-prose-captions: #a1a1aa;
+  --tw-prose-code: #f4f4f5;
+  --tw-prose-pre-code: #e4e4e7;
+  --tw-prose-pre-bg: #18181b;
+  --tw-prose-th-borders: #3f3f46;
+  --tw-prose-td-borders: #27272a;
 }
 
 .prose a {
-  color: #1d4ed8;
+  color: #38bdf8;
   text-decoration: none;
 }
 
@@ -39,4 +56,44 @@
 
 .prose code {
   font-family: var(--font-mono);
+}
+
+::selection {
+  background: #0ea5e9;
+  color: #f8fafc;
+}
+
+.text-zinc-950 {
+  color: #f4f4f5;
+}
+
+.text-zinc-700,
+.text-zinc-600 {
+  color: #d4d4d8;
+}
+
+.text-zinc-500 {
+  color: #a1a1aa;
+}
+
+.text-blue-700,
+.hover\:text-blue-700:hover {
+  color: #38bdf8;
+}
+
+.hover\:text-blue-700:hover {
+  color: #7dd3fc;
+}
+
+.border-zinc-200,
+.divide-zinc-200 > :not(:last-child) {
+  border-color: #27272a;
+}
+
+.bg-white\/45 {
+  background-color: rgb(24 24 27 / 0.68);
+}
+
+.hover\:border-blue-500:hover {
+  border-color: #38bdf8;
 }
