@@ -14,14 +14,16 @@ related: []
 
 ## 인적사항
 
-| 항목 | 값 |
-|---|---|
-| 성명 | 강건 (Keon Kang) |
-| 생년월일 | 1998-01-24 (만 28세) |
-| 성별 | 남 |
-| 거주지 | 서울특별시 (상세주소 NEEDS_REVIEW) |
-| 휴대전화 | 010-5331-5896 |
-| 이메일 | [kangkk9714@gmail.com](mailto:kangkk9714@gmail.com) |
+<table>
+  <tbody>
+    <tr><td>성명</td><td>강건 (Keon Kang)</td></tr>
+    <tr><td>생년월일</td><td>1998-01-24 (만 28세)</td></tr>
+    <tr><td>성별</td><td>남</td></tr>
+    <tr><td>거주지</td><td>서울</td></tr>
+    <tr><td>휴대전화</td><td>010-5331-5896</td></tr>
+    <tr><td>이메일</td><td><a href="mailto:kangkk9714@gmail.com">kangkk9714@gmail.com</a></td></tr>
+  </tbody>
+</table>
 
 ## 학력사항
 
@@ -38,8 +40,8 @@ related: []
 
 담당:
 
-- **골목길: 귀흔** (PC/STOVE, 2024.04~): AI, UI, 옵션, 인벤토리, 로컬라이제이션, 오디오(MetaSound), 시퀀서, 퍼즐/콘텐츠
-- **Forbidden Art** (PC VR/Steam/STOVE, 2023.04~2024.05): 퍼즐 로직, 입력, 인벤토리, Steam 도전과제, AI, 로컬라이제이션, 옵션
+- **골목길: 귀흔** (PC/STOVE, 2024.04.09~2026.05.01): AI, UI, 옵션, 인벤토리, 로컬라이제이션, 오디오(MetaSound), 시퀀서, 퍼즐/콘텐츠
+- **Forbidden Art** (PC VR/Steam/STOVE, 2023.04.15~2024.05.02): 퍼즐 로직, 입력, 인벤토리, Steam 도전과제, AI, 로컬라이제이션, 옵션
 
 수상:
 

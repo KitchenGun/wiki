@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "id": "person_keon_kang",
+      "label": "강건 (Keon Kang)",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L4"
+    },
+    {
+      "id": "profile_engine_agnostic_developer",
+      "label": "엔진에 구애받지 않는 개발자",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "role_unreal_client_programmer",
+      "label": "Unreal Client Programmer",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "project_golmokgil_guihon",
+      "label": "골목길: 귀흔",
+      "file_type": "document",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "project_forbidden_art",
+      "label": "Forbidden Art / 금지된 예술",
+      "file_type": "document",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "project_unreal_mcp",
+      "label": "Unreal MCP",
+      "file_type": "document",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "project_hermes_hybrid",
+      "label": "hermes-hybrid",
+      "file_type": "document",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "project_dx2d_metalslug",
+      "label": "DX2D-METALSLUG",
+      "file_type": "document",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L42"
+    },
+    {
+      "id": "skill_directx_unity",
+      "label": "DirectX와 Unity 게임 제작 경험",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "skill_ai_animation_content",
+      "label": "AI 로직, Animation, 인게임 콘텐츠 구현",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "skill_common_ui_layer_widget",
+      "label": "Common UI Plugin 기반 레이어 Widget 설계",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "skill_custom_game_user_settings",
+      "label": "Custom GameUserSettings 확장",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "skill_upscale_virtual_texture",
+      "label": "Upscale(DLSS/FSR), Virtual Texture 옵션",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "skill_localization_dashboard",
+      "label": "현지화 대시보드",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "skill_steam_achievements_depot",
+      "label": "Steam 도전 과제와 Depot 빌드 업로드",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "award_korea_game_of_month_2024_h2",
+      "label": "2024 하반기 이달의 우수게임",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L48"
+    },
+    {
+      "id": "award_stove_indie_top10_2025",
+      "label": "2025 스토브인디 어워즈 Top 10",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L49"
+    },
+    {
+      "id": "education_woosong_game_multimedia",
+      "label": "우송대학교 게임멀티미디어공학과",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L32"
+    },
+    {
+      "id": "contact_youtube_kangkeon4500",
+      "label": "YouTube @kangkeon4500",
+      "file_type": "document",
+      "source_file": "src/pages/about.astro",
+      "source_location": "L9"
+    }
+  ],
+  "links": [
+    { "source": "src_content_publish_pages_about_md", "target": "person_keon_kang", "relation": "describes", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/about.md", "source_location": "L4", "weight": 1.0 },
+    { "source": "src_content_publish_pages_cv_md", "target": "person_keon_kang", "relation": "describes", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L5", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "profile_engine_agnostic_developer", "relation": "has_profile", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/about.md", "source_location": "L13", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "role_unreal_client_programmer", "relation": "has_role", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L5", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "pages_cv_aixlab", "relation": "worked_at", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L37", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "pages_cv_ribbon_games", "relation": "worked_at", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L51", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "education_woosong_game_multimedia", "relation": "studied_at", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L32", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "contact_youtube_kangkeon4500", "relation": "has_contact", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/pages/about.astro", "source_location": "L9", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "skill_directx_unity", "relation": "has_experience", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/about.md", "source_location": "L13", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "skill_ai_animation_content", "relation": "has_experience", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/about.md", "source_location": "L15", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "skill_common_ui_layer_widget", "relation": "has_experience", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/about.md", "source_location": "L15", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "skill_custom_game_user_settings", "relation": "has_experience", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/about.md", "source_location": "L15", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "skill_upscale_virtual_texture", "relation": "has_experience", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/about.md", "source_location": "L15", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "skill_localization_dashboard", "relation": "has_experience", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/about.md", "source_location": "L15", "weight": 1.0 },
+    { "source": "person_keon_kang", "target": "skill_steam_achievements_depot", "relation": "has_experience", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/about.md", "source_location": "L15", "weight": 1.0 },
+    { "source": "pages_cv_aixlab", "target": "project_golmokgil_guihon", "relation": "shipped_project", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L43", "weight": 1.0 },
+    { "source": "pages_cv_aixlab", "target": "project_forbidden_art", "relation": "shipped_project", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L44", "weight": 1.0 },
+    { "source": "project_golmokgil_guihon", "target": "award_stove_indie_top10_2025", "relation": "won_award", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L49", "weight": 1.0 },
+    { "source": "project_forbidden_art", "target": "award_korea_game_of_month_2024_h2", "relation": "won_award", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L48", "weight": 1.0 },
+    { "source": "project_golmokgil_guihon", "target": "skill_ai_animation_content", "relation": "uses_skill", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L43", "weight": 1.0 },
+    { "source": "project_golmokgil_guihon", "target": "skill_common_ui_layer_widget", "relation": "uses_skill", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "src/content/publish/pages/about.md", "source_location": "L15", "weight": 1.0 },
+    { "source": "project_golmokgil_guihon", "target": "skill_localization_dashboard", "relation": "uses_skill", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L43", "weight": 1.0 },
+    { "source": "project_forbidden_art", "target": "skill_steam_achievements_depot", "relation": "uses_skill", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L44", "weight": 1.0 },
+    { "source": "project_forbidden_art", "target": "skill_localization_dashboard", "relation": "uses_skill", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/cv.md", "source_location": "L44", "weight": 1.0 },
+    { "source": "project_unreal_mcp", "target": "skill_ai_animation_content", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.7, "source_file": "src/content/publish/pages/about.md", "source_location": "L15", "weight": 1.0 },
+    { "source": "project_unreal_mcp", "target": "project_hermes_hybrid", "relation": "conceptually_related_to", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/content/publish/pages/about.md", "source_location": "L15", "weight": 1.0 },
+    { "source": "project_dx2d_metalslug", "target": "skill_directx_unity", "relation": "demonstrates", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "src/data/projects.ts", "source_location": "L42", "weight": 1.0 },
+    { "source": "src_data_projects_ts", "target": "project_golmokgil_guihon", "relation": "contains", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/data/projects.ts", "source_location": "L3", "weight": 1.0 },
+    { "source": "src_data_projects_ts", "target": "project_forbidden_art", "relation": "contains", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/data/projects.ts", "source_location": "L13", "weight": 1.0 },
+    { "source": "src_data_projects_ts", "target": "project_unreal_mcp", "relation": "contains", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/data/projects.ts", "source_location": "L24", "weight": 1.0 },
+    { "source": "src_data_projects_ts", "target": "project_hermes_hybrid", "relation": "contains", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/data/projects.ts", "source_location": "L33", "weight": 1.0 },
+    { "source": "src_data_projects_ts", "target": "project_dx2d_metalslug", "relation": "contains", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/data/projects.ts", "source_location": "L42", "weight": 1.0 }
+  ]
+}

@@ -1,0 +1,1751 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "astro.config.mjs",
+      "file_type": "code",
+      "source_file": "astro.config.mjs",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "astro.config.mjs",
+      "id": "astro_config_mjs"
+    },
+    {
+      "label": "generate-graph-data.mjs",
+      "file_type": "code",
+      "source_file": "scripts/generate-graph-data.mjs",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "generate-graph-data.mjs",
+      "id": "scripts_generate_graph_data_mjs"
+    },
+    {
+      "label": "graphify-codex-semantics.mjs",
+      "file_type": "code",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L1",
+      "community": 5,
+      "norm_label": "graphify-codex-semantics.mjs",
+      "id": "scripts_graphify_codex_semantics_mjs"
+    },
+    {
+      "label": "graph",
+      "file_type": "code",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L6",
+      "community": 5,
+      "norm_label": "graph",
+      "id": "scripts_graphify_codex_semantics_graph"
+    },
+    {
+      "label": "semantics",
+      "file_type": "code",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L7",
+      "community": 5,
+      "norm_label": "semantics",
+      "id": "scripts_graphify_codex_semantics_semantics"
+    },
+    {
+      "label": "existingIds",
+      "file_type": "code",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L9",
+      "community": 5,
+      "norm_label": "existingids",
+      "id": "scripts_graphify_codex_semantics_existingids"
+    },
+    {
+      "label": "semanticIds",
+      "file_type": "code",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L10",
+      "community": 5,
+      "norm_label": "semanticids",
+      "id": "scripts_graphify_codex_semantics_semanticids"
+    },
+    {
+      "label": "next",
+      "file_type": "code",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L16",
+      "community": 5,
+      "norm_label": "next",
+      "id": "scripts_graphify_codex_semantics_next"
+    },
+    {
+      "label": "index",
+      "file_type": "code",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L21",
+      "community": 5,
+      "norm_label": "index",
+      "id": "scripts_graphify_codex_semantics_index"
+    },
+    {
+      "label": "validIds",
+      "file_type": "code",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L30",
+      "community": 5,
+      "norm_label": "validids",
+      "id": "scripts_graphify_codex_semantics_validids"
+    },
+    {
+      "label": "graphify-update.mjs",
+      "file_type": "code",
+      "source_file": "scripts/graphify-update.mjs",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "graphify-update.mjs",
+      "id": "scripts_graphify_update_mjs"
+    },
+    {
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "scripts/graphify-update.mjs",
+      "source_location": "L3",
+      "community": 6,
+      "norm_label": "run()",
+      "id": "scripts_graphify_update_run"
+    },
+    {
+      "label": "content.config.ts",
+      "file_type": "code",
+      "source_file": "src/content.config.ts",
+      "source_location": "L1",
+      "community": 10,
+      "norm_label": "content.config.ts",
+      "id": "src_content_config_ts"
+    },
+    {
+      "label": "projects.ts",
+      "file_type": "code",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L1",
+      "community": 4,
+      "norm_label": "projects.ts",
+      "id": "src_data_projects_ts"
+    },
+    {
+      "label": "content.ts",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L1",
+      "community": 2,
+      "norm_label": "content.ts",
+      "id": "src_lib_content_ts"
+    },
+    {
+      "label": "isPublicEntry()",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L5",
+      "community": 2,
+      "norm_label": "ispublicentry()",
+      "id": "lib_content_ispublicentry"
+    },
+    {
+      "label": "byDateDesc()",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L9",
+      "community": 2,
+      "norm_label": "bydatedesc()",
+      "id": "lib_content_bydatedesc"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L13",
+      "community": 2,
+      "norm_label": "formatdate()",
+      "id": "lib_content_formatdate"
+    },
+    {
+      "label": "entryHref()",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L22",
+      "community": 2,
+      "norm_label": "entryhref()",
+      "id": "lib_content_entryhref"
+    },
+    {
+      "label": "entrySlug()",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L26",
+      "community": 2,
+      "norm_label": "entryslug()",
+      "id": "lib_content_entryslug"
+    },
+    {
+      "label": "collectTags()",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L30",
+      "community": 2,
+      "norm_label": "collecttags()",
+      "id": "lib_content_collecttags"
+    },
+    {
+      "label": "relatedEntries()",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L34",
+      "community": 2,
+      "norm_label": "relatedentries()",
+      "id": "lib_content_relatedentries"
+    },
+    {
+      "label": "backlinkEntries()",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L51",
+      "community": 2,
+      "norm_label": "backlinkentries()",
+      "id": "lib_content_backlinkentries"
+    },
+    {
+      "label": "hasWikiLink()",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L60",
+      "community": 2,
+      "norm_label": "haswikilink()",
+      "id": "lib_content_haswikilink"
+    },
+    {
+      "label": "normalizeTarget()",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L72",
+      "community": 2,
+      "norm_label": "normalizetarget()",
+      "id": "lib_content_normalizetarget"
+    },
+    {
+      "label": "remark-wikilinks.mjs",
+      "file_type": "code",
+      "source_file": "src/lib/remark-wikilinks.mjs",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "remark-wikilinks.mjs",
+      "id": "src_lib_remark_wikilinks_mjs"
+    },
+    {
+      "label": "remarkWikiLinks()",
+      "file_type": "code",
+      "source_file": "src/lib/remark-wikilinks.mjs",
+      "source_location": "L3",
+      "community": 3,
+      "norm_label": "remarkwikilinks()",
+      "id": "lib_remark_wikilinks_remarkwikilinks"
+    },
+    {
+      "label": "walk()",
+      "file_type": "code",
+      "source_file": "src/lib/remark-wikilinks.mjs",
+      "source_location": "L18",
+      "community": 3,
+      "norm_label": "walk()",
+      "id": "lib_remark_wikilinks_walk"
+    },
+    {
+      "label": "splitWikiText()",
+      "file_type": "code",
+      "source_file": "src/lib/remark-wikilinks.mjs",
+      "source_location": "L28",
+      "community": 3,
+      "norm_label": "splitwikitext()",
+      "id": "lib_remark_wikilinks_splitwikitext"
+    },
+    {
+      "label": "site.ts",
+      "file_type": "code",
+      "source_file": "src/lib/site.ts",
+      "source_location": "L1",
+      "community": 11,
+      "norm_label": "site.ts",
+      "id": "src_lib_site_ts"
+    },
+    {
+      "label": "url.ts",
+      "file_type": "code",
+      "source_file": "src/lib/url.ts",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "url.ts",
+      "id": "src_lib_url_ts"
+    },
+    {
+      "label": "withBase()",
+      "file_type": "code",
+      "source_file": "src/lib/url.ts",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "withbase()",
+      "id": "lib_url_withbase"
+    },
+    {
+      "label": "wiki-links.mjs",
+      "file_type": "code",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "wiki-links.mjs",
+      "id": "src_lib_wiki_links_mjs"
+    },
+    {
+      "label": "slugifyWikiTarget()",
+      "file_type": "code",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "slugifywikitarget()",
+      "id": "lib_wiki_links_slugifywikitarget"
+    },
+    {
+      "label": "slugifyAnchor()",
+      "file_type": "code",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L15",
+      "community": 3,
+      "norm_label": "slugifyanchor()",
+      "id": "lib_wiki_links_slugifyanchor"
+    },
+    {
+      "label": "wikiHref()",
+      "file_type": "code",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L25",
+      "community": 3,
+      "norm_label": "wikihref()",
+      "id": "lib_wiki_links_wikihref"
+    },
+    {
+      "label": "extractWikiLinks()",
+      "file_type": "code",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L33",
+      "community": 3,
+      "norm_label": "extractwikilinks()",
+      "id": "lib_wiki_links_extractwikilinks"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "community": 8,
+      "norm_label": "agents.md",
+      "id": "agents_md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "community": 8,
+      "norm_label": "graphify",
+      "id": "wiki_agents_graphify"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "community": 1,
+      "norm_label": "readme.md",
+      "id": "readme_md"
+    },
+    {
+      "label": "Personal Wiki",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "community": 1,
+      "norm_label": "personal wiki",
+      "id": "wiki_readme_personal_wiki"
+    },
+    {
+      "label": "\uc0ac\uc6a9",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "community": 1,
+      "norm_label": "\u1109\u1161\u110b\u116d\u11bc",
+      "id": "wiki_readme"
+    },
+    {
+      "label": "code:bash (npm install)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "community": 1,
+      "norm_label": "code:bash (npm install)",
+      "id": "wiki_readme_codeblock_1"
+    },
+    {
+      "label": "code:bash (PUBLIC_SITE_URL=https://USER.github.io)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L15",
+      "community": 1,
+      "norm_label": "code:bash (public_site_url=https://user.github.io)",
+      "id": "wiki_readme_codeblock_2"
+    },
+    {
+      "label": "\ucf58\ud150\uce20",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L20",
+      "community": 1,
+      "norm_label": "\u110f\u1169\u11ab\u1110\u1166\u11ab\u110e\u1173",
+      "id": "wiki_readme_20"
+    },
+    {
+      "label": "code:text (src/content/publish/blog)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L24",
+      "community": 1,
+      "norm_label": "code:text (src/content/publish/blog)",
+      "id": "wiki_readme_codeblock_3"
+    },
+    {
+      "label": "code:yaml (title: Note title)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L31",
+      "community": 1,
+      "norm_label": "code:yaml (title: note title)",
+      "id": "wiki_readme_codeblock_4"
+    },
+    {
+      "label": "Wikilink",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "community": 1,
+      "norm_label": "wikilink",
+      "id": "wiki_readme_wikilink"
+    },
+    {
+      "label": "Graph Data",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L47",
+      "community": 1,
+      "norm_label": "graph data",
+      "id": "wiki_readme_graph_data"
+    },
+    {
+      "label": "code:bash (npm run graph)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "community": 1,
+      "norm_label": "code:bash (npm run graph)",
+      "id": "wiki_readme_codeblock_5"
+    },
+    {
+      "label": "\ubc30\ud3ec",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "community": 1,
+      "norm_label": "\u1107\u1162\u1111\u1169",
+      "id": "wiki_readme_55"
+    },
+    {
+      "label": "2026-04-29-portfolio-case-notes.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/blog/2026-04-29-portfolio-case-notes.md",
+      "source_location": "L1",
+      "community": 12,
+      "norm_label": "2026-04-29-portfolio-case-notes.md",
+      "id": "src_content_publish_blog_2026_04_29_portfolio_case_notes_md"
+    },
+    {
+      "label": "2026-04-29-public-wiki.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/blog/2026-04-29-public-wiki.md",
+      "source_location": "L1",
+      "community": 13,
+      "norm_label": "2026-04-29-public-wiki.md",
+      "id": "src_content_publish_blog_2026_04_29_public_wiki_md"
+    },
+    {
+      "label": "iteration-loop.mdx",
+      "file_type": "document",
+      "source_file": "src/content/publish/blog/iteration-loop.mdx",
+      "source_location": "L1",
+      "community": 14,
+      "norm_label": "iteration-loop.mdx",
+      "id": "src_content_publish_blog_iteration_loop_mdx"
+    },
+    {
+      "label": "about.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "about.md",
+      "id": "src_content_publish_pages_about_md"
+    },
+    {
+      "label": "cv.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "cv.md",
+      "id": "src_content_publish_pages_cv_md"
+    },
+    {
+      "label": "\uc778\uc801\uc0ac\ud56d",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L15",
+      "community": 0,
+      "norm_label": "\u110b\u1175\u11ab\u110c\u1165\u11a8\u1109\u1161\u1112\u1161\u11bc",
+      "id": "pages_cv"
+    },
+    {
+      "label": "\ud559\ub825\uc0ac\ud56d",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L28",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11a8\u1105\u1167\u11a8\u1109\u1161\u1112\u1161\u11bc",
+      "id": "pages_cv_28"
+    },
+    {
+      "label": "\uacbd\ub825\uc0ac\ud56d",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L35",
+      "community": 0,
+      "norm_label": "\u1100\u1167\u11bc\u1105\u1167\u11a8\u1109\u1161\u1112\u1161\u11bc",
+      "id": "pages_cv_35"
+    },
+    {
+      "label": "AIXLAB",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L37",
+      "community": 0,
+      "norm_label": "aixlab",
+      "id": "pages_cv_aixlab"
+    },
+    {
+      "label": "Ribbon Games",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L51",
+      "community": 0,
+      "norm_label": "ribbon games",
+      "id": "pages_cv_ribbon_games"
+    },
+    {
+      "label": "home.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/home.md",
+      "source_location": "L1",
+      "community": 15,
+      "norm_label": "home.md",
+      "id": "src_content_publish_pages_home_md"
+    },
+    {
+      "label": "audio-visual-sequencer.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/audio-visual-sequencer.md",
+      "source_location": "L1",
+      "community": 16,
+      "norm_label": "audio-visual-sequencer.md",
+      "id": "src_content_publish_wiki_audio_visual_sequencer_md"
+    },
+    {
+      "label": "common-ui-workflow.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/common-ui-workflow.md",
+      "source_location": "L1",
+      "community": 17,
+      "norm_label": "common-ui-workflow.md",
+      "id": "src_content_publish_wiki_common_ui_workflow_md"
+    },
+    {
+      "label": "game-options-localization.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/game-options-localization.md",
+      "source_location": "L1",
+      "community": 18,
+      "norm_label": "game-options-localization.md",
+      "id": "src_content_publish_wiki_game_options_localization_md"
+    },
+    {
+      "label": "interaction-component-architecture.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/interaction-component-architecture.md",
+      "source_location": "L1",
+      "community": 19,
+      "norm_label": "interaction-component-architecture.md",
+      "id": "src_content_publish_wiki_interaction_component_architecture_md"
+    },
+    {
+      "label": "inventory-system.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/inventory-system.md",
+      "source_location": "L1",
+      "community": 20,
+      "norm_label": "inventory-system.md",
+      "id": "src_content_publish_wiki_inventory_system_md"
+    },
+    {
+      "label": "obsidian-publication-workflow.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/obsidian-publication-workflow.md",
+      "source_location": "L1",
+      "community": 9,
+      "norm_label": "obsidian-publication-workflow.md",
+      "id": "src_content_publish_wiki_obsidian_publication_workflow_md"
+    },
+    {
+      "label": "code:yaml (draft: false)",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/obsidian-publication-workflow.md",
+      "source_location": "L22",
+      "community": 9,
+      "norm_label": "code:yaml (draft: false)",
+      "id": "wiki_obsidian_publication_workflow_codeblock_1"
+    },
+    {
+      "label": "steamworks-integration.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/steamworks-integration.md",
+      "source_location": "L1",
+      "community": 21,
+      "norm_label": "steamworks-integration.md",
+      "id": "src_content_publish_wiki_steamworks_integration_md"
+    },
+    {
+      "label": "unreal-ai-behavior-tree-eqs.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/unreal-ai-behavior-tree-eqs.md",
+      "source_location": "L1",
+      "community": 22,
+      "norm_label": "unreal-ai-behavior-tree-eqs.md",
+      "id": "src_content_publish_wiki_unreal_ai_behavior_tree_eqs_md"
+    },
+    {
+      "label": "unreal-client-programming.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/unreal-client-programming.md",
+      "source_location": "L1",
+      "community": 23,
+      "norm_label": "unreal-client-programming.md",
+      "id": "src_content_publish_wiki_unreal_client_programming_md"
+    },
+    {
+      "label": "unreal-mcp.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/unreal-mcp.md",
+      "source_location": "L1",
+      "community": 24,
+      "norm_label": "unreal-mcp.md",
+      "id": "src_content_publish_wiki_unreal_mcp_md"
+    },
+    {
+      "label": "\uac15\uac74 (Keon Kang)",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L4",
+      "semantic_provider": "codex",
+      "norm_label": "\u1100\u1161\u11bc\u1100\u1165\u11ab (keon kang)",
+      "community": 0,
+      "id": "person_keon_kang"
+    },
+    {
+      "label": "\uc5d4\uc9c4\uc5d0 \uad6c\uc560\ubc1b\uc9c0 \uc54a\ub294 \uac1c\ubc1c\uc790",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L13",
+      "semantic_provider": "codex",
+      "norm_label": "\u110b\u1166\u11ab\u110c\u1175\u11ab\u110b\u1166 \u1100\u116e\u110b\u1162\u1107\u1161\u11ae\u110c\u1175 \u110b\u1161\u11ad\u1102\u1173\u11ab \u1100\u1162\u1107\u1161\u11af\u110c\u1161",
+      "community": 0,
+      "id": "profile_engine_agnostic_developer"
+    },
+    {
+      "label": "Unreal Client Programmer",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L5",
+      "semantic_provider": "codex",
+      "norm_label": "unreal client programmer",
+      "community": 0,
+      "id": "role_unreal_client_programmer"
+    },
+    {
+      "label": "\uace8\ubaa9\uae38: \uadc0\ud754",
+      "file_type": "document",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L3",
+      "semantic_provider": "codex",
+      "norm_label": "\u1100\u1169\u11af\u1106\u1169\u11a8\u1100\u1175\u11af: \u1100\u1171\u1112\u1173\u11ab",
+      "community": 4,
+      "id": "project_golmokgil_guihon"
+    },
+    {
+      "label": "Forbidden Art / \uae08\uc9c0\ub41c \uc608\uc220",
+      "file_type": "document",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L13",
+      "semantic_provider": "codex",
+      "norm_label": "forbidden art / \u1100\u1173\u11b7\u110c\u1175\u1103\u116c\u11ab \u110b\u1168\u1109\u116e\u11af",
+      "community": 0,
+      "id": "project_forbidden_art"
+    },
+    {
+      "label": "Unreal MCP",
+      "file_type": "document",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L24",
+      "semantic_provider": "codex",
+      "norm_label": "unreal mcp",
+      "community": 4,
+      "id": "project_unreal_mcp"
+    },
+    {
+      "label": "hermes-hybrid",
+      "file_type": "document",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L33",
+      "semantic_provider": "codex",
+      "norm_label": "hermes-hybrid",
+      "community": 4,
+      "id": "project_hermes_hybrid"
+    },
+    {
+      "label": "DX2D-METALSLUG",
+      "file_type": "document",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L42",
+      "semantic_provider": "codex",
+      "norm_label": "dx2d-metalslug",
+      "community": 4,
+      "id": "project_dx2d_metalslug"
+    },
+    {
+      "label": "DirectX\uc640 Unity \uac8c\uc784 \uc81c\uc791 \uacbd\ud5d8",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L13",
+      "semantic_provider": "codex",
+      "norm_label": "directx\u110b\u116a unity \u1100\u1166\u110b\u1175\u11b7 \u110c\u1166\u110c\u1161\u11a8 \u1100\u1167\u11bc\u1112\u1165\u11b7",
+      "community": 4,
+      "id": "skill_directx_unity"
+    },
+    {
+      "label": "AI \ub85c\uc9c1, Animation, \uc778\uac8c\uc784 \ucf58\ud150\uce20 \uad6c\ud604",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "semantic_provider": "codex",
+      "norm_label": "ai \u1105\u1169\u110c\u1175\u11a8, animation, \u110b\u1175\u11ab\u1100\u1166\u110b\u1175\u11b7 \u110f\u1169\u11ab\u1110\u1166\u11ab\u110e\u1173 \u1100\u116e\u1112\u1167\u11ab",
+      "community": 4,
+      "id": "skill_ai_animation_content"
+    },
+    {
+      "label": "Common UI Plugin \uae30\ubc18 \ub808\uc774\uc5b4 Widget \uc124\uacc4",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "semantic_provider": "codex",
+      "norm_label": "common ui plugin \u1100\u1175\u1107\u1161\u11ab \u1105\u1166\u110b\u1175\u110b\u1165 widget \u1109\u1165\u11af\u1100\u1168",
+      "community": 4,
+      "id": "skill_common_ui_layer_widget"
+    },
+    {
+      "label": "Custom GameUserSettings \ud655\uc7a5",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "semantic_provider": "codex",
+      "norm_label": "custom gameusersettings \u1112\u116a\u11a8\u110c\u1161\u11bc",
+      "community": 0,
+      "id": "skill_custom_game_user_settings"
+    },
+    {
+      "label": "Upscale(DLSS/FSR), Virtual Texture \uc635\uc158",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "semantic_provider": "codex",
+      "norm_label": "upscale(dlss/fsr), virtual texture \u110b\u1169\u11b8\u1109\u1167\u11ab",
+      "community": 0,
+      "id": "skill_upscale_virtual_texture"
+    },
+    {
+      "label": "\ud604\uc9c0\ud654 \ub300\uc2dc\ubcf4\ub4dc",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "semantic_provider": "codex",
+      "norm_label": "\u1112\u1167\u11ab\u110c\u1175\u1112\u116a \u1103\u1162\u1109\u1175\u1107\u1169\u1103\u1173",
+      "community": 0,
+      "id": "skill_localization_dashboard"
+    },
+    {
+      "label": "Steam \ub3c4\uc804 \uacfc\uc81c\uc640 Depot \ube4c\ub4dc \uc5c5\ub85c\ub4dc",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "semantic_provider": "codex",
+      "norm_label": "steam \u1103\u1169\u110c\u1165\u11ab \u1100\u116a\u110c\u1166\u110b\u116a depot \u1107\u1175\u11af\u1103\u1173 \u110b\u1165\u11b8\u1105\u1169\u1103\u1173",
+      "community": 0,
+      "id": "skill_steam_achievements_depot"
+    },
+    {
+      "label": "2024 \ud558\ubc18\uae30 \uc774\ub2ec\uc758 \uc6b0\uc218\uac8c\uc784",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L48",
+      "semantic_provider": "codex",
+      "norm_label": "2024 \u1112\u1161\u1107\u1161\u11ab\u1100\u1175 \u110b\u1175\u1103\u1161\u11af\u110b\u1174 \u110b\u116e\u1109\u116e\u1100\u1166\u110b\u1175\u11b7",
+      "community": 0,
+      "id": "award_korea_game_of_month_2024_h2"
+    },
+    {
+      "label": "2025 \uc2a4\ud1a0\ube0c\uc778\ub514 \uc5b4\uc6cc\uc988 Top 10",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L49",
+      "semantic_provider": "codex",
+      "norm_label": "2025 \u1109\u1173\u1110\u1169\u1107\u1173\u110b\u1175\u11ab\u1103\u1175 \u110b\u1165\u110b\u116f\u110c\u1173 top 10",
+      "community": 4,
+      "id": "award_stove_indie_top10_2025"
+    },
+    {
+      "label": "\uc6b0\uc1a1\ub300\ud559\uad50 \uac8c\uc784\uba40\ud2f0\ubbf8\ub514\uc5b4\uacf5\ud559\uacfc",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L32",
+      "semantic_provider": "codex",
+      "norm_label": "\u110b\u116e\u1109\u1169\u11bc\u1103\u1162\u1112\u1161\u11a8\u1100\u116d \u1100\u1166\u110b\u1175\u11b7\u1106\u1165\u11af\u1110\u1175\u1106\u1175\u1103\u1175\u110b\u1165\u1100\u1169\u11bc\u1112\u1161\u11a8\u1100\u116a",
+      "community": 0,
+      "id": "education_woosong_game_multimedia"
+    },
+    {
+      "label": "YouTube @kangkeon4500",
+      "file_type": "document",
+      "source_file": "src/pages/about.astro",
+      "source_location": "L9",
+      "semantic_provider": "codex",
+      "norm_label": "youtube @kangkeon4500",
+      "community": 0,
+      "id": "contact_youtube_kangkeon4500"
+    }
+  ],
+  "links": [
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "astro.config.mjs",
+      "source_location": "L5",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "astro_config_mjs",
+      "target": "src_lib_remark_wikilinks_mjs"
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-graph-data.mjs",
+      "source_location": "L5",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_generate_graph_data_mjs",
+      "target": "src_lib_wiki_links_mjs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L6",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_graphify_codex_semantics_mjs",
+      "target": "scripts_graphify_codex_semantics_graph"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L7",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_graphify_codex_semantics_mjs",
+      "target": "scripts_graphify_codex_semantics_semantics"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L9",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_graphify_codex_semantics_mjs",
+      "target": "scripts_graphify_codex_semantics_existingids"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L10",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_graphify_codex_semantics_mjs",
+      "target": "scripts_graphify_codex_semantics_semanticids"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L16",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_graphify_codex_semantics_mjs",
+      "target": "scripts_graphify_codex_semantics_next"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L21",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_graphify_codex_semantics_mjs",
+      "target": "scripts_graphify_codex_semantics_index"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/graphify-codex-semantics.mjs",
+      "source_location": "L30",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_graphify_codex_semantics_mjs",
+      "target": "scripts_graphify_codex_semantics_validids"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/graphify-update.mjs",
+      "source_location": "L3",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_graphify_update_mjs",
+      "target": "scripts_graphify_update_run"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/data/projects.ts",
+      "source_location": "L3",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "src_data_projects_ts",
+      "target": "project_golmokgil_guihon"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/data/projects.ts",
+      "source_location": "L13",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "src_data_projects_ts",
+      "target": "project_forbidden_art"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/data/projects.ts",
+      "source_location": "L24",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "src_data_projects_ts",
+      "target": "project_unreal_mcp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/data/projects.ts",
+      "source_location": "L33",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "src_data_projects_ts",
+      "target": "project_hermes_hybrid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/data/projects.ts",
+      "source_location": "L42",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "src_data_projects_ts",
+      "target": "project_dx2d_metalslug"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L5",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_content_ts",
+      "target": "lib_content_ispublicentry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L9",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_content_ts",
+      "target": "lib_content_bydatedesc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L13",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_content_ts",
+      "target": "lib_content_formatdate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L22",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_content_ts",
+      "target": "lib_content_entryhref"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L26",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_content_ts",
+      "target": "lib_content_entryslug"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L30",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_content_ts",
+      "target": "lib_content_collecttags"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L34",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_content_ts",
+      "target": "lib_content_relatedentries"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L51",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_content_ts",
+      "target": "lib_content_backlinkentries"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L60",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_content_ts",
+      "target": "lib_content_haswikilink"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L72",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_content_ts",
+      "target": "lib_content_normalizetarget"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L23",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "lib_content_entryhref",
+      "target": "lib_content_entryslug"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L52",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "lib_content_entryslug",
+      "target": "lib_content_backlinkentries"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/content.ts",
+      "source_location": "L65",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "lib_content_haswikilink",
+      "target": "lib_content_normalizetarget"
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/remark-wikilinks.mjs",
+      "source_location": "L1",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_remark_wikilinks_mjs",
+      "target": "src_lib_wiki_links_mjs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/remark-wikilinks.mjs",
+      "source_location": "L3",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_remark_wikilinks_mjs",
+      "target": "lib_remark_wikilinks_remarkwikilinks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/remark-wikilinks.mjs",
+      "source_location": "L18",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_remark_wikilinks_mjs",
+      "target": "lib_remark_wikilinks_walk"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/remark-wikilinks.mjs",
+      "source_location": "L28",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_remark_wikilinks_mjs",
+      "target": "lib_remark_wikilinks_splitwikitext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/lib/remark-wikilinks.mjs",
+      "source_location": "L42",
+      "weight": 1,
+      "source": "lib_remark_wikilinks_splitwikitext",
+      "target": "lib_wiki_links_wikihref"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/url.ts",
+      "source_location": "L1",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_url_ts",
+      "target": "lib_url_withbase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L1",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_wiki_links_mjs",
+      "target": "lib_wiki_links_slugifywikitarget"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L15",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_wiki_links_mjs",
+      "target": "lib_wiki_links_slugifyanchor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L25",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_wiki_links_mjs",
+      "target": "lib_wiki_links_wikihref"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L33",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_wiki_links_mjs",
+      "target": "lib_wiki_links_extractwikilinks"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L28",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "lib_wiki_links_slugifywikitarget",
+      "target": "lib_wiki_links_wikihref"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L43",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "lib_wiki_links_slugifywikitarget",
+      "target": "lib_wiki_links_extractwikilinks"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/wiki-links.mjs",
+      "source_location": "L29",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "lib_wiki_links_slugifyanchor",
+      "target": "lib_wiki_links_wikihref"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "agents_md",
+      "target": "wiki_agents_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "readme_md",
+      "target": "wiki_readme_personal_wiki"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "wiki_readme_personal_wiki",
+      "target": "wiki_readme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L20",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "wiki_readme_personal_wiki",
+      "target": "wiki_readme_20"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "wiki_readme_personal_wiki",
+      "target": "wiki_readme_wikilink"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L47",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "wiki_readme_personal_wiki",
+      "target": "wiki_readme_graph_data"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "wiki_readme_personal_wiki",
+      "target": "wiki_readme_55"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "wiki_readme",
+      "target": "wiki_readme_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L15",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "wiki_readme",
+      "target": "wiki_readme_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L24",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "wiki_readme_20",
+      "target": "wiki_readme_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L31",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "wiki_readme_20",
+      "target": "wiki_readme_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "wiki_readme_graph_data",
+      "target": "wiki_readme_codeblock_5"
+    },
+    {
+      "relation": "describes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L4",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "src_content_publish_pages_about_md",
+      "target": "person_keon_kang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L15",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L28",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_28"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L35",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_35"
+    },
+    {
+      "relation": "describes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L5",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "src_content_publish_pages_cv_md",
+      "target": "person_keon_kang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L37",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "pages_cv_35",
+      "target": "pages_cv_aixlab"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L51",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "pages_cv_35",
+      "target": "pages_cv_ribbon_games"
+    },
+    {
+      "relation": "worked_at",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L37",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "pages_cv_aixlab"
+    },
+    {
+      "relation": "shipped_project",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L43",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "pages_cv_aixlab",
+      "target": "project_golmokgil_guihon"
+    },
+    {
+      "relation": "shipped_project",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L44",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "pages_cv_aixlab",
+      "target": "project_forbidden_art"
+    },
+    {
+      "relation": "worked_at",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L51",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "pages_cv_ribbon_games"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/obsidian-publication-workflow.md",
+      "source_location": "L22",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_wiki_obsidian_publication_workflow_md",
+      "target": "wiki_obsidian_publication_workflow_codeblock_1"
+    },
+    {
+      "relation": "has_profile",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L13",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "profile_engine_agnostic_developer"
+    },
+    {
+      "relation": "has_role",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L5",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "role_unreal_client_programmer"
+    },
+    {
+      "relation": "studied_at",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L32",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "education_woosong_game_multimedia"
+    },
+    {
+      "relation": "has_contact",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/pages/about.astro",
+      "source_location": "L9",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "contact_youtube_kangkeon4500"
+    },
+    {
+      "relation": "has_experience",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L13",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "skill_directx_unity"
+    },
+    {
+      "relation": "has_experience",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "skill_ai_animation_content"
+    },
+    {
+      "relation": "has_experience",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "skill_common_ui_layer_widget"
+    },
+    {
+      "relation": "has_experience",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "skill_custom_game_user_settings"
+    },
+    {
+      "relation": "has_experience",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "skill_upscale_virtual_texture"
+    },
+    {
+      "relation": "has_experience",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "skill_localization_dashboard"
+    },
+    {
+      "relation": "has_experience",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "person_keon_kang",
+      "target": "skill_steam_achievements_depot"
+    },
+    {
+      "relation": "won_award",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L49",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "project_golmokgil_guihon",
+      "target": "award_stove_indie_top10_2025"
+    },
+    {
+      "relation": "uses_skill",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L43",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "project_golmokgil_guihon",
+      "target": "skill_ai_animation_content"
+    },
+    {
+      "relation": "uses_skill",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "project_golmokgil_guihon",
+      "target": "skill_common_ui_layer_widget"
+    },
+    {
+      "relation": "uses_skill",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L43",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "project_golmokgil_guihon",
+      "target": "skill_localization_dashboard"
+    },
+    {
+      "relation": "won_award",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L48",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "project_forbidden_art",
+      "target": "award_korea_game_of_month_2024_h2"
+    },
+    {
+      "relation": "uses_skill",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L44",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "project_forbidden_art",
+      "target": "skill_steam_achievements_depot"
+    },
+    {
+      "relation": "uses_skill",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L44",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "project_forbidden_art",
+      "target": "skill_localization_dashboard"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "project_unreal_mcp",
+      "target": "skill_ai_animation_content"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "src/content/publish/pages/about.md",
+      "source_location": "L15",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "project_unreal_mcp",
+      "target": "project_hermes_hybrid"
+    },
+    {
+      "relation": "demonstrates",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/data/projects.ts",
+      "source_location": "L42",
+      "weight": 1,
+      "semantic_provider": "codex",
+      "source": "project_dx2d_metalslug",
+      "target": "skill_directx_unity"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "4bf73ded0e1f47ea76fc1418515c276eb719199d"
+}

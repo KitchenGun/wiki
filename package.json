@@ -8,6 +8,10 @@
   "scripts": {
     "dev": "npm run graph && astro dev",
     "graph": "node scripts/generate-graph-data.mjs",
+    "graphify:update": "node scripts/graphify-update.mjs",
+    "graphify:codex-semantics": "node scripts/graphify-codex-semantics.mjs",
+    "graphify:extract": "graphify extract .",
+    "graphify:benchmark": "graphify benchmark graphify-out/graph.json",
     "build": "npm run graph && astro build",
     "preview": "astro preview",
     "astro": "astro"
