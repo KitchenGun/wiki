@@ -985,9 +985,9 @@
       "source_file": "src/data/projects.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_projects_ts",
-      "target": "data_projects_projects",
-      "confidence_score": 1.0
+      "target": "data_projects_projects"
     },
     {
       "relation": "contains",
@@ -1472,9 +1472,9 @@
       "source_file": "src/content/publish/pages/cv.md",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_publish_pages_cv_md",
-      "target": "pages_cv_59",
-      "confidence_score": 1.0
+      "target": "pages_cv_59"
     },
     {
       "relation": "describes",
@@ -1794,5 +1794,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9dcd48b0b1838a9a4133c99c8b422c23dce163bd"
+  "built_at_commit": "0f996e4273ee55b59b1d1bc109811fc782bce061"
 }
