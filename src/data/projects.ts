@@ -38,6 +38,15 @@ export const projects = [
     status: 'R&D',
   },
   {
+    title: 'personal-hermes-agent',
+    description: 'Public sanitized operations profile and Job Registry for a personal AI agent, covering memory, skills, gateway, cron, delegation, provider routing, and validation scripts.',
+    role: 'Personal R&D / Documentation',
+    period: '2026',
+    href: 'https://github.com/KitchenGun/personal-hermes-agent',
+    tags: ['LLM', 'Agent', 'Automation', 'Documentation'],
+    status: 'Published',
+  },
+  {
     title: 'DX2D-METALSLUG',
     description: 'DirectX 2D Metal Slug clone project focused on C++ game programming fundamentals.',
     role: 'Game Programmer',

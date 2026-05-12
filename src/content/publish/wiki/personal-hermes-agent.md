@@ -1,0 +1,21 @@
+---
+title: Personal Hermes Agent
+description: 개인 Hermes Agent 운영 프로필과 Job Registry를 공개 가능한 형태로 정리한 저장소.
+date: 2026-05-12
+tags: [ai-tools, agent, automation, hermes]
+draft: false
+visibility: public
+aliases: [personal-hermes-agent]
+related: [unreal-mcp]
+---
+
+Personal Hermes Agent는 개인 AI 에이전트 운영 구조를 공개 가능한 형태로 정리한 저장소다.
+
+포트폴리오 기준 의미:
+
+- Memory, Skills, Tools, Gateway, Cron, Delegation, Provider Routing 구조 문서화
+- 자연어 요청으로 `jobs/.../*.yaml` Job Registry를 생성·갱신하는 흐름 제시
+- 실제 토큰, OAuth, Discord 채널 ID, 개인 메모리, 로그, DB를 제외한 sanitized 예시 구성
+- secret scan, example validation, job registry validation 스크립트 포함
+
+이 프로젝트는 [[unreal-mcp]]와 함께 AI 도구를 실제 개발 루틴에 연결하려는 개인 R&D 흐름에 속한다.

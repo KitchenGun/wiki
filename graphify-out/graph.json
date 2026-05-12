@@ -130,6 +130,15 @@
       "norm_label": "projects.ts"
     },
     {
+      "label": "projects",
+      "file_type": "code",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L1",
+      "id": "data_projects_projects",
+      "community": 4,
+      "norm_label": "projects"
+    },
+    {
       "label": "content.ts",
       "file_type": "code",
       "source_file": "src/lib/content.ts",
@@ -553,6 +562,15 @@
       "norm_label": "ribbon games"
     },
     {
+      "label": "\uac1c\uc778 \ud504\ub85c\uc81d\ud2b8",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L59",
+      "id": "pages_cv_59",
+      "community": 0,
+      "norm_label": "\u1100\u1162\u110b\u1175\u11ab \u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173"
+    },
+    {
       "label": "home.md",
       "file_type": "document",
       "source_file": "src/content/publish/pages/home.md",
@@ -625,12 +643,21 @@
       "norm_label": "code:yaml (draft: false)"
     },
     {
+      "label": "personal-hermes-agent.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/personal-hermes-agent.md",
+      "source_location": "L1",
+      "id": "src_content_publish_wiki_personal_hermes_agent_md",
+      "community": 21,
+      "norm_label": "personal-hermes-agent.md"
+    },
+    {
       "label": "steamworks-integration.md",
       "file_type": "document",
       "source_file": "src/content/publish/wiki/steamworks-integration.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_steamworks_integration_md",
-      "community": 21,
+      "community": 22,
       "norm_label": "steamworks-integration.md"
     },
     {
@@ -639,7 +666,7 @@
       "source_file": "src/content/publish/wiki/unreal-ai-behavior-tree-eqs.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_ai_behavior_tree_eqs_md",
-      "community": 22,
+      "community": 23,
       "norm_label": "unreal-ai-behavior-tree-eqs.md"
     },
     {
@@ -648,7 +675,7 @@
       "source_file": "src/content/publish/wiki/unreal-client-programming.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_client_programming_md",
-      "community": 23,
+      "community": 24,
       "norm_label": "unreal-client-programming.md"
     },
     {
@@ -657,7 +684,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_mcp_md",
-      "community": 24,
+      "community": 25,
       "norm_label": "unreal-mcp.md"
     },
     {
@@ -951,6 +978,16 @@
       "confidence_score": 1,
       "source": "scripts_graphify_update_mjs",
       "target": "scripts_graphify_update_run"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_projects_ts",
+      "target": "data_projects_projects",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1430,6 +1467,16 @@
       "target": "pages_cv_35"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_59",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "describes",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
@@ -1747,5 +1794,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c90bccecd6948f9d0fbb90a0fc6be26a86dbeed0"
+  "built_at_commit": "9dcd48b0b1838a9a4133c99c8b422c23dce163bd"
 }

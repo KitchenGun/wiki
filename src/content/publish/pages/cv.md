@@ -55,3 +55,7 @@ related: []
 담당:
 
 - 미 출시 프로젝트 언리얼 클라이언트 개발자
+
+## 개인 프로젝트
+
+- **personal-hermes-agent** (2026): 개인 Hermes Agent 운영 프로필과 Job Registry를 공개 가능한 형태로 정리한 저장소. Memory, Skills, Gateway, Cron, Delegation, Provider Routing 구조와 검증 스크립트를 문서화. [GitHub](https://github.com/KitchenGun/personal-hermes-agent)
