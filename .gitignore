@@ -24,6 +24,10 @@ pnpm-debug.log*
 __pycache__/
 *.py[cod]
 
+# browser automation captures
+_*.png
+_downloads_before.txt
+
 
 # environment variables
 .env
