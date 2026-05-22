@@ -1,0 +1,97 @@
+job_id: weekly_profile_update
+schedule: weekly
+control_channel_id: '1504020211194662994'
+status: ready_for_manual_publish
+current_step: publish_approved_all
+sources:
+  wiki_path: /mnt/e/Wiki
+  windows_wiki_path: E:\Wiki
+  github_window_days: 7
+  github_username: KitchenGun
+  github_repositories:
+  - KitchenGun/wiki
+  - KitchenGun/personal-hermes-agent
+  - KitchenGun/UnrealMCP
+  - KitchenGun/hermes-hybrid
+  - KitchenGun/DX2D-METALSLUG
+  - KitchenGun/Claude-Token-Visible-Wdiget
+  - KitchenGun/harness-Auto-Create
+  include_private_repositories: false
+platforms:
+  linkedin:
+    enabled: true
+    publish_enabled: false
+    target: null
+  facebook:
+    enabled: true
+    publish_enabled: false
+    target: page
+    page_id: null
+  instagram:
+    enabled: true
+    publish_enabled: false
+    account_type_required: business_or_creator
+    publish_feed: true
+    publish_story: false
+  x:
+    enabled: true
+    publish_enabled: false
+    target: profile
+image_policy:
+  agent_selects_images: false
+  user_upload_required: true
+  require_user_approval: true
+publish_policy:
+  require_final_approval: true
+  allow_platform_partial_publish: true
+  prevent_duplicate_publish: true
+approval:
+  discord_user_allowlist:
+  - '100816750945255424'
+  draft_approved: true
+  assets_approved: true
+  publish_approved:
+    linkedin: true
+    facebook: true
+    instagram: true
+    x: true
+secrets:
+  discord_bot_token: env:DISCORD_BOT_TOKEN
+  github_token: env:GITHUB_TOKEN
+  linkedin_access_token: env:LINKEDIN_ACCESS_TOKEN
+  meta_page_access_token: env:META_PAGE_ACCESS_TOKEN
+  x_access_token: env:X_ACCESS_TOKEN
+scheduler:
+  enabled: true
+  systemd_service: weekly-profile-update.service
+  systemd_timer: weekly-profile-update.timer
+  on_calendar: weekly
+  entrypoint: /mnt/e/Wiki/cron/profile_update.py --root /mnt/e/Wiki
+assets:
+  submitted:
+  - &id001
+    platform: general
+    attachment_id: '1506202853599875242'
+    filename: test.png
+    uploaded_by: '100816750945255424'
+    uploaded_at: '2026-05-19T07:52:24.923692+00:00'
+    content_type: image/png
+    size: 401185
+  approved:
+  - *id001
+  cache_dir: assets/cache
+configuration_flow:
+  discord_allowlist:
+    bootstrap_rule: allowlist가 비어 있을 때만 관리 채널 사용자가 최초 승인자를 추가할 수 있다.
+    commands:
+    - /weekly-profile allowlist list
+    - /weekly-profile allowlist add <discord_user_id>
+    - /weekly-profile allowlist remove <discord_user_id>
+  github_sources:
+    commands:
+    - /weekly-profile github username <name>
+    - /weekly-profile github repos <owner/repo,owner/repo>
+  discord_status_check:
+    command: /weekly-profile status
+    channel_id: '1504020211194662994'
+    document: weekly-profile-update/discord-status-check.md

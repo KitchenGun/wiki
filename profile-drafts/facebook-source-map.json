@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "purpose": "Facebook profile/update draft evidence map (internal review only; do not publish)",
+  "preferred_public_title": "Unreal Engine Developer",
+  "generated_files": [
+    "facebook-profile-draft.ko.md",
+    "facebook-source-map.json",
+    "facebook-privacy-review.md",
+    "facebook-manual-checklist.md"
+  ],
+  "claims": [
+    {
+      "claim": "Public role uses Unreal Engine Developer.",
+      "evidence": [
+        "portfolio site role/profile content",
+        "public Unreal Engine portfolio notes"
+      ],
+      "publication": "safe"
+    },
+    {
+      "claim": "AIXLAB period is 2023.04 ~ 2026.05.",
+      "evidence": [
+        "CV/profile source content",
+        "confirmed employment end month"
+      ],
+      "publication": "safe_month_level_for_facebook"
+    },
+    {
+      "claim": "Projects include 골목길: 귀흔 and Forbidden Art.",
+      "evidence": [
+        "portfolio project list",
+        "CV/about profile content"
+      ],
+      "publication": "safe"
+    },
+    {
+      "claim": "Skills include Gameplay, UI, AI, Localization, Steamworks, Sequencer/MetaSound, GameUserSettings.",
+      "evidence": [
+        "public wiki/portfolio skill notes"
+      ],
+      "publication": "safe_summarized"
+    },
+    {
+      "claim": "Portfolio links are GitHub and YouTube.",
+      "evidence": [
+        "confirmed public profile links"
+      ],
+      "links": [
+        "https://github.com/KitchenGun",
+        "https://www.youtube.com/@kangkeon4500"
+      ],
+      "publication": "safe_confirmed"
+    },
+    {
+      "claim": "GPA 3.94/4.5 is approved for public use.",
+      "evidence": [
+        "CV/profile source content",
+        "confirmed public-use preference"
+      ],
+      "publication": "optional_for_facebook"
+    }
+  ],
+  "excluded": [
+    "phone",
+    "birthdate",
+    "address",
+    "local_paths",
+    "secrets",
+    "private_internal_details",
+    "unreleased_project_details"
+  ],
+  "privacy_note": "This file is for internal verification only. Copy Facebook-facing text from facebook-profile-draft.ko.md, not from this source map."
+}

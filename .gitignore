@@ -20,6 +20,10 @@ yarn-error.log*
 pnpm-debug.log*
 .codex/*.log
 
+# python cache
+__pycache__/
+*.py[cod]
+
 
 # environment variables
 .env

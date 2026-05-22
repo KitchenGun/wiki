@@ -55,3 +55,26 @@ npm run graph
 ## 배포
 
 `.github/workflows/deploy.yml`은 Astro 공식 GitHub Pages Action을 사용한다. GitHub repo Settings → Pages → Source를 `GitHub Actions`로 설정한다.
+
+## Weekly Profile Update
+
+`weekly-profile-update/`는 Wiki/GitHub 활동을 LinkedIn, Facebook Page, Instagram, X 수동 게시 준비물로 변환하는 승인 기반 Job Registry 산출물이다. 현재 자동 게시 API는 비활성화되어 있으며 모든 플랫폼의 `publish_enabled`는 `false`로 유지한다.
+
+주요 명령 흐름:
+
+```text
+/weekly-profile preview target:x
+/weekly-profile approve publish target:x
+/weekly-profile approve publish target:all
+/weekly-profile assets
+```
+
+Discord 첨부 이미지는 원본 URL/token을 저장하지 않고, 승인된 첨부만 `weekly-profile-update/assets/cache/`에 attachment id 기반 안전한 파일명으로 캐시하는 구조를 사용한다. `publishing/publish-plan.md`와 `publishing/publish-results.md`는 dry-run/manual-ready 상태만 기록한다.
+
+## Weekly Profile Update Job Registry
+
+`weekly-profile-update/`는 주간 SNS 업로드 승인 파이프라인의 운영 상태를 보관한다. 현재 대상 플랫폼은 LinkedIn, Facebook Page, Instagram, X이며, 모든 플랫폼의 `publish_enabled`는 `false`로 유지한다.
+
+- Discord 명령 preview/approve publish는 X를 포함한다.
+- 승인된 Discord 첨부 이미지는 `weekly-profile-update/assets/cache/`에 attachment id 기반 안전 파일명으로 캐시할 수 있다.
+- `publishing/publish-plan.md`와 `publishing/publish-results.md`는 dry-run/manual-ready 문서만 생성하며 실제 SNS API는 호출하지 않는다.

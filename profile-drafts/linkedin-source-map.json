@@ -1,0 +1,210 @@
+{
+  "generated_at": "2026-05-15",
+  "scope": "LinkedIn profile draft artifacts only; no publishing; no browser automation",
+  "privacy_policy": [
+    "Excluded phone number, birthdate, gender, residence/address, local filesystem paths, NDA/private internals, and secrets.",
+    "Resolved user-confirmed AIXLAB end date, GPA disclosure, representative links, and limited Ribbon Games wording; no placeholder review markers remain in the LinkedIn draft.",
+    "Used only public/publish source files and public project data as evidence."
+  ],
+  "sections": {
+    "identity_headline": [
+      {
+        "claim": "Name Keon Kang / 강건 / KitchenGun",
+        "sources": [
+          "src/lib/site.ts:2-4",
+          "src/content/publish/pages/about.md:5",
+          "src/content/publish/pages/cv.md:5"
+        ]
+      },
+      {
+        "claim": "Preferred public LinkedIn role/headline: Unreal Engine Developer; source role wording includes Unreal Client Programmer",
+        "sources": [
+          "src/lib/site.ts:4",
+          "src/content/publish/pages/home.md:4-5",
+          "src/content/publish/pages/cv.md:5-6"
+        ]
+      }
+    ],
+    "about": [
+      {
+        "claim": "Focus on gameplay, UI, AI, tools, AI-assisted workflows",
+        "sources": [
+          "src/lib/site.ts:5",
+          "src/content/publish/pages/home.md:3-6",
+          "src/content/publish/pages/cv.md:6"
+        ]
+      },
+      {
+        "claim": "AIXLAB shipped horror/adventure projects 골목길: 귀흔 and Forbidden Art",
+        "sources": [
+          "src/content/publish/pages/about.md:14",
+          "src/content/publish/pages/cv.md:37-45",
+          "src/data/projects.ts:3-20"
+        ]
+      },
+      {
+        "claim": "Unreal Engine Developer positioning grounded in client programming responsibilities across AI, Animation, UI, options, localization, Steam, Sequencer, tools",
+        "sources": [
+          "src/content/publish/pages/about.md:16",
+          "src/content/publish/wiki/unreal-client-programming.md:12-27"
+        ]
+      }
+    ],
+    "experience_aixlab": [
+      {
+        "claim": "AIXLAB public LinkedIn title uses Unreal Engine Developer (Client Programmer), 2023.04~2026.05; historical/source role is Client Programmer (Unreal); ended 2026-05-01 per user confirmation",
+        "sources": [
+          "src/content/publish/pages/cv.md:37-40",
+          "user correction: 2026-05-15"
+        ]
+      },
+      {
+        "claim": "골목길: 귀흔 responsibilities",
+        "sources": [
+          "src/content/publish/pages/cv.md:43",
+          "src/data/projects.ts:3-11"
+        ]
+      },
+      {
+        "claim": "Forbidden Art responsibilities",
+        "sources": [
+          "src/content/publish/pages/cv.md:44",
+          "src/data/projects.ts:13-20"
+        ]
+      },
+      {
+        "claim": "Awards",
+        "sources": [
+          "src/content/publish/pages/about.md:14",
+          "src/content/publish/pages/cv.md:46-49"
+        ]
+      }
+    ],
+    "experience_ribbon_games": [
+      {
+        "claim": "Ribbon Games public LinkedIn title uses Unreal Engine Developer (Client Programmer), 2022.10~2022.12; historical/source role is Unreal client programmer",
+        "sources": [
+          "src/content/publish/pages/cv.md:51-57"
+        ],
+        "review": "Public wording limited to one safe line because project was unreleased"
+      }
+    ],
+    "skills": [
+      {
+        "claim": "AI Behavior Tree, Blackboard, AI Perception, EQS",
+        "sources": [
+          "src/content/publish/wiki/unreal-ai-behavior-tree-eqs.md:11-21",
+          "src/content/publish/wiki/unreal-client-programming.md:16-18"
+        ]
+      },
+      {
+        "claim": "Common UI, Action Bar, widget layers, input device UI",
+        "sources": [
+          "src/content/publish/wiki/common-ui-workflow.md:11-23"
+        ]
+      },
+      {
+        "claim": "Custom GameUserSettings, DLSS/FSR, Virtual Texture, localization",
+        "sources": [
+          "src/content/publish/wiki/game-options-localization.md:11-29"
+        ]
+      },
+      {
+        "claim": "Inventory system with Grid Panel, GI Subsystem, DataTable, 3D item inspection",
+        "sources": [
+          "src/content/publish/wiki/inventory-system.md:11-22"
+        ]
+      },
+      {
+        "claim": "Interface/component based puzzle interaction architecture",
+        "sources": [
+          "src/content/publish/wiki/interaction-component-architecture.md:11-21"
+        ]
+      },
+      {
+        "claim": "MetaSound, Attenuation, AnimNotify, Sequencer",
+        "sources": [
+          "src/content/publish/wiki/audio-visual-sequencer.md:13-29"
+        ]
+      },
+      {
+        "claim": "Steamworks SDK, achievements, Depot, build upload",
+        "sources": [
+          "src/content/publish/wiki/steamworks-integration.md:11-23"
+        ]
+      },
+      {
+        "claim": "Unity and DirectX experience",
+        "sources": [
+          "src/content/publish/pages/about.md:14",
+          "src/data/projects.ts:50-55"
+        ]
+      },
+      {
+        "claim": "LLM tooling, MCP, AI agent projects",
+        "sources": [
+          "src/data/projects.ts:23-48",
+          "src/content/publish/wiki/unreal-mcp.md:11-22",
+          "src/content/publish/wiki/personal-hermes-agent.md:12-20"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "claim": "우송대학교 게임멀티미디어공학과 학사, 2016.03~2023.02, GPA 3.94/4.5 public",
+        "sources": [
+          "src/content/publish/pages/cv.md:28-33"
+        ]
+      }
+    ],
+    "featured_links": [
+      {
+        "claim": "YouTube channel: https://www.youtube.com/@kangkeon4500",
+        "sources": [
+          "user correction: 2026-05-15"
+        ]
+      },
+      {
+        "claim": "GitHub KitchenGun profile: https://github.com/KitchenGun",
+        "sources": [
+          "src/lib/site.ts:7-8",
+          "user correction: 2026-05-15"
+        ]
+      },
+      {
+        "claim": "Project repository links",
+        "sources": [
+          "src/data/projects.ts:23-55",
+          "src/content/publish/pages/cv.md:59-61"
+        ]
+      }
+    ]
+  },
+  "excluded_source_items": [
+    {
+      "item": "birthdate",
+      "source": "src/content/publish/pages/cv.md:20",
+      "reason": "personal data not needed for LinkedIn draft"
+    },
+    {
+      "item": "gender",
+      "source": "src/content/publish/pages/cv.md:21",
+      "reason": "personal data not needed for LinkedIn draft"
+    },
+    {
+      "item": "residence/address",
+      "source": "src/content/publish/pages/cv.md:22",
+      "reason": "location/address excluded per task"
+    },
+    {
+      "item": "phone number",
+      "source": "src/content/publish/pages/cv.md:23",
+      "reason": "explicitly excluded per task"
+    },
+    {
+      "item": "company secrets/unreleased internals",
+      "source": "src/content/publish/wiki/obsidian-publication-workflow.md:27",
+      "reason": "avoid private/NDA details"
+    }
+  ]
+}
