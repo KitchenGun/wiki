@@ -1,16 +1,16 @@
-# Graph Report - Wiki  (2026-05-12)
+# Graph Report - Wiki  (2026-06-13)
 
 ## Corpus Check
-- 30 files · ~10,225 words
+- 31 files · ~22,687 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 95 nodes · 88 edges · 26 communities (24 shown, 2 thin omitted)
-- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.78)
+- 101 nodes · 93 edges · 27 communities (25 shown, 2 thin omitted)
+- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0f996e42`
+- Built from commit: `05a8ae2b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -21,8 +21,9 @@
 - [[_COMMUNITY_Community 3|Community 3]]
 - [[_COMMUNITY_Community 4|Community 4]]
 - [[_COMMUNITY_Community 5|Community 5]]
-- [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 6|Community 6]]
 - [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `강건 (Keon Kang)` - 15 edges
@@ -48,7 +49,7 @@
 - `Forbidden Art / 금지된 예술` --won_award--> `2024 하반기 이달의 우수게임`  [EXTRACTED]
   src/data/projects.ts → src/content/publish/pages/cv.md
 
-## Communities (26 total, 2 thin omitted)
+## Communities (27 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.13
@@ -74,8 +75,12 @@ Nodes (9): 2025 스토브인디 어워즈 Top 10, projects, DX2D-METALSLUG, 골�
 Cohesion: 0.25
 Nodes (7): existingIds, graph, index, next, semanticIds, semantics, validIds
 
+### Community 6 - "Community 6"
+Cohesion: 0.33
+Nodes (5): 사용자 흐름, 구현 구조, 데이터 기반 루틴 생성, 안전장치, 포트폴리오 기준 의미
+
 ## Knowledge Gaps
-- **28 isolated node(s):** `graph`, `semantics`, `existingIds`, `semanticIds`, `next` (+23 more)
+- **33 isolated node(s):** `graph`, `semantics`, `existingIds`, `semanticIds`, `next` (+28 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -83,12 +88,12 @@ Nodes (7): existingIds, graph, index, next, semanticIds, semantics, validIds
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `강건 (Keon Kang)` connect `Community 0` to `Community 4`?**
-  _High betweenness centrality (0.060) - this node is a cross-community bridge._
+  _High betweenness centrality (0.053) - this node is a cross-community bridge._
 - **Why does `골목길: 귀흔` connect `Community 4` to `Community 0`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `Forbidden Art / 금지된 예술` connect `Community 0` to `Community 4`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `Forbidden Art / 금지된 예술` connect `Community 0` to `Community 4`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **What connects `graph`, `semantics`, `existingIds` to the rest of the system?**
-  _28 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _33 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.13 - nodes in this community are weakly interconnected._
