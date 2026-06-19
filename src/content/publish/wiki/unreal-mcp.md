@@ -19,4 +19,4 @@ UnrealMCP는 Unreal Engine 작업을 AI 도구와 연결하려는 개인 R&D다.
 - Hermes Agent로 자연어 요청을 작업 형태로 변환
 - Claude Code, Open Code, Codex와 Unreal MCP 연동 실험
 
-이 주제는 [[unreal-client-programming]]과 연결된다. 클라이언트 개발 경험이 있어야 자동화 대상과 위험한 작업을 구분할 수 있다.
+이 주제는 [[unreal-client-programming]]과 연결된다. 클라이언트 개발 경험이 있어야 자동화 대상과 위험한 작업을 구분할 수 있다. [[hermes-daily-dev-brief]]는 Unreal/MCP 생태계 변화를 작업 전 리서치 맥락으로 공급한다.

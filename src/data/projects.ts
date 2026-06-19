@@ -39,11 +39,11 @@ export const projects = [
   },
   {
     title: 'personal-hermes-agent',
-    description: 'Public sanitized operations profile and Job Registry for a personal AI agent, including workout/InBody logging and data-driven routine draft automation.',
+    description: 'Public sanitized operations profile and Job Registry for a personal AI agent, including workout/InBody logging, daily dev brief automation, and data-driven routine draft automation.',
     role: 'Personal R&D / Documentation',
     period: '2026',
     href: 'https://github.com/KitchenGun/personal-hermes-agent',
-    tags: ['LLM', 'Agent', 'Automation', 'Fitness'],
+    tags: ['LLM', 'Agent', 'Automation', 'Fitness', 'Research'],
     status: 'Published',
   },
   {

@@ -99,7 +99,7 @@
       "source_file": "scripts/graphify-update.mjs",
       "source_location": "L1",
       "id": "scripts_graphify_update_mjs",
-      "community": 7,
+      "community": 8,
       "norm_label": "graphify-update.mjs"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "scripts/graphify-update.mjs",
       "source_location": "L3",
       "id": "scripts_graphify_update_run",
-      "community": 7,
+      "community": 8,
       "norm_label": "run()"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "src/content.config.ts",
       "source_location": "L1",
       "id": "src_content_config_ts",
-      "community": 11,
+      "community": 12,
       "norm_label": "content.config.ts"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "src/lib/site.ts",
       "source_location": "L1",
       "id": "src_lib_site_ts",
-      "community": 12,
+      "community": 13,
       "norm_label": "site.ts"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "src/lib/url.ts",
       "source_location": "L1",
       "id": "src_lib_url_ts",
-      "community": 8,
+      "community": 9,
       "norm_label": "url.ts"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "src/lib/url.ts",
       "source_location": "L1",
       "id": "lib_url_withbase",
-      "community": 8,
+      "community": 9,
       "norm_label": "withbase()"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "agents_md",
-      "community": 9,
+      "community": 10,
       "norm_label": "agents.md"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "wiki_agents_graphify",
-      "community": 9,
+      "community": 10,
       "norm_label": "graphify"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "src/content/publish/blog/2026-04-29-portfolio-case-notes.md",
       "source_location": "L1",
       "id": "src_content_publish_blog_2026_04_29_portfolio_case_notes_md",
-      "community": 13,
+      "community": 14,
       "norm_label": "2026-04-29-portfolio-case-notes.md"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "src/content/publish/blog/2026-04-29-public-wiki.md",
       "source_location": "L1",
       "id": "src_content_publish_blog_2026_04_29_public_wiki_md",
-      "community": 14,
+      "community": 15,
       "norm_label": "2026-04-29-public-wiki.md"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "src/content/publish/blog/iteration-loop.mdx",
       "source_location": "L1",
       "id": "src_content_publish_blog_iteration_loop_mdx",
-      "community": 15,
+      "community": 16,
       "norm_label": "iteration-loop.mdx"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "src/content/publish/pages/home.md",
       "source_location": "L1",
       "id": "src_content_publish_pages_home_md",
-      "community": 16,
+      "community": 17,
       "norm_label": "home.md"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "src/content/publish/wiki/audio-visual-sequencer.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_audio_visual_sequencer_md",
-      "community": 17,
+      "community": 18,
       "norm_label": "audio-visual-sequencer.md"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "src/content/publish/wiki/common-ui-workflow.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_common_ui_workflow_md",
-      "community": 18,
+      "community": 19,
       "norm_label": "common-ui-workflow.md"
     },
     {
@@ -603,8 +603,71 @@
       "source_file": "src/content/publish/wiki/game-options-localization.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_game_options_localization_md",
-      "community": 19,
+      "community": 20,
       "norm_label": "game-options-localization.md"
+    },
+    {
+      "label": "hermes-daily-dev-brief.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L1",
+      "id": "src_content_publish_wiki_hermes_daily_dev_brief_md",
+      "community": 6,
+      "norm_label": "hermes-daily-dev-brief.md"
+    },
+    {
+      "label": "\ubaa9\ud45c",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L19",
+      "id": "wiki_hermes_daily_dev_brief",
+      "community": 6,
+      "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
+    },
+    {
+      "label": "\uc0ac\uc6a9\uc790 \ud750\ub984",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L25",
+      "id": "wiki_hermes_daily_dev_brief_25",
+      "community": 6,
+      "norm_label": "\u1109\u1161\u110b\u116d\u11bc\u110c\u1161 \u1112\u1173\u1105\u1173\u11b7"
+    },
+    {
+      "label": "\uad6c\ud604 \uad6c\uc870",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L33",
+      "id": "wiki_hermes_daily_dev_brief_33",
+      "community": 6,
+      "norm_label": "\u1100\u116e\u1112\u1167\u11ab \u1100\u116e\u110c\u1169"
+    },
+    {
+      "label": "\uac1c\uc778\ud654 \uae30\uc900",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L41",
+      "id": "wiki_hermes_daily_dev_brief_41",
+      "community": 6,
+      "norm_label": "\u1100\u1162\u110b\u1175\u11ab\u1112\u116a \u1100\u1175\u110c\u116e\u11ab"
+    },
+    {
+      "label": "\uc548\uc804\uc7a5\uce58",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L52",
+      "id": "wiki_hermes_daily_dev_brief_52",
+      "community": 6,
+      "norm_label": "\u110b\u1161\u11ab\u110c\u1165\u11ab\u110c\u1161\u11bc\u110e\u1175"
+    },
+    {
+      "label": "\ud3ec\ud2b8\ud3f4\ub9ac\uc624 \uae30\uc900 \uc758\ubbf8",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L60",
+      "id": "wiki_hermes_daily_dev_brief_60",
+      "community": 6,
+      "norm_label": "\u1111\u1169\u1110\u1173\u1111\u1169\u11af\u1105\u1175\u110b\u1169 \u1100\u1175\u110c\u116e\u11ab \u110b\u1174\u1106\u1175"
     },
     {
       "label": "hermes-personal-pt.md",
@@ -612,7 +675,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_hermes_personal_pt_md",
-      "community": 6,
+      "community": 7,
       "norm_label": "hermes-personal-pt.md"
     },
     {
@@ -621,7 +684,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L20",
       "id": "wiki_hermes_personal_pt",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1109\u1161\u110b\u116d\u11bc\u110c\u1161 \u1112\u1173\u1105\u1173\u11b7"
     },
     {
@@ -630,7 +693,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L29",
       "id": "wiki_hermes_personal_pt_29",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1100\u116e\u1112\u1167\u11ab \u1100\u116e\u110c\u1169"
     },
     {
@@ -639,7 +702,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L41",
       "id": "wiki_hermes_personal_pt_41",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1103\u1166\u110b\u1175\u1110\u1165 \u1100\u1175\u1107\u1161\u11ab \u1105\u116e\u1110\u1175\u11ab \u1109\u1162\u11bc\u1109\u1165\u11bc"
     },
     {
@@ -648,7 +711,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L56",
       "id": "wiki_hermes_personal_pt_56",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u110b\u1161\u11ab\u110c\u1165\u11ab\u110c\u1161\u11bc\u110e\u1175"
     },
     {
@@ -657,7 +720,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L71",
       "id": "wiki_hermes_personal_pt_71",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1111\u1169\u1110\u1173\u1111\u1169\u11af\u1105\u1175\u110b\u1169 \u1100\u1175\u110c\u116e\u11ab \u110b\u1174\u1106\u1175"
     },
     {
@@ -666,7 +729,7 @@
       "source_file": "src/content/publish/wiki/interaction-component-architecture.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_interaction_component_architecture_md",
-      "community": 20,
+      "community": 21,
       "norm_label": "interaction-component-architecture.md"
     },
     {
@@ -675,7 +738,7 @@
       "source_file": "src/content/publish/wiki/inventory-system.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_inventory_system_md",
-      "community": 21,
+      "community": 22,
       "norm_label": "inventory-system.md"
     },
     {
@@ -684,7 +747,7 @@
       "source_file": "src/content/publish/wiki/obsidian-publication-workflow.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_obsidian_publication_workflow_md",
-      "community": 10,
+      "community": 11,
       "norm_label": "obsidian-publication-workflow.md"
     },
     {
@@ -693,7 +756,7 @@
       "source_file": "src/content/publish/wiki/obsidian-publication-workflow.md",
       "source_location": "L22",
       "id": "wiki_obsidian_publication_workflow_codeblock_1",
-      "community": 10,
+      "community": 11,
       "norm_label": "code:yaml (draft: false)"
     },
     {
@@ -702,7 +765,7 @@
       "source_file": "src/content/publish/wiki/personal-hermes-agent.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_personal_hermes_agent_md",
-      "community": 22,
+      "community": 23,
       "norm_label": "personal-hermes-agent.md"
     },
     {
@@ -711,7 +774,7 @@
       "source_file": "src/content/publish/wiki/steamworks-integration.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_steamworks_integration_md",
-      "community": 23,
+      "community": 24,
       "norm_label": "steamworks-integration.md"
     },
     {
@@ -720,7 +783,7 @@
       "source_file": "src/content/publish/wiki/unreal-ai-behavior-tree-eqs.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_ai_behavior_tree_eqs_md",
-      "community": 24,
+      "community": 25,
       "norm_label": "unreal-ai-behavior-tree-eqs.md"
     },
     {
@@ -729,7 +792,7 @@
       "source_file": "src/content/publish/wiki/unreal-client-programming.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_client_programming_md",
-      "community": 25,
+      "community": 26,
       "norm_label": "unreal-client-programming.md"
     },
     {
@@ -738,7 +801,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_mcp_md",
-      "community": 26,
+      "community": 27,
       "norm_label": "unreal-mcp.md"
     },
     {
@@ -1038,8 +1101,8 @@
       "confidence": "EXTRACTED",
       "source_file": "src/data/projects.ts",
       "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
+      "weight": 1,
+      "confidence_score": 1,
       "source": "src_data_projects_ts",
       "target": "data_projects_projects"
     },
@@ -1525,8 +1588,8 @@
       "confidence": "EXTRACTED",
       "source_file": "src/content/publish/pages/cv.md",
       "source_location": "L59",
-      "weight": 1.0,
-      "confidence_score": 1.0,
+      "weight": 1,
+      "confidence_score": 1,
       "source": "src_content_publish_pages_cv_md",
       "target": "pages_cv_59"
     },
@@ -1608,10 +1671,70 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L19",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_wiki_hermes_daily_dev_brief_md",
+      "target": "wiki_hermes_daily_dev_brief"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L25",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_wiki_hermes_daily_dev_brief_md",
+      "target": "wiki_hermes_daily_dev_brief_25"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L33",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_wiki_hermes_daily_dev_brief_md",
+      "target": "wiki_hermes_daily_dev_brief_33"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L41",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_wiki_hermes_daily_dev_brief_md",
+      "target": "wiki_hermes_daily_dev_brief_41"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L52",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_wiki_hermes_daily_dev_brief_md",
+      "target": "wiki_hermes_daily_dev_brief_52"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
+      "source_location": "L60",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_wiki_hermes_daily_dev_brief_md",
+      "target": "wiki_hermes_daily_dev_brief_60"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
+      "weight": 1,
+      "confidence_score": 1,
       "source": "src_content_publish_wiki_hermes_personal_pt_md",
       "target": "wiki_hermes_personal_pt"
     },
@@ -1620,8 +1743,8 @@
       "confidence": "EXTRACTED",
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
+      "weight": 1,
+      "confidence_score": 1,
       "source": "src_content_publish_wiki_hermes_personal_pt_md",
       "target": "wiki_hermes_personal_pt_29"
     },
@@ -1630,8 +1753,8 @@
       "confidence": "EXTRACTED",
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L41",
-      "weight": 1.0,
-      "confidence_score": 1.0,
+      "weight": 1,
+      "confidence_score": 1,
       "source": "src_content_publish_wiki_hermes_personal_pt_md",
       "target": "wiki_hermes_personal_pt_41"
     },
@@ -1640,8 +1763,8 @@
       "confidence": "EXTRACTED",
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L56",
-      "weight": 1.0,
-      "confidence_score": 1.0,
+      "weight": 1,
+      "confidence_score": 1,
       "source": "src_content_publish_wiki_hermes_personal_pt_md",
       "target": "wiki_hermes_personal_pt_56"
     },
@@ -1650,8 +1773,8 @@
       "confidence": "EXTRACTED",
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L71",
-      "weight": 1.0,
-      "confidence_score": 1.0,
+      "weight": 1,
+      "confidence_score": 1,
       "source": "src_content_publish_wiki_hermes_personal_pt_md",
       "target": "wiki_hermes_personal_pt_71"
     },
@@ -1898,5 +2021,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "05a8ae2b727b95ed14bbf63387cb19d01cc53095"
+  "built_at_commit": "92ef06f8e05a07a0be5b3cb9e8c5e100921310d4"
 }
