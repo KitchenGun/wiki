@@ -27,7 +27,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L1",
       "id": "scripts_graphify_codex_semantics_mjs",
-      "community": 5,
+      "community": 4,
       "norm_label": "graphify-codex-semantics.mjs"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L6",
       "id": "scripts_graphify_codex_semantics_graph",
-      "community": 5,
+      "community": 4,
       "norm_label": "graph"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L7",
       "id": "scripts_graphify_codex_semantics_semantics",
-      "community": 5,
+      "community": 4,
       "norm_label": "semantics"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L9",
       "id": "scripts_graphify_codex_semantics_existingids",
-      "community": 5,
+      "community": 4,
       "norm_label": "existingids"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L10",
       "id": "scripts_graphify_codex_semantics_semanticids",
-      "community": 5,
+      "community": 4,
       "norm_label": "semanticids"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L16",
       "id": "scripts_graphify_codex_semantics_next",
-      "community": 5,
+      "community": 4,
       "norm_label": "next"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L21",
       "id": "scripts_graphify_codex_semantics_index",
-      "community": 5,
+      "community": 4,
       "norm_label": "index"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L30",
       "id": "scripts_graphify_codex_semantics_validids",
-      "community": 5,
+      "community": 4,
       "norm_label": "validids"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "scripts/graphify-update.mjs",
       "source_location": "L1",
       "id": "scripts_graphify_update_mjs",
-      "community": 8,
+      "community": 9,
       "norm_label": "graphify-update.mjs"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "scripts/graphify-update.mjs",
       "source_location": "L3",
       "id": "scripts_graphify_update_run",
-      "community": 8,
+      "community": 9,
       "norm_label": "run()"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "src/content.config.ts",
       "source_location": "L1",
       "id": "src_content_config_ts",
-      "community": 12,
+      "community": 13,
       "norm_label": "content.config.ts"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "src/data/projects.ts",
       "source_location": "L1",
       "id": "src_data_projects_ts",
-      "community": 4,
+      "community": 8,
       "norm_label": "projects.ts"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "src/data/projects.ts",
       "source_location": "L1",
       "id": "data_projects_projects",
-      "community": 4,
+      "community": 8,
       "norm_label": "projects"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "src/lib/site.ts",
       "source_location": "L1",
       "id": "src_lib_site_ts",
-      "community": 13,
+      "community": 14,
       "norm_label": "site.ts"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "src/lib/url.ts",
       "source_location": "L1",
       "id": "src_lib_url_ts",
-      "community": 9,
+      "community": 10,
       "norm_label": "url.ts"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "src/lib/url.ts",
       "source_location": "L1",
       "id": "lib_url_withbase",
-      "community": 9,
+      "community": 10,
       "norm_label": "withbase()"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "agents_md",
-      "community": 10,
+      "community": 11,
       "norm_label": "agents.md"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "wiki_agents_graphify",
-      "community": 10,
+      "community": 11,
       "norm_label": "graphify"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "src/content/publish/blog/2026-04-29-portfolio-case-notes.md",
       "source_location": "L1",
       "id": "src_content_publish_blog_2026_04_29_portfolio_case_notes_md",
-      "community": 14,
+      "community": 15,
       "norm_label": "2026-04-29-portfolio-case-notes.md"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "src/content/publish/blog/2026-04-29-public-wiki.md",
       "source_location": "L1",
       "id": "src_content_publish_blog_2026_04_29_public_wiki_md",
-      "community": 15,
+      "community": 16,
       "norm_label": "2026-04-29-public-wiki.md"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "src/content/publish/blog/iteration-loop.mdx",
       "source_location": "L1",
       "id": "src_content_publish_blog_iteration_loop_mdx",
-      "community": 16,
+      "community": 17,
       "norm_label": "iteration-loop.mdx"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "src/content/publish/pages/home.md",
       "source_location": "L1",
       "id": "src_content_publish_pages_home_md",
-      "community": 17,
+      "community": 18,
       "norm_label": "home.md"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "src/content/publish/wiki/audio-visual-sequencer.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_audio_visual_sequencer_md",
-      "community": 18,
+      "community": 19,
       "norm_label": "audio-visual-sequencer.md"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "src/content/publish/wiki/common-ui-workflow.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_common_ui_workflow_md",
-      "community": 19,
+      "community": 20,
       "norm_label": "common-ui-workflow.md"
     },
     {
@@ -603,7 +603,7 @@
       "source_file": "src/content/publish/wiki/game-options-localization.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_game_options_localization_md",
-      "community": 20,
+      "community": 21,
       "norm_label": "game-options-localization.md"
     },
     {
@@ -729,7 +729,7 @@
       "source_file": "src/content/publish/wiki/interaction-component-architecture.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_interaction_component_architecture_md",
-      "community": 21,
+      "community": 22,
       "norm_label": "interaction-component-architecture.md"
     },
     {
@@ -738,7 +738,7 @@
       "source_file": "src/content/publish/wiki/inventory-system.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_inventory_system_md",
-      "community": 22,
+      "community": 23,
       "norm_label": "inventory-system.md"
     },
     {
@@ -747,7 +747,7 @@
       "source_file": "src/content/publish/wiki/obsidian-publication-workflow.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_obsidian_publication_workflow_md",
-      "community": 11,
+      "community": 12,
       "norm_label": "obsidian-publication-workflow.md"
     },
     {
@@ -756,7 +756,7 @@
       "source_file": "src/content/publish/wiki/obsidian-publication-workflow.md",
       "source_location": "L22",
       "id": "wiki_obsidian_publication_workflow_codeblock_1",
-      "community": 11,
+      "community": 12,
       "norm_label": "code:yaml (draft: false)"
     },
     {
@@ -765,7 +765,7 @@
       "source_file": "src/content/publish/wiki/personal-hermes-agent.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_personal_hermes_agent_md",
-      "community": 23,
+      "community": 24,
       "norm_label": "personal-hermes-agent.md"
     },
     {
@@ -774,7 +774,7 @@
       "source_file": "src/content/publish/wiki/steamworks-integration.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_steamworks_integration_md",
-      "community": 24,
+      "community": 25,
       "norm_label": "steamworks-integration.md"
     },
     {
@@ -783,7 +783,7 @@
       "source_file": "src/content/publish/wiki/unreal-ai-behavior-tree-eqs.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_ai_behavior_tree_eqs_md",
-      "community": 25,
+      "community": 26,
       "norm_label": "unreal-ai-behavior-tree-eqs.md"
     },
     {
@@ -792,8 +792,80 @@
       "source_file": "src/content/publish/wiki/unreal-client-programming.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_client_programming_md",
-      "community": 26,
+      "community": 27,
       "norm_label": "unreal-client-programming.md"
+    },
+    {
+      "label": "unreal-mcp-58-official-update.md",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L1",
+      "id": "src_content_publish_wiki_unreal_mcp_58_official_update_md",
+      "community": 5,
+      "norm_label": "unreal-mcp-58-official-update.md"
+    },
+    {
+      "label": "\uc801\uc6a9 \ubaa9\ud45c",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L20",
+      "id": "wiki_unreal_mcp_58_official_update",
+      "community": 5,
+      "norm_label": "\u110c\u1165\u11a8\u110b\u116d\u11bc \u1106\u1169\u11a8\u1111\u116d"
+    },
+    {
+      "label": "\uc124\uc815",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L27",
+      "id": "wiki_unreal_mcp_58_official_update_27",
+      "community": 5,
+      "norm_label": "\u1109\u1165\u11af\u110c\u1165\u11bc"
+    },
+    {
+      "label": "Claude\uc5d0\uc11c \ud655\uc778\ud55c \uacf5\uc2dd Toolset",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L35",
+      "id": "wiki_unreal_mcp_58_official_update_claude_toolset",
+      "community": 5,
+      "norm_label": "claude\u110b\u1166\u1109\u1165 \u1112\u116a\u11a8\u110b\u1175\u11ab\u1112\u1161\u11ab \u1100\u1169\u11bc\u1109\u1175\u11a8 toolset"
+    },
+    {
+      "label": "\uc2e4\uc81c \ud574\uacb0 \uc791\uc5c5",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L51",
+      "id": "wiki_unreal_mcp_58_official_update_51",
+      "community": 5,
+      "norm_label": "\u1109\u1175\u11af\u110c\u1166 \u1112\u1162\u1100\u1167\u11af \u110c\u1161\u11a8\u110b\u1165\u11b8"
+    },
+    {
+      "label": "code:text (BeginPlay())",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L68",
+      "id": "wiki_unreal_mcp_58_official_update_codeblock_1",
+      "community": 5,
+      "norm_label": "code:text (beginplay())"
+    },
+    {
+      "label": "\uc758\ubbf8",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L76",
+      "id": "wiki_unreal_mcp_58_official_update_76",
+      "community": 5,
+      "norm_label": "\u110b\u1174\u1106\u1175"
+    },
+    {
+      "label": "\uacf5\uac1c \uae30\uc900",
+      "file_type": "document",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L82",
+      "id": "wiki_unreal_mcp_58_official_update_82",
+      "community": 5,
+      "norm_label": "\u1100\u1169\u11bc\u1100\u1162 \u1100\u1175\u110c\u116e\u11ab"
     },
     {
       "label": "unreal-mcp.md",
@@ -801,7 +873,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_mcp_md",
-      "community": 27,
+      "community": 28,
       "norm_label": "unreal-mcp.md"
     },
     {
@@ -841,7 +913,7 @@
       "source_location": "L3",
       "semantic_provider": "codex",
       "norm_label": "\u1100\u1169\u11af\u1106\u1169\u11a8\u1100\u1175\u11af: \u1100\u1171\u1112\u1173\u11ab",
-      "community": 4,
+      "community": 0,
       "id": "project_golmokgil_guihon"
     },
     {
@@ -861,7 +933,7 @@
       "source_location": "L24",
       "semantic_provider": "codex",
       "norm_label": "unreal mcp",
-      "community": 4,
+      "community": 8,
       "id": "project_unreal_mcp"
     },
     {
@@ -871,7 +943,7 @@
       "source_location": "L33",
       "semantic_provider": "codex",
       "norm_label": "hermes-hybrid",
-      "community": 4,
+      "community": 8,
       "id": "project_hermes_hybrid"
     },
     {
@@ -881,7 +953,7 @@
       "source_location": "L42",
       "semantic_provider": "codex",
       "norm_label": "dx2d-metalslug",
-      "community": 4,
+      "community": 8,
       "id": "project_dx2d_metalslug"
     },
     {
@@ -891,7 +963,7 @@
       "source_location": "L13",
       "semantic_provider": "codex",
       "norm_label": "directx\u110b\u116a unity \u1100\u1166\u110b\u1175\u11b7 \u110c\u1166\u110c\u1161\u11a8 \u1100\u1167\u11bc\u1112\u1165\u11b7",
-      "community": 4,
+      "community": 8,
       "id": "skill_directx_unity"
     },
     {
@@ -901,7 +973,7 @@
       "source_location": "L15",
       "semantic_provider": "codex",
       "norm_label": "ai \u1105\u1169\u110c\u1175\u11a8, animation, \u110b\u1175\u11ab\u1100\u1166\u110b\u1175\u11b7 \u110f\u1169\u11ab\u1110\u1166\u11ab\u110e\u1173 \u1100\u116e\u1112\u1167\u11ab",
-      "community": 4,
+      "community": 0,
       "id": "skill_ai_animation_content"
     },
     {
@@ -911,7 +983,7 @@
       "source_location": "L15",
       "semantic_provider": "codex",
       "norm_label": "common ui plugin \u1100\u1175\u1107\u1161\u11ab \u1105\u1166\u110b\u1175\u110b\u1165 widget \u1109\u1165\u11af\u1100\u1168",
-      "community": 4,
+      "community": 0,
       "id": "skill_common_ui_layer_widget"
     },
     {
@@ -971,7 +1043,7 @@
       "source_location": "L49",
       "semantic_provider": "codex",
       "norm_label": "2025 \u1109\u1173\u1110\u1169\u1107\u1173\u110b\u1175\u11ab\u1103\u1175 \u110b\u1165\u110b\u116f\u110c\u1173 top 10",
-      "community": 4,
+      "community": 0,
       "id": "award_stove_indie_top10_2025"
     },
     {
@@ -1789,6 +1861,76 @@
       "target": "wiki_obsidian_publication_workflow_codeblock_1"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_content_publish_wiki_unreal_mcp_58_official_update_md",
+      "target": "wiki_unreal_mcp_58_official_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "src_content_publish_wiki_unreal_mcp_58_official_update_md",
+      "target": "wiki_unreal_mcp_58_official_update_27",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "src_content_publish_wiki_unreal_mcp_58_official_update_md",
+      "target": "wiki_unreal_mcp_58_official_update_claude_toolset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "src_content_publish_wiki_unreal_mcp_58_official_update_md",
+      "target": "wiki_unreal_mcp_58_official_update_51",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "src_content_publish_wiki_unreal_mcp_58_official_update_md",
+      "target": "wiki_unreal_mcp_58_official_update_76",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "src_content_publish_wiki_unreal_mcp_58_official_update_md",
+      "target": "wiki_unreal_mcp_58_official_update_82",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "wiki_unreal_mcp_58_official_update_51",
+      "target": "wiki_unreal_mcp_58_official_update_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "has_profile",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
@@ -2021,5 +2163,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "92ef06f8e05a07a0be5b3cb9e8c5e100921310d4"
+  "built_at_commit": "2f9e3f621afd303ff815c0b0d7f3c7c9026f886e"
 }
