@@ -595,6 +595,49 @@ function commitSubjects(repo, base, head) {
   }
 }
 
+function memoryRecommendation(entry) {
+  const subjects = entry.subjects ?? [];
+  const text = `${entry.repo} ${subjects.join(' ')}`.toLowerCase();
+
+  if (entry.visibility !== 'public') {
+    return {
+      action: 'deny',
+      label: '거절 권장',
+      reason: '비공개 repo에서 나온 커밋은 공개 글로 바로 올리지 않는 것이 안전합니다.',
+    };
+  }
+
+  if (entry.risk !== 'low') {
+    return {
+      action: 'deny',
+      label: '거절 권장',
+      reason: '자동 검사에서 민감정보, 로컬 경로, 비공개 링크 같은 공개 차단 가능성이 감지됐습니다.',
+    };
+  }
+
+  if (/kitchengun\/wiki/u.test(text) && /(hermes|discord|watcher|memory|timer|notification|message|prefix|graphify|workflow|deploy|build|content:check|relay)/u.test(text)) {
+    return {
+      action: 'deny',
+      label: '거절 권장',
+      reason: '위키/Hermes 운영 자동화 개선 커밋이라 포트폴리오나 공개 블로그 글로 남길 가치가 낮습니다.',
+    };
+  }
+
+  if (/(feature|system|architecture|unreal|game|camera|inventory|interaction|localization|mcp|ai|tool|plugin|refactor)/u.test(text)) {
+    return {
+      action: 'review',
+      label: '내용 확인 후 승인 고려',
+      reason: '프로젝트 구현 방식이나 학습 기록으로 재사용할 수 있는 내용일 가능성이 있습니다.',
+    };
+  }
+
+  return {
+    action: 'review',
+    label: '내용 확인 후 판단',
+    reason: '커밋 제목만으로 공개 가치가 확실하지 않습니다. 먼저 후보 내용을 확인해야 합니다.',
+  };
+}
+
 function renderReadableDiscordMessage(item) {
   if (item.errors.length > 0) {
     const lines = [
@@ -612,28 +655,38 @@ function renderReadableDiscordMessage(item) {
   if (item.ingested.length > 0) {
     const lines = [
       '[Hermes 검토 요청]',
-      '새 커밋을 공개 메모리 후보로 만들었습니다.',
-      '승인 전에는 블로그/wiki 공개 파일에 반영되지 않습니다.',
+      '새 커밋에서 공개 글 후보를 만들었습니다.',
+      '아직 공개 반영되지 않았습니다. 아래 추천을 보고 승인/거절하세요.',
     ];
 
     for (const entry of item.ingested.slice(0, 5)) {
       const candidateId = entry.candidate_id || entry.package_id || '(unknown)';
       const riskLabel = entry.risk === 'low' ? '자동 검사 통과' : `확인 필요(${entry.risk || 'unknown'})`;
+      const recommendation = memoryRecommendation(entry);
       lines.push('');
       lines.push(`대상: ${entry.repo} (${entry.branch})`);
       lines.push(`커밋: ${entry.commits}개`);
-      lines.push(`공개 안전성: ${riskLabel}`);
       if (entry.subjects?.length) {
         lines.push('내용:');
         for (const subject of entry.subjects.slice(0, 4)) {
           lines.push(`- ${subject}`);
         }
       }
+      lines.push(`공개 안전성: ${riskLabel}`);
+      lines.push(`추천: ${recommendation.label}`);
+      lines.push(`이유: ${recommendation.reason}`);
+      lines.push('승인하면: 후보 초안을 공개 wiki 글로 승격하고 content:check/build 검증을 실행합니다.');
+      lines.push('거절하면: 공개 글은 만들지 않고 private memory 기록만 유지합니다.');
       lines.push(`후보 ID: ${candidateId}`);
       lines.push('');
-      lines.push(`내용 보기: !memory show ${candidateId}`);
-      lines.push(`공개 반영: !memory approve ${candidateId} wiki`);
-      lines.push(`버리기: !memory deny ${candidateId}`);
+      lines.push(`자세히 보기: !memory show ${candidateId}`);
+      if (recommendation.action === 'deny') {
+        lines.push(`추천대로 처리: !memory deny ${candidateId}`);
+        lines.push(`그래도 공개 반영: !memory approve ${candidateId} wiki`);
+      } else {
+        lines.push(`공개 반영: !memory approve ${candidateId} wiki`);
+        lines.push(`버리기: !memory deny ${candidateId}`);
+      }
     }
 
     return clipDiscordMessage(lines.join('\n'));
