@@ -152,6 +152,7 @@ for (const repo of repos) {
       '--source-branch',
       branch,
     ], { cwd: root, maxBuffer: 1024 * 1024 * 16 });
+    const ingestMetadata = parseIngestMetadata(ingestOutput);
 
     state.repos[repo.nameWithOwner].refs[branch].last_processed_sha = headSha;
     state.repos[repo.nameWithOwner].refs[branch].last_processed_at = isoStamp();
@@ -169,6 +170,10 @@ for (const repo of repos) {
       branch,
       commits: commitCount,
       visibility: repo.isPrivate ? 'private' : 'public',
+      package_id: ingestMetadata.packageId,
+      candidate_id: ingestMetadata.candidateId,
+      candidate_path: ingestMetadata.candidatePath,
+      risk: ingestMetadata.risk,
       output: ingestOutput.split(/\r?\n/u).filter(Boolean).slice(-4),
     });
   } catch (error) {
@@ -466,6 +471,22 @@ function shortSha(sha) {
   return String(sha ?? '').slice(0, 8);
 }
 
+function parseIngestMetadata(output) {
+  const packageMatch = output.match(/(?:Created memory package|Memory package already exists):\s+(.+?\.json)/u);
+  const candidateMatch = output.match(/Public candidate:\s+(.+?\.md)/u);
+  const riskMatch = output.match(/Risk:\s+([A-Za-z0-9_-]+)/u);
+  const packagePath = packageMatch?.[1]?.trim() ?? '';
+  const packageId = packagePath ? path.basename(packagePath, '.json') : '';
+  const candidatePath = candidateMatch?.[1]?.trim() ?? (packageId ? `.memory-work/public-candidates/${packageId}.md` : '');
+
+  return {
+    packageId,
+    candidateId: candidatePath ? path.basename(candidatePath, '.md') : packageId,
+    candidatePath,
+    risk: riskMatch?.[1]?.trim() ?? '',
+  };
+}
+
 function printSummary(item) {
   console.log(JSON.stringify(item, null, 2));
   if (repoRoot) {
@@ -502,23 +523,48 @@ async function sendDiscord(item) {
 }
 
 function renderDiscordMessage(item) {
-  const lines = [
-    '[Hermes GitHub Watch]',
-    `owner: ${item.owner}`,
-    `repos: ${item.discovered}`,
-    `bootstrapped: ${item.bootstrapped.length}`,
-    `changed: ${item.changed.length}`,
-    `ingested: ${item.ingested.length}`,
-    `skipped: ${item.skipped.length}`,
-    `errors: ${item.errors.length}`,
-  ];
+  const lines = ['[Hermes GitHub Watch]'];
+  const status = item.errors.length > 0 ? '확인 필요' : '정상';
 
-  for (const entry of item.ingested.slice(0, 8)) {
-    lines.push(`- ${entry.repo} ${entry.branch}: ${entry.commits} commit(s), ${entry.visibility}`);
+  lines.push(`상태: ${status}`);
+  lines.push(`계정: ${item.owner}`);
+  lines.push(`감시 repo: ${item.discovered}개`);
+  lines.push(`초기 등록: ${item.bootstrapped.length}개`);
+  lines.push(`새 커밋 감지: ${item.changed.length}개`);
+  lines.push(`초안 생성: ${item.ingested.length}개`);
+  lines.push(`제외: ${item.skipped.length}개`);
+  lines.push(`오류: ${item.errors.length}개`);
+
+  if (item.ingested.length === 0 && item.errors.length === 0) {
+    lines.push('');
+    lines.push('새로 검토할 커밋 초안은 없습니다.');
   }
 
-  for (const entry of item.errors.slice(0, 5)) {
-    lines.push(`! ${entry.repo}: ${entry.error.slice(0, 140)}`);
+  if (item.ingested.length > 0) {
+    lines.push('');
+    lines.push('검토 대기 초안');
+    for (const entry of item.ingested.slice(0, 8)) {
+      const candidateId = entry.candidate_id || entry.package_id || '(unknown)';
+      const risk = entry.risk || 'unknown';
+      lines.push(`- ${entry.repo} ${entry.branch}: ${entry.commits} commit(s), ${entry.visibility}, risk=${risk}`);
+      lines.push(`  후보: ${candidateId}`);
+      lines.push(`  보기: /memory show ${candidateId}`);
+      lines.push(`  승인: /memory approve ${candidateId} wiki`);
+      lines.push(`  거절: /memory deny ${candidateId}`);
+    }
+  }
+
+  if (item.errors.length > 0) {
+    lines.push('');
+    lines.push('오류');
+    for (const entry of item.errors.slice(0, 5)) {
+      lines.push(`- ${entry.repo}: ${String(entry.error).slice(0, 180)}`);
+    }
+  }
+
+  if (item.skipped.length > 0) {
+    lines.push('');
+    lines.push(`참고: ${item.skipped.length}개 repo는 기본 브랜치 문제 등으로 제외되었습니다.`);
   }
 
   const message = lines.join('\n');
