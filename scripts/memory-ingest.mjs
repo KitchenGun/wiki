@@ -14,6 +14,12 @@ import {
   splitRepoEnv,
   toRelativePortable,
 } from './memory-utils.mjs';
+import {
+  recommendMemoryAction,
+  summarizeChangedFiles,
+  summarizeCommitSubjects,
+  summarizeDiffStats,
+} from './memory-recommendation.mjs';
 
 const root = process.cwd();
 const args = parseArgs(process.argv.slice(2));
@@ -39,7 +45,10 @@ const createdAt = isoStamp();
 const workRoot = path.join(root, '.memory-work');
 const packageRoot = path.join(workRoot, 'packages');
 const candidateRoot = path.join(workRoot, 'public-candidates');
-const privateSummaryRoot = path.resolve(privateVaultRoot, 'commit-memory');
+const privateRawRoot = path.resolve(privateVaultRoot, 'raw');
+const privateCompiledRoot = path.resolve(privateVaultRoot, 'compiled');
+const privateMocRoot = path.resolve(privateVaultRoot, 'moc');
+const privateDecisionRoot = path.resolve(privateVaultRoot, 'decisions');
 const validation = [
   'npm run memory:normalize',
   'npm run content:check',
@@ -50,7 +59,10 @@ const validation = [
 
 await fs.mkdir(packageRoot, { recursive: true });
 await fs.mkdir(candidateRoot, { recursive: true });
-await fs.mkdir(privateSummaryRoot, { recursive: true });
+await fs.mkdir(privateRawRoot, { recursive: true });
+await fs.mkdir(privateCompiledRoot, { recursive: true });
+await fs.mkdir(privateMocRoot, { recursive: true });
+await fs.mkdir(privateDecisionRoot, { recursive: true });
 
 function collectCommits(repoRoot, range) {
   const output = git(repoRoot, ['log', '--reverse', '--date=short', '--format=%H%x09%ad%x09%s', range]);
@@ -109,7 +121,7 @@ function mergeRisk(commits, blockers) {
   return 'low';
 }
 
-function renderPrivateSummary({ id, normalizedRepos, risk, blockers, commits }) {
+function renderPrivateSummary({ id, normalizedRepos, risk, blockers, commits, recommendation }) {
   const lines = [
     '---',
     `title: Commit memory package ${id}`,
@@ -129,6 +141,9 @@ function renderPrivateSummary({ id, normalizedRepos, risk, blockers, commits }) 
     `Source: ${sourceFullName || 'local'}${sourceBranch ? ` ${sourceBranch}` : ''}`,
     `Source visibility: ${sourceVisibility}`,
     `Risk: ${risk}`,
+    `Recommendation: ${recommendation.label}`,
+    `Recommendation category: ${recommendation.category}`,
+    `Recommendation reason: ${recommendation.reason_code}`,
     '',
     '## Blockers',
     '',
@@ -153,7 +168,73 @@ function renderPrivateSummary({ id, normalizedRepos, risk, blockers, commits }) 
   return `${lines.join('\n')}\n`;
 }
 
-function renderCandidate({ id, risk, blockers, commits }) {
+function recommendationMoc(recommendation) {
+  if (recommendation.category === 'internal-ops') {
+    return { slug: 'hermes-operations', title: 'Hermes Operations' };
+  }
+  if (recommendation.category === 'risk-blocked') {
+    return { slug: 'decisions', title: 'Decisions' };
+  }
+  return { slug: 'portfolio-candidates', title: 'Portfolio Candidates' };
+}
+
+function renderCompiledNote({ id, normalizedRepos, risk, blockers, commits, recommendation, changedFiles, diffStats }) {
+  const source = sourceFullName || commits[0]?.repo_name || 'local';
+  const moc = recommendationMoc(recommendation);
+  const data = {
+    title: `Commit memory compiled ${id}`,
+    created_at: createdAt,
+    source_repo: source,
+    source_branch: sourceBranch,
+    commit_range: commitRange,
+    memory_status: 'candidate',
+    recommendation: recommendation.label,
+    recommendation_category: recommendation.category,
+    recommendation_reason: recommendation.reason_code,
+    decision_summary: recommendation.reason,
+    related: [
+      'moc/repositories',
+      `moc/${moc.slug}`,
+    ],
+  };
+  const body = [
+    '# Compiled Commit Memory',
+    '',
+    `Package: ${id}`,
+    `Source: ${source}${sourceBranch ? ` ${sourceBranch}` : ''}`,
+    `Range: ${commitRange}`,
+    `Repos: ${normalizedRepos.join(', ')}`,
+    `Risk: ${risk}`,
+    `Recommendation: ${recommendation.label}`,
+    `Reason: ${recommendation.reason_code} - ${recommendation.reason}`,
+    '',
+    '## Blockers',
+    '',
+    ...(blockers.length > 0 ? blockers.map((blocker) => `- ${blocker}`) : ['- none']),
+    '',
+    '## Commit Themes',
+    '',
+    ...summarizeCommitSubjects(commits, 10).map((subject) => `- ${subject}`),
+    '',
+    '## Changed Files',
+    '',
+    ...(changedFiles.length > 0 ? changedFiles.map((file) => `- ${file}`) : ['- none']),
+    '',
+    '## Diff Summary',
+    '',
+    ...(diffStats.length > 0 ? diffStats.map((stat) => `- ${stat}`) : ['- none']),
+    '',
+    '## Links',
+    '',
+    '- [[repositories]]',
+    `- [[${moc.slug}]]`,
+    '',
+  ].join('\n');
+
+  return matter.stringify(body, data);
+}
+
+function renderCandidate({ id, risk, blockers, commits, recommendation, changedFiles, diffStats }) {
   const primaryRepo = commits[0]?.repo_name ?? 'repo';
   const slug = slugify(`commit-memory-${today}-${hashId(id, 6)}`);
   const safeSubjects = commits.map((commit) => commit.subject).slice(0, 8);
@@ -176,6 +257,10 @@ function renderCandidate({ id, risk, blockers, commits }) {
     slug,
     memory_package: id,
     memory_risk: risk,
+    memory_recommendation: recommendation.label,
+    memory_recommendation_category: recommendation.category,
+    memory_recommendation_reason: recommendation.reason_code,
+    memory_recommendation_detail: recommendation.reason,
     memory_source_visibility: sourceVisibility,
     memory_source_full_name: sourceFullName,
     memory_source_branch: sourceBranch,
@@ -191,9 +276,24 @@ function renderCandidate({ id, risk, blockers, commits }) {
     '- Keep only reusable implementation decisions and public project context.',
     '- Remove raw diffs, local paths, private issue references, credentials, and internal identifiers.',
     '',
+    '## Recommendation',
+    '',
+    `- ${recommendation.label}: ${recommendation.reason_code}`,
+    `- ${recommendation.reason}`,
+    '- Approval promotes this candidate to a public wiki/blog note and runs content:check, graph, and build validation.',
+    '- Denial keeps only the private memory record and does not create public content.',
+    '',
     '## Commit Themes',
     '',
     ...(safeSubjects.length > 0 ? safeSubjects.map((subject) => `- ${subject}`) : ['- No commits found in the selected range.']),
+    '',
+    '## Changed Files',
+    '',
+    ...(changedFiles.length > 0 ? changedFiles.map((file) => `- ${file}`) : ['- No changed files captured.']),
+    '',
+    '## Diff Summary',
+    '',
+    ...(diffStats.length > 0 ? diffStats.map((stat) => `- ${stat}`) : ['- No diff stats captured.']),
     '',
     '## Approval Notes',
     '',
@@ -204,6 +304,28 @@ function renderCandidate({ id, risk, blockers, commits }) {
   ].join('\n');
 
   return matter.stringify(body, data);
+}
+
+async function upsertMoc({ file, title, line }) {
+  let raw = '';
+  try {
+    raw = await fs.readFile(file, 'utf8');
+  } catch {
+    raw = [
+      '---',
+      `title: ${title}`,
+      'memory_status: moc',
+      '---',
+      '',
+      `# ${title}`,
+      '',
+    ].join('\n');
+  }
+
+  if (raw.includes(line)) return;
+  const next = raw.endsWith('\n') ? `${raw}${line}\n` : `${raw}\n${line}\n`;
+  await fs.mkdir(path.dirname(file), { recursive: true });
+  await fs.writeFile(file, next, 'utf8');
 }
 
 const normalizedRepos = [];
@@ -256,7 +378,9 @@ const idempotencyKey = hashId(JSON.stringify({
 const packageId = `${today}-${slugify(trigger)}-${idempotencyKey}`;
 const packagePath = path.join(packageRoot, `${packageId}.json`);
 const candidatePath = path.join(candidateRoot, `${packageId}.md`);
-const privateSummaryPath = path.join(privateSummaryRoot, `${packageId}.md`);
+const privateSummaryPath = path.join(privateRawRoot, `${packageId}.md`);
+const privateRawPackagePath = path.join(privateRawRoot, `${packageId}.json`);
+const privateCompiledPath = path.join(privateCompiledRoot, `${packageId}.md`);
 
 try {
   await fs.access(packagePath);
@@ -271,22 +395,43 @@ const blockers = [...new Set([
   ...allCommits.flatMap((commit) => commit.blockers),
 ])];
 const risk = mergeRisk(allCommits, blockers);
+const changedFiles = summarizeChangedFiles(allCommits, 20);
+const diffStats = summarizeDiffStats(allCommits, 10);
+const recommendation = recommendMemoryAction({
+  sourceRepo: sourceFullName || allCommits[0]?.repo_name || '',
+  sourceVisibility,
+  risk,
+  blockers,
+  commits: allCommits,
+  files: changedFiles,
+});
 const privateSummary = renderPrivateSummary({
   id: packageId,
   normalizedRepos,
   risk,
   blockers,
   commits: allCommits,
+  recommendation,
+});
+const compiledNote = renderCompiledNote({
+  id: packageId,
+  normalizedRepos,
+  risk,
+  blockers,
+  commits: allCommits,
+  recommendation,
+  changedFiles,
+  diffStats,
 });
 const candidate = renderCandidate({
   id: packageId,
   risk,
   blockers,
   commits: allCommits,
+  recommendation,
+  changedFiles,
+  diffStats,
 });
-
-await fs.writeFile(privateSummaryPath, privateSummary, 'utf8');
-await fs.writeFile(candidatePath, candidate, 'utf8');
 
 const packageData = {
   id: packageId,
@@ -299,12 +444,18 @@ const packageData = {
   source_full_name: sourceFullName,
   source_branch: sourceBranch,
   risk,
+  recommendation,
   private_summary_path: privateSummaryPath,
+  private_raw_path: privateSummaryPath,
+  private_raw_package_path: privateRawPackagePath,
+  private_compiled_path: privateCompiledPath,
+  private_decision_root: privateDecisionRoot,
   public_candidates: [
     {
       id: packageId,
       path: candidatePath,
       risk,
+      recommendation,
       approval_blockers: blockers,
     },
   ],
@@ -321,9 +472,26 @@ const packageData = {
   })),
 };
 
+await fs.writeFile(privateSummaryPath, privateSummary, 'utf8');
+await fs.writeFile(privateCompiledPath, compiledNote, 'utf8');
+await fs.writeFile(privateRawPackagePath, `${JSON.stringify(packageData, null, 2)}\n`, 'utf8');
+await fs.writeFile(candidatePath, candidate, 'utf8');
 await fs.writeFile(packagePath, `${JSON.stringify(packageData, null, 2)}\n`, 'utf8');
+await upsertMoc({
+  file: path.join(privateMocRoot, 'repositories.md'),
+  title: 'Repositories',
+  line: `- [[${packageId}]] ${sourceFullName || normalizedRepos.join(', ')} ${commitRange} - ${recommendation.label}`,
+});
+const moc = recommendationMoc(recommendation);
+await upsertMoc({
+  file: path.join(privateMocRoot, `${moc.slug}.md`),
+  title: moc.title,
+  line: `- [[${packageId}]] ${recommendation.reason_code}: ${recommendation.reason}`,
+});
 
 console.log(`Created memory package: ${toRelativePortable(root, packagePath)}`);
 console.log(`Private summary: ${privateSummaryPath}`);
+console.log(`Private compiled: ${privateCompiledPath}`);
 console.log(`Public candidate: ${toRelativePortable(root, candidatePath)}`);
 console.log(`Risk: ${risk}`);
+console.log(`Recommendation: ${recommendation.label} (${recommendation.reason_code})`);

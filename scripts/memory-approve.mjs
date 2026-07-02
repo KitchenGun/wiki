@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
 import { inspectLinkedAssets, scanText } from './memory-safety.mjs';
 import {
@@ -12,17 +13,19 @@ import {
 } from './memory-utils.mjs';
 
 const root = process.cwd();
+const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const args = parseArgs(process.argv.slice(2));
 const candidateArg = args.candidate;
 const target = args.target;
 const overwrite = args.overwrite === true || args.overwrite === 'true';
 const runGraphify = args.graphify === true || args.graphify === 'true';
 const npmCommand = process.platform === 'win32' ? 'npm.cmd' : 'npm';
+const npmRunner = process.platform === 'win32' ? process.env.ComSpec || 'cmd.exe' : npmCommand;
 const validation = [
-  [npmCommand, ['run', 'memory:normalize']],
-  [npmCommand, ['run', 'content:check']],
-  [npmCommand, ['run', 'graph']],
-  [npmCommand, ['run', 'build']],
+  'memory:normalize',
+  'content:check',
+  'graph',
+  'build',
 ];
 
 if (!candidateArg || !target) {
@@ -78,6 +81,12 @@ function gitDirtyFor(file) {
   }
 }
 
+function npmRunArgs(script) {
+  return process.platform === 'win32'
+    ? ['/d', '/s', '/c', npmCommand, 'run', script]
+    : ['run', script];
+}
+
 async function pathExists(file) {
   try {
     await fs.access(file);
@@ -90,6 +99,7 @@ async function pathExists(file) {
 const candidatePath = resolveCandidate(candidateArg);
 const raw = await fs.readFile(candidatePath, 'utf8');
 const parsed = matter(raw);
+const packageId = parsed.data.memory_package ?? path.basename(candidatePath, '.md');
 const packageRisk = await readPackageRisk(parsed.data.memory_package);
 const candidateRisk = parsed.data.memory_risk ?? packageRisk.risk ?? 'unknown';
 const blockers = [
@@ -122,6 +132,7 @@ const slug = slugify(parsed.data.slug ?? parsed.data.title ?? path.basename(cand
 const targetDir = path.join(root, 'src', 'content', 'publish', String(target));
 const targetPath = path.join(targetDir, `${slug}.md`);
 const existed = await pathExists(targetPath);
+const previousTargetRaw = existed ? await fs.readFile(targetPath, 'utf8') : '';
 
 if (existed && !overwrite) {
   console.error(`Target already exists: ${toRelativePortable(root, targetPath)}`);
@@ -155,18 +166,43 @@ await fs.mkdir(targetDir, { recursive: true });
 await fs.writeFile(targetPath, publicNote, 'utf8');
 
 try {
-  for (const [command, commandArgs] of validation) {
-    runInherit(command, commandArgs, { cwd: root });
+  for (const script of validation) {
+    runInherit(npmRunner, npmRunArgs(script), { cwd: root });
   }
 
   if (runGraphify) {
-    runInherit(npmCommand, ['run', 'graphify:update'], { cwd: root });
+    runInherit(npmRunner, npmRunArgs('graphify:update'), { cwd: root });
   }
 } catch (error) {
-  if (!existed) {
+  if (existed) {
+    await fs.writeFile(targetPath, previousTargetRaw, 'utf8');
+  } else {
     await fs.rm(targetPath, { force: true });
   }
   console.error(error.message);
+  console.error(`Rolled back approved note: ${toRelativePortable(root, targetPath)}`);
+  process.exit(1);
+}
+
+try {
+  runCapture(process.execPath, [
+    path.join(scriptDir, 'memory-decide.mjs'),
+    '--candidate',
+    packageId,
+    '--decision',
+    'approved',
+    '--target',
+    String(target),
+    '--approved-path',
+    toRelativePortable(root, targetPath),
+  ], { cwd: root });
+} catch (error) {
+  if (existed) {
+    await fs.writeFile(targetPath, previousTargetRaw, 'utf8');
+  } else {
+    await fs.rm(targetPath, { force: true });
+  }
+  console.error(`Decision marker failed: ${error.message}`);
   console.error(`Rolled back approved note: ${toRelativePortable(root, targetPath)}`);
   process.exit(1);
 }

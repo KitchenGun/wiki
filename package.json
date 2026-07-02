@@ -10,6 +10,7 @@
     "content:check": "node scripts/check-public-content.mjs --strict-memory",
     "memory:ingest": "node scripts/memory-ingest.mjs",
     "memory:approve": "node scripts/memory-approve.mjs",
+    "memory:decide": "node scripts/memory-decide.mjs",
     "memory:report": "node scripts/memory-report.mjs",
     "memory:github-watch": "node scripts/memory-github-watch.mjs",
     "memory:normalize": "node scripts/normalize-llm-frontmatter.mjs",

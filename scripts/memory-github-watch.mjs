@@ -9,6 +9,7 @@ import {
   slugify,
   toRelativePortable,
 } from './memory-utils.mjs';
+import { recommendMemoryAction } from './memory-recommendation.mjs';
 
 await loadDefaultEnvFiles();
 
@@ -154,7 +155,7 @@ for (const repo of repos) {
       '--source-branch',
       branch,
     ], { cwd: root, maxBuffer: 1024 * 1024 * 16 });
-    const ingestMetadata = parseIngestMetadata(ingestOutput);
+    const ingestMetadata = await parseIngestMetadata(ingestOutput);
 
     state.repos[repo.nameWithOwner].refs[branch].last_processed_sha = headSha;
     state.repos[repo.nameWithOwner].refs[branch].last_processed_at = isoStamp();
@@ -176,6 +177,7 @@ for (const repo of repos) {
       candidate_id: ingestMetadata.candidateId,
       candidate_path: ingestMetadata.candidatePath,
       risk: ingestMetadata.risk,
+      recommendation: ingestMetadata.recommendation,
       subjects,
       output: ingestOutput.split(/\r?\n/u).filter(Boolean).slice(-4),
     });
@@ -476,19 +478,33 @@ function shortSha(sha) {
   return String(sha ?? '').slice(0, 8);
 }
 
-function parseIngestMetadata(output) {
+async function parseIngestMetadata(output) {
   const packageMatch = output.match(/(?:Created memory package|Memory package already exists):\s+(.+?\.json)/u);
   const candidateMatch = output.match(/Public candidate:\s+(.+?\.md)/u);
   const riskMatch = output.match(/Risk:\s+([A-Za-z0-9_-]+)/u);
   const packagePath = packageMatch?.[1]?.trim() ?? '';
   const packageId = packagePath ? path.basename(packagePath, '.json') : '';
   const candidatePath = candidateMatch?.[1]?.trim() ?? (packageId ? `.memory-work/public-candidates/${packageId}.md` : '');
+  let packageData = {};
+
+  if (packagePath) {
+    try {
+      const resolvedPackagePath = path.isAbsolute(packagePath) ? packagePath : path.resolve(root, packagePath);
+      packageData = JSON.parse(await fs.readFile(resolvedPackagePath, 'utf8'));
+    } catch {
+      packageData = {};
+    }
+  }
+
+  const packageCandidate = packageData.public_candidates?.[0] ?? {};
+  const resolvedCandidatePath = candidatePath || packageCandidate.path || (packageId ? `.memory-work/public-candidates/${packageId}.md` : '');
 
   return {
     packageId,
-    candidateId: candidatePath ? path.basename(candidatePath, '.md') : packageId,
-    candidatePath,
-    risk: riskMatch?.[1]?.trim() ?? '',
+    candidateId: packageCandidate.id || (resolvedCandidatePath ? path.basename(resolvedCandidatePath, '.md') : packageId),
+    candidatePath: resolvedCandidatePath,
+    risk: riskMatch?.[1]?.trim() ?? packageData.risk ?? '',
+    recommendation: packageData.recommendation,
   };
 }
 
@@ -595,49 +611,6 @@ function commitSubjects(repo, base, head) {
   }
 }
 
-function memoryRecommendation(entry) {
-  const subjects = entry.subjects ?? [];
-  const text = `${entry.repo} ${subjects.join(' ')}`.toLowerCase();
-
-  if (entry.visibility !== 'public') {
-    return {
-      action: 'deny',
-      label: '거절 권장',
-      reason: '비공개 repo에서 나온 커밋은 공개 글로 바로 올리지 않는 것이 안전합니다.',
-    };
-  }
-
-  if (entry.risk !== 'low') {
-    return {
-      action: 'deny',
-      label: '거절 권장',
-      reason: '자동 검사에서 민감정보, 로컬 경로, 비공개 링크 같은 공개 차단 가능성이 감지됐습니다.',
-    };
-  }
-
-  if (/kitchengun\/wiki/u.test(text) && /(hermes|discord|watcher|memory|timer|notification|message|prefix|graphify|workflow|deploy|build|content:check|relay)/u.test(text)) {
-    return {
-      action: 'deny',
-      label: '거절 권장',
-      reason: '위키/Hermes 운영 자동화 개선 커밋이라 포트폴리오나 공개 블로그 글로 남길 가치가 낮습니다.',
-    };
-  }
-
-  if (/(feature|system|architecture|unreal|game|camera|inventory|interaction|localization|mcp|ai|tool|plugin|refactor)/u.test(text)) {
-    return {
-      action: 'review',
-      label: '내용 확인 후 승인 고려',
-      reason: '프로젝트 구현 방식이나 학습 기록으로 재사용할 수 있는 내용일 가능성이 있습니다.',
-    };
-  }
-
-  return {
-    action: 'review',
-    label: '내용 확인 후 판단',
-    reason: '커밋 제목만으로 공개 가치가 확실하지 않습니다. 먼저 후보 내용을 확인해야 합니다.',
-  };
-}
-
 function renderReadableDiscordMessage(item) {
   if (item.errors.length > 0) {
     const lines = [
@@ -662,7 +635,12 @@ function renderReadableDiscordMessage(item) {
     for (const entry of item.ingested.slice(0, 5)) {
       const candidateId = entry.candidate_id || entry.package_id || '(unknown)';
       const riskLabel = entry.risk === 'low' ? '자동 검사 통과' : `확인 필요(${entry.risk || 'unknown'})`;
-      const recommendation = memoryRecommendation(entry);
+      const recommendation = entry.recommendation ?? recommendMemoryAction({
+        sourceRepo: entry.repo,
+        sourceVisibility: entry.visibility,
+        risk: entry.risk,
+        subjects: entry.subjects,
+      });
       lines.push('');
       lines.push(`대상: ${entry.repo} (${entry.branch})`);
       lines.push(`커밋: ${entry.commits}개`);
