@@ -29,6 +29,7 @@ const maxWindow = Number(args.maxWindow ?? process.env.HERMES_MAX_COMMIT_WINDOW 
 const onlyRepos = new Set(arrayValue(args.only).map((value) => String(value)));
 const cloneProtocol = String(args.cloneProtocol ?? process.env.HERMES_CLONE_PROTOCOL ?? 'auto');
 const cloneFilter = String(args.cloneFilter ?? process.env.HERMES_GIT_CLONE_FILTER ?? 'blob:none');
+const cloneDepth = Number(args.cloneDepth ?? process.env.HERMES_GIT_CLONE_DEPTH ?? 200);
 const repoRoot = repoRootArg ? path.resolve(String(repoRootArg)) : '';
 const ghAvailable = hasCommand('gh', ['--version']);
 const askpassPath = path.join(stateRoot, 'github-askpass.sh');
@@ -340,8 +341,12 @@ async function ensureClone(repo, clonePath) {
 
   await ensureAskpass();
   const url = cloneProtocol === 'ssh' ? repo.sshUrl : (repo.cloneUrl ?? `${repo.url}.git`);
-  const cloneArgs = ['clone', '--no-tags'];
+  const cloneArgs = ['clone', '--no-tags', '--no-checkout'];
   const branch = repo.defaultBranchRef?.name;
+
+  if (cloneDepth > 0) {
+    cloneArgs.push(`--depth=${cloneDepth}`);
+  }
 
   if (cloneFilter && cloneFilter !== 'off') {
     cloneArgs.push(`--filter=${cloneFilter}`);
@@ -361,7 +366,12 @@ async function ensureClone(repo, clonePath) {
 }
 
 function fetchRepo(clonePath) {
-  git(clonePath, ['fetch', '--prune', 'origin', '+refs/heads/*:refs/remotes/origin/*']);
+  const fetchArgs = ['fetch', '--prune', '--no-tags'];
+  if (cloneDepth > 0) {
+    fetchArgs.push(`--depth=${cloneDepth}`);
+  }
+  fetchArgs.push('origin', '+refs/heads/*:refs/remotes/origin/*');
+  git(clonePath, fetchArgs);
 }
 
 function git(repo, gitArgs) {

@@ -4,12 +4,12 @@
 - cluster-only mode — file stats not available
 
 ## Summary
-- 315 nodes · 370 edges · 35 communities (33 shown, 2 thin omitted)
+- 316 nodes · 371 edges · 35 communities (33 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b0c5ea7e`
+- Built from commit: `5bb421e9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -61,27 +61,27 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
-Nodes (44): printSummary(), repoClonePath(), allCommits, args, blockers, candidate, candidatePath, candidateRoot (+36 more)
+Nodes (43): gitDirtyFor(), args, askpassPath, cloneDepth, cloneFilter, clonePath, cloneProtocol, commitCount (+35 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.06
-Nodes (42): gitDirtyFor(), args, askpassPath, cloneFilter, clonePath, cloneProtocol, commitCount, computeRange() (+34 more)
+Nodes (32): repoClonePath(), allCommits, args, blockers, candidate, candidatePath, candidateRoot, commitRange (+24 more)
 
 ### Community 2 - "Community 2"
+Cohesion: 0.08
+Nodes (24): args, blockers, candidatePath, parsed, publicData, publicNote, root, slug (+16 more)
+
+### Community 3 - "Community 3"
 Cohesion: 0.09
 Nodes (27): 2024 하반기 이달의 우수게임, 2025 스토브인디 어워즈 Top 10, YouTube @kangkeon4500, projects, 우송대학교 게임멀티미디어공학과, 학력사항, 학력사항, 경력사항 (+19 more)
 
-### Community 3 - "Community 3"
+### Community 4 - "Community 4"
 Cohesion: 0.1
 Nodes (25): argv, blockedPatterns, failures, parsed, publishRoot, relative, requiredMemoryFields, root (+17 more)
 
-### Community 4 - "Community 4"
-Cohesion: 0.12
-Nodes (15): splitWikiText(), extractWikiLinks(), slugifyAnchor(), slugifyWikiTarget(), wikiHref(), contentRoot, edges, entries (+7 more)
-
 ### Community 5 - "Community 5"
 Cohesion: 0.12
-Nodes (12): args, blockers, candidatePath, parsed, publicData, publicNote, root, slug (+4 more)
+Nodes (15): splitWikiText(), extractWikiLinks(), slugifyAnchor(), slugifyWikiTarget(), wikiHref(), contentRoot, edges, entries (+7 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.12
@@ -124,24 +124,24 @@ Cohesion: 0.4
 Nodes (4): code:yaml (status: evergreen), Layer roles, Operating loop, Public note contract
 
 ## Knowledge Gaps
-- **162 isolated node(s):** `argv`, `root`, `publishRoot`, `strictMemory`, `root` (+157 more)
+- **163 isolated node(s):** `argv`, `root`, `publishRoot`, `strictMemory`, `root` (+158 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `toRelativePortable()` connect `Community 0` to `Community 1`, `Community 5`?**
+- **Why does `toRelativePortable()` connect `Community 2` to `Community 0`, `Community 1`?**
   _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `parseArgs()` connect `Community 0` to `Community 1`, `Community 5`?**
+- **Why does `parseArgs()` connect `Community 2` to `Community 0`, `Community 1`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `slugify()` connect `Community 0` to `Community 1`, `Community 5`?**
+- **Why does `slugify()` connect `Community 1` to `Community 0`, `Community 2`?**
   _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **What connects `argv`, `root`, `publishRoot` to the rest of the system?**
-  _162 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _163 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.06 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.09 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
