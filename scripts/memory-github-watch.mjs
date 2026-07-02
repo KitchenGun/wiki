@@ -10,6 +10,8 @@ import {
   toRelativePortable,
 } from './memory-utils.mjs';
 
+await loadDefaultEnvFiles();
+
 const root = process.cwd();
 const args = parseArgs(process.argv.slice(2));
 const npmCommand = process.platform === 'win32' ? 'npm.cmd' : 'npm';
@@ -25,8 +27,10 @@ const notify = args.notify === true || args.notify === 'true';
 const processFirstRun = args.processFirstRun === true || args.processFirstRun === 'true';
 const maxWindow = Number(args.maxWindow ?? process.env.HERMES_MAX_COMMIT_WINDOW ?? 50);
 const onlyRepos = new Set(arrayValue(args.only).map((value) => String(value)));
-const cloneProtocol = String(args.cloneProtocol ?? process.env.HERMES_CLONE_PROTOCOL ?? 'gh');
+const cloneProtocol = String(args.cloneProtocol ?? process.env.HERMES_CLONE_PROTOCOL ?? 'auto');
 const repoRoot = repoRootArg ? path.resolve(String(repoRootArg)) : '';
+const ghAvailable = hasCommand('gh', ['--version']);
+const askpassPath = path.join(stateRoot, 'github-askpass.sh');
 
 if (!repoRoot && !dryRun) {
   console.error('--repo-root or HERMES_REPO_ROOT is required unless --dry-run is used.');
@@ -35,6 +39,11 @@ if (!repoRoot && !dryRun) {
 
 if (!process.env.PRIVATE_VAULT_ROOT && !dryRun) {
   console.error('PRIVATE_VAULT_ROOT is required unless --dry-run is used.');
+  process.exit(1);
+}
+
+if (!ghAvailable && !githubToken()) {
+  console.error('gh is unavailable and no GitHub token was found. Set GITHUB_TOKEN, GH_TOKEN, or AI_TRENDS_GITHUB_TOKEN.');
   process.exit(1);
 }
 
@@ -206,6 +215,30 @@ async function loadState() {
   }
 }
 
+async function loadDefaultEnvFiles() {
+  const home = process.env.HOME || process.env.USERPROFILE;
+  if (!home) return;
+
+  for (const file of [
+    path.join(home, '.hermes', '.env'),
+    path.join(home, '.hermes', 'codex-control.env'),
+  ]) {
+    try {
+      const raw = await fs.readFile(file, 'utf8');
+      for (const line of raw.split(/\r?\n/u)) {
+        const trimmed = line.trim();
+        if (!trimmed || trimmed.startsWith('#') || !trimmed.includes('=')) continue;
+        const [key, ...valueParts] = trimmed.split('=');
+        if (!/^[A-Za-z_][A-Za-z0-9_]*$/u.test(key)) continue;
+        if (process.env[key] !== undefined) continue;
+        process.env[key] = valueParts.join('=').trim().replace(/^["']|["']$/gu, '');
+      }
+    } catch {
+      // Optional env file.
+    }
+  }
+}
+
 async function saveState(nextState) {
   const tempPath = `${statePath}.${process.pid}.tmp`;
   await fs.writeFile(tempPath, `${JSON.stringify(nextState, null, 2)}\n`, 'utf8');
@@ -213,6 +246,10 @@ async function saveState(nextState) {
 }
 
 function listRepos(repoOwner) {
+  if (!ghAvailable) {
+    return listReposFromApi(repoOwner);
+  }
+
   const output = runCapture('gh', [
     'repo',
     'list',
@@ -224,6 +261,49 @@ function listRepos(repoOwner) {
   ], { cwd: root, maxBuffer: 1024 * 1024 * 16 });
 
   return JSON.parse(output);
+}
+
+async function listReposFromApi(repoOwner) {
+  const token = githubToken();
+  const repos = [];
+  let page = 1;
+
+  while (true) {
+    const url = `https://api.github.com/user/repos?per_page=100&page=${page}&affiliation=owner&sort=pushed&direction=desc`;
+    const response = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        Accept: 'application/vnd.github+json',
+        'User-Agent': 'wiki-memory-github-watch',
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`GitHub repo list failed: ${response.status} ${await response.text()}`);
+    }
+
+    const pageItems = await response.json();
+    repos.push(
+      ...pageItems
+        .filter((repo) => repo.full_name?.startsWith(`${repoOwner}/`))
+        .map((repo) => ({
+          nameWithOwner: repo.full_name,
+          isPrivate: repo.private,
+          isFork: repo.fork,
+          isArchived: repo.archived,
+          defaultBranchRef: { name: repo.default_branch ?? '' },
+          pushedAt: repo.pushed_at,
+          url: repo.html_url,
+          sshUrl: repo.ssh_url,
+          cloneUrl: repo.clone_url,
+        })),
+    );
+
+    if (pageItems.length < 100) break;
+    page += 1;
+  }
+
+  return repos;
 }
 
 function filterRepos(repoList) {
@@ -252,13 +332,18 @@ async function ensureClone(repo, clonePath) {
     await fs.mkdir(path.dirname(clonePath), { recursive: true });
   }
 
-  if (cloneProtocol === 'gh') {
+  if (cloneProtocol === 'gh' || (cloneProtocol === 'auto' && ghAvailable)) {
     runCapture('gh', ['repo', 'clone', repo.nameWithOwner, clonePath], { cwd: root, maxBuffer: 1024 * 1024 * 16 });
     return;
   }
 
-  const url = cloneProtocol === 'ssh' ? repo.sshUrl : `${repo.url}.git`;
-  runCapture('git', ['clone', url, clonePath], { cwd: root, maxBuffer: 1024 * 1024 * 16 });
+  await ensureAskpass();
+  const url = cloneProtocol === 'ssh' ? repo.sshUrl : (repo.cloneUrl ?? `${repo.url}.git`);
+  runCapture('git', ['clone', url, clonePath], {
+    cwd: root,
+    env: gitAuthEnv(),
+    maxBuffer: 1024 * 1024 * 16,
+  });
 }
 
 function fetchRepo(clonePath) {
@@ -266,7 +351,54 @@ function fetchRepo(clonePath) {
 }
 
 function git(repo, gitArgs) {
-  return runCapture('git', ['-C', repo, ...gitArgs], { cwd: repo, maxBuffer: 1024 * 1024 * 16 });
+  return runCapture('git', ['-C', repo, ...gitArgs], {
+    cwd: repo,
+    env: gitAuthEnv(),
+    maxBuffer: 1024 * 1024 * 16,
+  });
+}
+
+async function ensureAskpass() {
+  if (!githubToken()) return;
+
+  const script = [
+    '#!/bin/sh',
+    'case "$1" in',
+    '  *Username*) printf "%s\\n" "x-access-token" ;;',
+    '  *) printf "%s\\n" "${GITHUB_TOKEN:-${GH_TOKEN:-${AI_TRENDS_GITHUB_TOKEN:-}}}" ;;',
+    'esac',
+    '',
+  ].join('\n');
+
+  await fs.mkdir(path.dirname(askpassPath), { recursive: true });
+  await fs.writeFile(askpassPath, script, { encoding: 'utf8', mode: 0o700 });
+  await fs.chmod(askpassPath, 0o700);
+}
+
+function gitAuthEnv() {
+  const token = githubToken();
+  if (!token) return {};
+
+  return {
+    GIT_TERMINAL_PROMPT: '0',
+    GIT_ASKPASS: askpassPath,
+    GITHUB_TOKEN: process.env.GITHUB_TOKEN ?? token,
+    GH_TOKEN: process.env.GH_TOKEN ?? token,
+    AI_TRENDS_GITHUB_TOKEN: process.env.AI_TRENDS_GITHUB_TOKEN ?? token,
+  };
+}
+
+function githubToken() {
+  return process.env.GITHUB_TOKEN || process.env.GH_TOKEN || process.env.AI_TRENDS_GITHUB_TOKEN || '';
+}
+
+function hasCommand(command, commandArgs) {
+  const result = spawnSync(command, commandArgs, {
+    cwd: root,
+    env: process.env,
+    stdio: 'ignore',
+  });
+  return result.status === 0;
 }
 
 function isAncestor(repo, base, head) {
