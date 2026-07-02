@@ -548,9 +548,9 @@ function renderDiscordMessage(item) {
       const risk = entry.risk || 'unknown';
       lines.push(`- ${entry.repo} ${entry.branch}: ${entry.commits} commit(s), ${entry.visibility}, risk=${risk}`);
       lines.push(`  후보: ${candidateId}`);
-      lines.push(`  보기: /memory show ${candidateId}`);
-      lines.push(`  승인: /memory approve ${candidateId} wiki`);
-      lines.push(`  거절: /memory deny ${candidateId}`);
+      lines.push(`  보기: !memory show ${candidateId}`);
+      lines.push(`  승인: !memory approve ${candidateId} wiki`);
+      lines.push(`  거절: !memory deny ${candidateId}`);
     }
   }
 
