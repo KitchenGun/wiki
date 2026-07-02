@@ -7,6 +7,13 @@ draft: false
 visibility: public
 related: [unreal-ai-behavior-tree-eqs, common-ui-workflow, game-options-localization, inventory-system, interaction-component-architecture, audio-visual-sequencer, steamworks-integration]
 aliases: [unreal client programming]
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-04-29"
+owner: "kang"
+decision_summary: "강건의 Unreal Engine 클라이언트 프로그래밍 관심사와 경험 정리."
+next_actions: []
 ---
 
 Unreal 클라이언트 프로그래밍의 핵심은 플레이어가 직접 만지는 시스템을 안정적으로 연결하는 일이다.

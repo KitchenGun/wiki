@@ -9,6 +9,13 @@ tags:
   - publishing
 draft: false
 visibility: public
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-04-29"
+owner: "kang"
+decision_summary: "이력서, GitHub, Obsidian 노트를 하나의 공개 지식 베이스로 정리하는 기준."
+next_actions: []
 ---
 
 이 사이트는 이력서, GitHub 프로젝트, Obsidian 공개 노트를 한곳에 모으기 위한 위키다.

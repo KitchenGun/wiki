@@ -21,6 +21,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Verify public content
+        run: |
+          npm install
+          npm run content:check
+
       - name: Install, build, and upload
         uses: withastro/action@v6
         with:

@@ -35,10 +35,37 @@ date: 2026-04-29
 tags: [tag]
 draft: false
 visibility: public
+status: evergreen
+source_type: compiled
+source_url: ""
+captured_at: 2026-04-29
+decision_summary: Why this note matters later
+next_actions: []
 slug: stable-url-slug
 ```
 
 빌드/목록/graph-data 대상은 `draft: false`, `visibility: public`뿐이다. 비공개 Vault, private, internal, drafts 폴더는 repo에 넣지 않는다.
+
+## LLM Wiki Memory
+
+이 repo는 private Obsidian vault가 아니라 공개 compiled layer다. 원자료, 작업 로그, 개인 정보, 회사 내부 정보는 repo 밖 private vault에 둔다. 공개 가능한 판단 요약과 연결 정보만 `src/content/publish`에 복사한다.
+
+```text
+Private Obsidian vault
+  -> compiled public note
+  -> src/content/publish
+  -> public/graph-data.json
+  -> graphify-out
+```
+
+공개 전 검사:
+
+```bash
+npm run memory:normalize
+npm run content:check
+```
+
+`content:check`는 공개 콘텐츠의 이메일, 전화번호, 로컬 사용자 경로, API token, Google 문서 ID URL 같은 민감 패턴과 LLM 회수용 frontmatter 누락을 차단한다.
 
 ## Wikilink
 
@@ -51,6 +78,12 @@ npm run graph
 ```
 
 `public/graph-data.json`을 생성한다. 현재는 노드/링크만 준비하고 Graphify/LLM UI는 구현하지 않는다.
+
+Graphify 기반 에이전트 회수 그래프 갱신:
+
+```bash
+npm run graphify:update
+```
 
 ## 배포
 

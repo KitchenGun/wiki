@@ -7,6 +7,13 @@ draft: false
 visibility: public
 aliases: [personal-hermes-agent]
 related: [unreal-mcp, hermes-personal-pt, hermes-daily-dev-brief]
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-05-12"
+owner: "kang"
+decision_summary: "개인 Hermes Agent 운영 프로필과 Job Registry를 공개 가능한 형태로 정리한 저장소."
+next_actions: []
 ---
 
 Personal Hermes Agent는 개인 AI 에이전트 운영 구조를 공개 가능한 형태로 정리한 저장소다.

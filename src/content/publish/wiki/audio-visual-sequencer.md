@@ -6,6 +6,13 @@ tags: [unreal, audio, sequencer]
 draft: false
 visibility: public
 aliases: [metasound, sequencer]
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-04-29"
+owner: "kang"
+decision_summary: "MetaSound, Attenuation, AnimNotify, Sequencer 기반 연출 구현 노트."
+next_actions: []
 ---
 
 공포 게임의 몰입감은 사운드와 시퀀스가 게임플레이와 같은 타이밍으로 연결될 때 커진다.

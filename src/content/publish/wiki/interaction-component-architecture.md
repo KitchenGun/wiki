@@ -6,6 +6,13 @@ tags: [unreal, architecture, puzzle]
 draft: false
 visibility: public
 aliases: [interaction architecture, puzzle architecture]
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-04-29"
+owner: "kang"
+decision_summary: "반복되는 퍼즐 기믹을 컴포넌트와 인터페이스로 분리한 Unreal 구조 노트."
+next_actions: []
 ---
 
 반복되는 퍼즐 기믹은 상속보다 컴포넌트와 인터페이스로 분리하는 편이 재사용성이 높다.

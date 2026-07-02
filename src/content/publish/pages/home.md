@@ -9,6 +9,13 @@ visibility: public
 tags: []
 aliases: []
 related: []
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-07-02"
+owner: "kang"
+decision_summary: "Unreal Engine client programmer focused on gameplay, UI, AI, tools, and AI-assisted game development workflows."
+next_actions: []
 ---
 
 Unreal Engine client programmer at AIXLAB. Shipping and maintaining horror/adventure gameplay systems while experimenting with AI-assisted tools.

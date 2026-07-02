@@ -6,6 +6,13 @@ tags: [steamworks, release, unreal]
 draft: false
 visibility: public
 aliases: [steam sdk, steamworks]
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-04-29"
+owner: "kang"
+decision_summary: "Steam 도전과제, Depot, 빌드 업로드 관련 클라이언트 작업 노트."
+next_actions: []
 ---
 
 Steamworks 작업은 게임 기능과 출시 운영 사이에 있다.

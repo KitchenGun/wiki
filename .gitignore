@@ -10,6 +10,9 @@ graphify-out/manifest.json
 graphify-out/.graphify_root
 graphify-out/.graphify_*.json
 
+# commit-memory staging
+.memory-work/
+
 # dependencies
 node_modules/
 

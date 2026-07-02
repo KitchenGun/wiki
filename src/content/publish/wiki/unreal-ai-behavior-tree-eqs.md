@@ -6,6 +6,13 @@ tags: [unreal, ai, gameplay]
 draft: false
 visibility: public
 aliases: [behavior tree, eqs, unreal ai]
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-04-29"
+owner: "kang"
+decision_summary: "Behavior Tree, Blackboard, AI Perception, EQS를 활용한 Unreal AI 구현 노트."
+next_actions: []
 ---
 
 Unreal AI 구현 경험은 Behavior Tree, Blackboard, AI Perception, EQS를 중심으로 정리한다.

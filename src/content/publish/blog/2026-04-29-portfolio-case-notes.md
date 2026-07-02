@@ -9,6 +9,13 @@ tags:
   - case-study
 draft: false
 visibility: public
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-04-29"
+owner: "kang"
+decision_summary: "AIXLAB에서의 프로젝트 경험을 공개한 위키 문서"
+next_actions: []
 ---
 
 공개 가능한 기술을 정리했다.

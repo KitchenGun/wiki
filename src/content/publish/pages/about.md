@@ -9,6 +9,13 @@ visibility: public
 tags: []
 aliases: []
 related: []
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-07-02"
+owner: "kang"
+decision_summary: "강건 소개."
+next_actions: []
 ---
 
 저는 엔진에 구애받지 않는 개발자입니다. 대학교 시절 DirectX와 Unity로 12개 이상의 게임을 만들고 AIXLAB에서 호러 어드벤처 [골목길: 귀흔]과 [금지된 예술] 두 타이틀을 프로젝트 초기부터 클라이언트 프로그래머로 참여해 출시까지 이끌었습니다. [금지된 예술]은 2024년 하반기 문화체육관광부 '이달의 우수 게임'에 선정되었고 [골목길: 귀흔]은 2025 스토브인디 어워즈 Top 10에 입상했습니다. 제 손으로 만든 결과물이 플레이어들에게 닿았다는 점에서 의미 있는 경험이었습니다.

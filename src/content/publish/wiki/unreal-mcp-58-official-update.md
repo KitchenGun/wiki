@@ -8,6 +8,13 @@ visibility: public
 aliases: [unreal-mcp-58, ue58-official-mcp]
 related: [unreal-mcp, unreal-client-programming]
 slug: unreal-mcp-58-official-update
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-06-26"
+owner: "kang"
+decision_summary: "Unreal Engine 5.8 공식 Model Context Protocol 지원을 DualFire 개발 환경에 적용한 기록."
+next_actions: []
 ---
 
 Unreal MCP 5.8 Official Update는 기존 커스텀 UnrealMCP 플러그인 중심 흐름을 정리하고, Unreal Engine 5.8의 공식 Model Context Protocol 플러그인과 EditorToolset을 DualFire 개발 루틴에 적용한 기록이다.

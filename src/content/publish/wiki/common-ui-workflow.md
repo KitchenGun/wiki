@@ -6,6 +6,13 @@ tags: [unreal, ui, common-ui]
 draft: false
 visibility: public
 aliases: [common ui]
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-04-29"
+owner: "kang"
+decision_summary: "Unreal Common UI 기반 포커스, 레이어, 액션 바 UI 구현 노트."
+next_actions: []
 ---
 
 Common UI는 컨트롤러/키보드/마우스 입력을 함께 고려하는 UI 구조에 적합하다.

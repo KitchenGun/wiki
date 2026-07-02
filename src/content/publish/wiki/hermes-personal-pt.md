@@ -7,6 +7,13 @@ draft: false
 visibility: public
 aliases: [hermes-personal-pt, personal-pt-agent]
 related: [personal-hermes-agent]
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-06-13"
+owner: "kang"
+decision_summary: "Hermes Agent로 운동 기록, InBody 기록, 데이터 기반 운동 루틴 초안을 처리하는 개인 PT 자동화 노트."
+next_actions: []
 ---
 
 Hermes Personal PT는 Discord에서 운동 기록과 InBody 기록을 받아 Google Sheets에 축적하고, 누적 데이터를 기반으로 다음 운동 루틴 초안을 제시하는 개인 자동화다.

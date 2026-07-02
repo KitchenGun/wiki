@@ -8,6 +8,13 @@ visibility: public
 aliases: [hermes-daily-dev-brief, daily-dev-brief]
 related: [personal-hermes-agent, unreal-mcp]
 slug: hermes-daily-dev-brief
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-06-19"
+owner: "kang"
+decision_summary: "Hermes Agent가 개발 환경과 관심 스택을 기준으로 최신 정보를 매일 수집해 작업 전 브리핑으로 정리하는 자동화 노트."
+next_actions: []
 ---
 
 Hermes Daily Dev Brief는 매일 Hermes Agent로 AI 에이전트, MCP, 개발 도구, Unreal 자동화 관련 최신 정보를 수집하고 내 개발 환경에 맞는 적용 포인트까지 정리하는 자동화다.

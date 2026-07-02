@@ -6,6 +6,13 @@ tags: [unreal, options, localization]
 draft: false
 visibility: public
 aliases: [custom game user settings, localization]
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-04-29"
+owner: "kang"
+decision_summary: "Unreal 옵션, 업스케일, 사운드, 현지화 작업 노트."
+next_actions: []
 ---
 
 옵션과 현지화는 출시 품질에 직접 연결되는 클라이언트 작업이다.

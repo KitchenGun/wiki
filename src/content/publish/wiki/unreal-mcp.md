@@ -7,6 +7,13 @@ draft: false
 visibility: public
 aliases: [unrealmcp]
 related: [unreal-client-programming, unreal-mcp-58-official-update, hermes-daily-dev-brief]
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-04-29"
+owner: "kang"
+decision_summary: "Unreal Engine 작업을 자연어/MCP 기반으로 제어하려는 개인 R&D 노트."
+next_actions: []
 ---
 
 UnrealMCP는 Unreal Engine 작업을 AI 도구와 연결하려는 개인 R&D다.

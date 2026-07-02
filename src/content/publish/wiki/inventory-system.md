@@ -6,6 +6,13 @@ tags: [unreal, inventory, ui]
 draft: false
 visibility: public
 aliases: [inventory]
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-04-29"
+owner: "kang"
+decision_summary: "Unreal 기반 인벤토리, DataTable, 3D 아이템 조사 기능 구현 노트."
+next_actions: []
 ---
 
 인벤토리는 UI, 데이터, 연출, 입력이 함께 묶이는 클라이언트 시스템이다.

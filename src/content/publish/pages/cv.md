@@ -10,20 +10,20 @@ visibility: public
 tags: []
 aliases: []
 related: []
+status: "evergreen"
+source_type: "compiled"
+source_url: ""
+captured_at: "2026-07-02"
+owner: "kang"
+decision_summary: "강건의 이력서."
+next_actions: []
 ---
 
-## 인적사항
+## Public Profile
 
-<table>
-  <tbody>
-    <tr><td>성명</td><td>강건 (Keon Kang)</td></tr>
-    <tr><td>생년월일</td><td>1998-01-24 (만 28세)</td></tr>
-    <tr><td>성별</td><td>남</td></tr>
-    <tr><td>거주지</td><td>서울</td></tr>
-    <tr><td>휴대전화</td><td>010-5331-5896</td></tr>
-    <tr><td>이메일</td><td><a href="mailto:kangkk9714@gmail.com">kangkk9714@gmail.com</a></td></tr>
-  </tbody>
-</table>
+Unreal Engine client programmer focused on gameplay systems, UI, AI, localization, release operations, and AI-assisted tooling.
+
+Public contact and project links are managed through the GitHub profile: [KitchenGun](https://github.com/KitchenGun).
 
 ## 학력사항
 

@@ -15,6 +15,12 @@ const files = await fg(['blog/**/*.{md,mdx}', 'wiki/**/*.{md,mdx}'], {
 
 const entries = [];
 
+function serializeDate(value) {
+  if (!value) return '';
+  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  return String(value);
+}
+
 for (const file of files) {
   const raw = await fs.readFile(file, 'utf8');
   const parsed = matter(raw);
@@ -38,6 +44,15 @@ for (const file of files) {
     title: parsed.data.title ?? id,
     description: parsed.data.description ?? '',
     tags: parsed.data.tags ?? [],
+    status: parsed.data.status ?? 'evergreen',
+    sourceType: parsed.data.source_type ?? 'compiled',
+    sourceUrl: parsed.data.source_url ?? '',
+    capturedAt: serializeDate(parsed.data.captured_at),
+    owner: parsed.data.owner ?? '',
+    decisionSummary: parsed.data.decision_summary ?? '',
+    nextActions: parsed.data.next_actions ?? [],
+    aliases: parsed.data.aliases ?? [],
+    related: parsed.data.related ?? [],
     url: `/${collection}/${slug}/`,
     links: extractWikiLinks(parsed.content),
   });
