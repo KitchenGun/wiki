@@ -4,12 +4,12 @@
 - cluster-only mode — file stats not available
 
 ## Summary
-- 318 nodes · 373 edges · 35 communities (33 shown, 2 thin omitted)
+- 319 nodes · 374 edges · 35 communities (33 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `924ba049`
+- Built from commit: `a9ba30f2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -61,11 +61,11 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
-Nodes (44): gitDirtyFor(), args, askpassPath, cloneDepth, cloneFilter, clonePath, cloneProtocol, commitCount (+36 more)
+Nodes (46): loadState(), printSummary(), repoClonePath(), allCommits, args, blockers, candidate, candidatePath (+38 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.05
-Nodes (44): printSummary(), repoClonePath(), allCommits, args, blockers, candidate, candidatePath, candidateRoot (+36 more)
+Nodes (42): gitDirtyFor(), args, askpassPath, cloneDepth, cloneFilter, clonePath, cloneProtocol, commitCount (+34 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.09
@@ -131,11 +131,11 @@ Nodes (4): code:yaml (status: evergreen), Layer roles, Operating loop, Public no
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `toRelativePortable()` connect `Community 1` to `Community 0`, `Community 5`?**
+- **Why does `toRelativePortable()` connect `Community 0` to `Community 1`, `Community 5`?**
   _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `parseArgs()` connect `Community 1` to `Community 0`, `Community 5`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `slugify()` connect `Community 1` to `Community 0`, `Community 5`?**
+- **Why does `parseArgs()` connect `Community 0` to `Community 1`, `Community 5`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `slugify()` connect `Community 0` to `Community 1`, `Community 5`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **What connects `argv`, `root`, `publishRoot` to the rest of the system?**
   _164 weakly-connected nodes found - possible documentation gaps or missing edges._

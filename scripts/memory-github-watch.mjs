@@ -200,8 +200,10 @@ await saveState(state);
 
 printSummary(summary);
 
-if (notify) {
+if (notify && hasNotableDiscordEvent(summary)) {
   await sendDiscord(summary);
+} else if (notify) {
+  console.log('Discord notification skipped: no changed commits, bootstraps, or errors.');
 }
 
 function detectOwner() {
@@ -493,6 +495,13 @@ function printSummary(item) {
     console.log(`Repo root: ${repoRoot}`);
   }
   console.log(`State: ${toRelativePortable(root, statePath)}`);
+}
+
+function hasNotableDiscordEvent(item) {
+  return item.bootstrapped.length > 0
+    || item.changed.length > 0
+    || item.ingested.length > 0
+    || item.errors.length > 0;
 }
 
 async function sendDiscord(item) {

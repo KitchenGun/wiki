@@ -332,7 +332,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L73",
-      "community": 0,
+      "community": 1,
       "norm_label": "gitdirtyfor()",
       "id": "scripts_memory_approve_gitdirtyfor"
     },
@@ -431,7 +431,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L1",
-      "community": 0,
+      "community": 1,
       "norm_label": "memory-github-watch.mjs",
       "id": "scripts_memory_github_watch_mjs"
     },
@@ -440,7 +440,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L15",
-      "community": 0,
+      "community": 1,
       "norm_label": "root",
       "id": "scripts_memory_github_watch_root"
     },
@@ -449,7 +449,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L16",
-      "community": 0,
+      "community": 1,
       "norm_label": "args",
       "id": "scripts_memory_github_watch_args"
     },
@@ -458,7 +458,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L18",
-      "community": 0,
+      "community": 1,
       "norm_label": "owner",
       "id": "scripts_memory_github_watch_owner"
     },
@@ -467,7 +467,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L20",
-      "community": 0,
+      "community": 1,
       "norm_label": "stateroot",
       "id": "scripts_memory_github_watch_stateroot"
     },
@@ -476,7 +476,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L21",
-      "community": 0,
+      "community": 1,
       "norm_label": "statepath",
       "id": "scripts_memory_github_watch_statepath"
     },
@@ -485,7 +485,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L22",
-      "community": 0,
+      "community": 1,
       "norm_label": "limit",
       "id": "scripts_memory_github_watch_limit"
     },
@@ -494,7 +494,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L28",
-      "community": 0,
+      "community": 1,
       "norm_label": "maxwindow",
       "id": "scripts_memory_github_watch_maxwindow"
     },
@@ -503,7 +503,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L29",
-      "community": 0,
+      "community": 1,
       "norm_label": "onlyrepos",
       "id": "scripts_memory_github_watch_onlyrepos"
     },
@@ -512,7 +512,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L30",
-      "community": 0,
+      "community": 1,
       "norm_label": "cloneprotocol",
       "id": "scripts_memory_github_watch_cloneprotocol"
     },
@@ -521,7 +521,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L31",
-      "community": 0,
+      "community": 1,
       "norm_label": "clonefilter",
       "id": "scripts_memory_github_watch_clonefilter"
     },
@@ -530,7 +530,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L32",
-      "community": 0,
+      "community": 1,
       "norm_label": "clonedepth",
       "id": "scripts_memory_github_watch_clonedepth"
     },
@@ -539,7 +539,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L34",
-      "community": 0,
+      "community": 1,
       "norm_label": "ghavailable",
       "id": "scripts_memory_github_watch_ghavailable"
     },
@@ -548,7 +548,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L35",
-      "community": 0,
+      "community": 1,
       "norm_label": "askpasspath",
       "id": "scripts_memory_github_watch_askpasspath"
     },
@@ -557,7 +557,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L58",
-      "community": 0,
+      "community": 1,
       "norm_label": "repos",
       "id": "scripts_memory_github_watch_repos"
     },
@@ -566,7 +566,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L59",
-      "community": 0,
+      "community": 1,
       "norm_label": "summary",
       "id": "scripts_memory_github_watch_summary"
     },
@@ -575,7 +575,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L80",
-      "community": 0,
+      "community": 1,
       "norm_label": "repostate",
       "id": "scripts_memory_github_watch_repostate"
     },
@@ -584,7 +584,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L81",
-      "community": 0,
+      "community": 1,
       "norm_label": "clonepath",
       "id": "scripts_memory_github_watch_clonepath"
     },
@@ -593,7 +593,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L91",
-      "community": 0,
+      "community": 1,
       "norm_label": "headsha",
       "id": "scripts_memory_github_watch_headsha"
     },
@@ -602,7 +602,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L126",
-      "community": 0,
+      "community": 1,
       "norm_label": "range",
       "id": "scripts_memory_github_watch_range"
     },
@@ -611,7 +611,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L127",
-      "community": 0,
+      "community": 1,
       "norm_label": "commitcount",
       "id": "scripts_memory_github_watch_commitcount"
     },
@@ -620,7 +620,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L128",
-      "community": 0,
+      "community": 1,
       "norm_label": "trigger",
       "id": "scripts_memory_github_watch_trigger"
     },
@@ -629,7 +629,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L138",
-      "community": 0,
+      "community": 1,
       "norm_label": "ingestoutput",
       "id": "scripts_memory_github_watch_ingestoutput"
     },
@@ -638,7 +638,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L155",
-      "community": 0,
+      "community": 1,
       "norm_label": "ingestmetadata",
       "id": "scripts_memory_github_watch_ingestmetadata"
     },
@@ -646,8 +646,8 @@
       "label": "detectOwner()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L207",
-      "community": 0,
+      "source_location": "L209",
+      "community": 1,
       "norm_label": "detectowner()",
       "id": "scripts_memory_github_watch_detectowner"
     },
@@ -655,8 +655,8 @@
       "label": "arrayValue()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L215",
-      "community": 0,
+      "source_location": "L217",
+      "community": 1,
       "norm_label": "arrayvalue()",
       "id": "scripts_memory_github_watch_arrayvalue"
     },
@@ -664,7 +664,7 @@
       "label": "loadState()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L220",
+      "source_location": "L222",
       "community": 0,
       "norm_label": "loadstate()",
       "id": "scripts_memory_github_watch_loadstate"
@@ -673,8 +673,8 @@
       "label": "loadDefaultEnvFiles()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L234",
-      "community": 0,
+      "source_location": "L236",
+      "community": 1,
       "norm_label": "loaddefaultenvfiles()",
       "id": "scripts_memory_github_watch_loaddefaultenvfiles"
     },
@@ -682,8 +682,8 @@
       "label": "saveState()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L258",
-      "community": 0,
+      "source_location": "L260",
+      "community": 1,
       "norm_label": "savestate()",
       "id": "scripts_memory_github_watch_savestate"
     },
@@ -691,8 +691,8 @@
       "label": "listRepos()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L264",
-      "community": 0,
+      "source_location": "L266",
+      "community": 1,
       "norm_label": "listrepos()",
       "id": "scripts_memory_github_watch_listrepos"
     },
@@ -700,8 +700,8 @@
       "label": "listReposFromApi()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L282",
-      "community": 0,
+      "source_location": "L284",
+      "community": 1,
       "norm_label": "listreposfromapi()",
       "id": "scripts_memory_github_watch_listreposfromapi"
     },
@@ -709,8 +709,8 @@
       "label": "filterRepos()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L325",
-      "community": 0,
+      "source_location": "L327",
+      "community": 1,
       "norm_label": "filterrepos()",
       "id": "scripts_memory_github_watch_filterrepos"
     },
@@ -718,8 +718,8 @@
       "label": "getRepoState()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L334",
-      "community": 0,
+      "source_location": "L336",
+      "community": 1,
       "norm_label": "getrepostate()",
       "id": "scripts_memory_github_watch_getrepostate"
     },
@@ -727,8 +727,8 @@
       "label": "repoClonePath()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L338",
-      "community": 1,
+      "source_location": "L340",
+      "community": 0,
       "norm_label": "repoclonepath()",
       "id": "scripts_memory_github_watch_repoclonepath"
     },
@@ -736,8 +736,8 @@
       "label": "ensureClone()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L343",
-      "community": 0,
+      "source_location": "L345",
+      "community": 1,
       "norm_label": "ensureclone()",
       "id": "scripts_memory_github_watch_ensureclone"
     },
@@ -745,8 +745,8 @@
       "label": "fetchRepo()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L382",
-      "community": 0,
+      "source_location": "L384",
+      "community": 1,
       "norm_label": "fetchrepo()",
       "id": "scripts_memory_github_watch_fetchrepo"
     },
@@ -754,8 +754,8 @@
       "label": "git()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L391",
-      "community": 0,
+      "source_location": "L393",
+      "community": 1,
       "norm_label": "git()",
       "id": "scripts_memory_github_watch_git"
     },
@@ -763,8 +763,8 @@
       "label": "ensureAskpass()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L399",
-      "community": 0,
+      "source_location": "L401",
+      "community": 1,
       "norm_label": "ensureaskpass()",
       "id": "scripts_memory_github_watch_ensureaskpass"
     },
@@ -772,8 +772,8 @@
       "label": "gitAuthEnv()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L416",
-      "community": 0,
+      "source_location": "L418",
+      "community": 1,
       "norm_label": "gitauthenv()",
       "id": "scripts_memory_github_watch_gitauthenv"
     },
@@ -781,8 +781,8 @@
       "label": "githubToken()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L429",
-      "community": 0,
+      "source_location": "L431",
+      "community": 1,
       "norm_label": "githubtoken()",
       "id": "scripts_memory_github_watch_githubtoken"
     },
@@ -790,8 +790,8 @@
       "label": "hasCommand()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L433",
-      "community": 0,
+      "source_location": "L435",
+      "community": 1,
       "norm_label": "hascommand()",
       "id": "scripts_memory_github_watch_hascommand"
     },
@@ -799,8 +799,8 @@
       "label": "isAncestor()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L442",
-      "community": 0,
+      "source_location": "L444",
+      "community": 1,
       "norm_label": "isancestor()",
       "id": "scripts_memory_github_watch_isancestor"
     },
@@ -808,8 +808,8 @@
       "label": "computeRange()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L451",
-      "community": 0,
+      "source_location": "L453",
+      "community": 1,
       "norm_label": "computerange()",
       "id": "scripts_memory_github_watch_computerange"
     },
@@ -817,8 +817,8 @@
       "label": "triggerName()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L466",
-      "community": 0,
+      "source_location": "L468",
+      "community": 1,
       "norm_label": "triggername()",
       "id": "scripts_memory_github_watch_triggername"
     },
@@ -826,8 +826,8 @@
       "label": "shortSha()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L470",
-      "community": 0,
+      "source_location": "L472",
+      "community": 1,
       "norm_label": "shortsha()",
       "id": "scripts_memory_github_watch_shortsha"
     },
@@ -835,8 +835,8 @@
       "label": "parseIngestMetadata()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L474",
-      "community": 0,
+      "source_location": "L476",
+      "community": 1,
       "norm_label": "parseingestmetadata()",
       "id": "scripts_memory_github_watch_parseingestmetadata"
     },
@@ -844,17 +844,26 @@
       "label": "printSummary()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L490",
-      "community": 1,
+      "source_location": "L492",
+      "community": 0,
       "norm_label": "printsummary()",
       "id": "scripts_memory_github_watch_printsummary"
+    },
+    {
+      "label": "hasNotableDiscordEvent()",
+      "file_type": "code",
+      "source_file": "scripts/memory-github-watch.mjs",
+      "source_location": "L500",
+      "community": 1,
+      "norm_label": "hasnotablediscordevent()",
+      "id": "scripts_memory_github_watch_hasnotablediscordevent"
     },
     {
       "label": "sendDiscord()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L498",
-      "community": 0,
+      "source_location": "L507",
+      "community": 1,
       "norm_label": "senddiscord()",
       "id": "scripts_memory_github_watch_senddiscord"
     },
@@ -862,8 +871,8 @@
       "label": "renderDiscordMessage()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L525",
-      "community": 0,
+      "source_location": "L534",
+      "community": 1,
       "norm_label": "renderdiscordmessage()",
       "id": "scripts_memory_github_watch_renderdiscordmessage"
     },
@@ -871,8 +880,8 @@
       "label": "postJson()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L574",
-      "community": 0,
+      "source_location": "L583",
+      "community": 1,
       "norm_label": "postjson()",
       "id": "scripts_memory_github_watch_postjson"
     },
@@ -881,7 +890,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L1",
-      "community": 1,
+      "community": 0,
       "norm_label": "memory-ingest.mjs",
       "id": "scripts_memory_ingest_mjs"
     },
@@ -890,7 +899,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L18",
-      "community": 1,
+      "community": 0,
       "norm_label": "root",
       "id": "scripts_memory_ingest_root"
     },
@@ -899,7 +908,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L19",
-      "community": 1,
+      "community": 0,
       "norm_label": "args",
       "id": "scripts_memory_ingest_args"
     },
@@ -908,7 +917,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L27",
-      "community": 1,
+      "community": 0,
       "norm_label": "trigger",
       "id": "scripts_memory_ingest_trigger"
     },
@@ -917,7 +926,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L28",
-      "community": 1,
+      "community": 0,
       "norm_label": "commitrange",
       "id": "scripts_memory_ingest_commitrange"
     },
@@ -926,7 +935,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L29",
-      "community": 1,
+      "community": 0,
       "norm_label": "sourcevisibility",
       "id": "scripts_memory_ingest_sourcevisibility"
     },
@@ -935,7 +944,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L30",
-      "community": 1,
+      "community": 0,
       "norm_label": "sourcefullname",
       "id": "scripts_memory_ingest_sourcefullname"
     },
@@ -944,7 +953,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L31",
-      "community": 1,
+      "community": 0,
       "norm_label": "sourcebranch",
       "id": "scripts_memory_ingest_sourcebranch"
     },
@@ -953,7 +962,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L32",
-      "community": 1,
+      "community": 0,
       "norm_label": "requestedrepos",
       "id": "scripts_memory_ingest_requestedrepos"
     },
@@ -962,7 +971,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L37",
-      "community": 1,
+      "community": 0,
       "norm_label": "today",
       "id": "scripts_memory_ingest_today"
     },
@@ -971,7 +980,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L38",
-      "community": 1,
+      "community": 0,
       "norm_label": "createdat",
       "id": "scripts_memory_ingest_createdat"
     },
@@ -980,7 +989,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L39",
-      "community": 1,
+      "community": 0,
       "norm_label": "workroot",
       "id": "scripts_memory_ingest_workroot"
     },
@@ -989,7 +998,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L40",
-      "community": 1,
+      "community": 0,
       "norm_label": "packageroot",
       "id": "scripts_memory_ingest_packageroot"
     },
@@ -998,7 +1007,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L41",
-      "community": 1,
+      "community": 0,
       "norm_label": "candidateroot",
       "id": "scripts_memory_ingest_candidateroot"
     },
@@ -1007,7 +1016,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L42",
-      "community": 1,
+      "community": 0,
       "norm_label": "privatesummaryroot",
       "id": "scripts_memory_ingest_privatesummaryroot"
     },
@@ -1016,7 +1025,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L43",
-      "community": 1,
+      "community": 0,
       "norm_label": "validation",
       "id": "scripts_memory_ingest_validation"
     },
@@ -1025,7 +1034,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L55",
-      "community": 1,
+      "community": 0,
       "norm_label": "collectcommits()",
       "id": "scripts_memory_ingest_collectcommits"
     },
@@ -1034,7 +1043,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L65",
-      "community": 1,
+      "community": 0,
       "norm_label": "collectrecentcommits()",
       "id": "scripts_memory_ingest_collectrecentcommits"
     },
@@ -1052,7 +1061,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L98",
-      "community": 1,
+      "community": 0,
       "norm_label": "sourceblockers()",
       "id": "scripts_memory_ingest_sourceblockers"
     },
@@ -1061,7 +1070,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L105",
-      "community": 1,
+      "community": 0,
       "norm_label": "mergerisk()",
       "id": "scripts_memory_ingest_mergerisk"
     },
@@ -1070,7 +1079,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L112",
-      "community": 1,
+      "community": 0,
       "norm_label": "renderprivatesummary()",
       "id": "scripts_memory_ingest_renderprivatesummary"
     },
@@ -1079,7 +1088,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L156",
-      "community": 1,
+      "community": 0,
       "norm_label": "rendercandidate()",
       "id": "scripts_memory_ingest_rendercandidate"
     },
@@ -1088,7 +1097,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L209",
-      "community": 1,
+      "community": 0,
       "norm_label": "normalizedrepos",
       "id": "scripts_memory_ingest_normalizedrepos"
     },
@@ -1097,7 +1106,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L210",
-      "community": 1,
+      "community": 0,
       "norm_label": "allcommits",
       "id": "scripts_memory_ingest_allcommits"
     },
@@ -1106,7 +1115,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L213",
-      "community": 1,
+      "community": 0,
       "norm_label": "reporoot",
       "id": "scripts_memory_ingest_reporoot"
     },
@@ -1115,7 +1124,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L234",
-      "community": 1,
+      "community": 0,
       "norm_label": "detailed",
       "id": "scripts_memory_ingest_detailed"
     },
@@ -1124,7 +1133,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L248",
-      "community": 1,
+      "community": 0,
       "norm_label": "idempotencykey",
       "id": "scripts_memory_ingest_idempotencykey"
     },
@@ -1133,7 +1142,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L257",
-      "community": 1,
+      "community": 0,
       "norm_label": "packagepath",
       "id": "scripts_memory_ingest_packagepath"
     },
@@ -1142,7 +1151,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L258",
-      "community": 1,
+      "community": 0,
       "norm_label": "candidatepath",
       "id": "scripts_memory_ingest_candidatepath"
     },
@@ -1151,7 +1160,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L259",
-      "community": 1,
+      "community": 0,
       "norm_label": "privatesummarypath",
       "id": "scripts_memory_ingest_privatesummarypath"
     },
@@ -1160,7 +1169,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L269",
-      "community": 1,
+      "community": 0,
       "norm_label": "blockers",
       "id": "scripts_memory_ingest_blockers"
     },
@@ -1169,7 +1178,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L273",
-      "community": 1,
+      "community": 0,
       "norm_label": "risk",
       "id": "scripts_memory_ingest_risk"
     },
@@ -1178,7 +1187,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L274",
-      "community": 1,
+      "community": 0,
       "norm_label": "privatesummary",
       "id": "scripts_memory_ingest_privatesummary"
     },
@@ -1187,7 +1196,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L281",
-      "community": 1,
+      "community": 0,
       "norm_label": "candidate",
       "id": "scripts_memory_ingest_candidate"
     },
@@ -1196,7 +1205,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L291",
-      "community": 1,
+      "community": 0,
       "norm_label": "packagedata",
       "id": "scripts_memory_ingest_packagedata"
     },
@@ -1205,7 +1214,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L1",
-      "community": 1,
+      "community": 0,
       "norm_label": "memory-report.mjs",
       "id": "scripts_memory_report_mjs"
     },
@@ -1214,7 +1223,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L6",
-      "community": 1,
+      "community": 0,
       "norm_label": "root",
       "id": "scripts_memory_report_root"
     },
@@ -1223,7 +1232,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L7",
-      "community": 1,
+      "community": 0,
       "norm_label": "args",
       "id": "scripts_memory_report_args"
     },
@@ -1232,7 +1241,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L8",
-      "community": 1,
+      "community": 0,
       "norm_label": "packageroot",
       "id": "scripts_memory_report_packageroot"
     },
@@ -1241,7 +1250,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L16",
-      "community": 1,
+      "community": 0,
       "norm_label": "packages",
       "id": "scripts_memory_report_packages"
     },
@@ -1385,7 +1394,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L1",
-      "community": 1,
+      "community": 0,
       "norm_label": "memory-utils.mjs",
       "id": "scripts_memory_utils_mjs"
     },
@@ -1394,7 +1403,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L5",
-      "community": 1,
+      "community": 0,
       "norm_label": "parseargs()",
       "id": "scripts_memory_utils_parseargs"
     },
@@ -1403,7 +1412,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L32",
-      "community": 1,
+      "community": 0,
       "norm_label": "arrayarg()",
       "id": "scripts_memory_utils_arrayarg"
     },
@@ -1412,7 +1421,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L37",
-      "community": 1,
+      "community": 0,
       "norm_label": "datestamp()",
       "id": "scripts_memory_utils_datestamp"
     },
@@ -1430,7 +1439,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L45",
-      "community": 1,
+      "community": 0,
       "norm_label": "slugify()",
       "id": "scripts_memory_utils_slugify"
     },
@@ -1439,7 +1448,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L57",
-      "community": 1,
+      "community": 0,
       "norm_label": "hashid()",
       "id": "scripts_memory_utils_hashid"
     },
@@ -1448,7 +1457,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L61",
-      "community": 0,
+      "community": 1,
       "norm_label": "runcapture()",
       "id": "scripts_memory_utils_runcapture"
     },
@@ -1457,7 +1466,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L78",
-      "community": 1,
+      "community": 0,
       "norm_label": "runinherit()",
       "id": "scripts_memory_utils_runinherit"
     },
@@ -1466,7 +1475,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L91",
-      "community": 0,
+      "community": 1,
       "norm_label": "git()",
       "id": "scripts_memory_utils_git"
     },
@@ -1475,7 +1484,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L95",
-      "community": 1,
+      "community": 0,
       "norm_label": "reponame()",
       "id": "scripts_memory_utils_reponame"
     },
@@ -1484,7 +1493,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L99",
-      "community": 1,
+      "community": 0,
       "norm_label": "splitrepoenv()",
       "id": "scripts_memory_utils_splitrepoenv"
     },
@@ -1493,7 +1502,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L107",
-      "community": 1,
+      "community": 0,
       "norm_label": "torelativeportable()",
       "id": "scripts_memory_utils_torelativeportable"
     },
@@ -4078,6 +4087,16 @@
       "confidence_score": 1,
       "source": "scripts_memory_github_watch_mjs",
       "target": "scripts_memory_github_watch_printsummary"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/memory-github-watch.mjs",
+      "source_location": "L500",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_memory_github_watch_mjs",
+      "target": "scripts_memory_github_watch_hasnotablediscordevent"
     },
     {
       "relation": "contains",
@@ -6726,5 +6745,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "924ba0497b44328e3b9f69567d5ea4d7372d6df8"
+  "built_at_commit": "a9ba30f288e1d38e0fcfa6ea10308e1fde53e71d"
 }
