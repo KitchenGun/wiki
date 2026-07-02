@@ -124,7 +124,7 @@ for (const repo of repos) {
     }
 
     const range = computeRange(clonePath, previousSha, headSha, maxWindow);
-    const commitCount = Number(git(clonePath, ['rev-list', '--count', range]));
+    const commitCount = Number(git(clonePath, ['rev-list', '--count', `${range.base}..${headSha}`]));
     const trigger = triggerName(repo.nameWithOwner, branch, range.base, headSha);
     summary.changed.push({
       repo: repo.nameWithOwner,
@@ -172,6 +172,15 @@ for (const repo of repos) {
       output: ingestOutput.split(/\r?\n/u).filter(Boolean).slice(-4),
     });
   } catch (error) {
+    if (/Remote branch .* not found in upstream origin/u.test(error.message)) {
+      summary.skipped.push({
+        repo: repo.nameWithOwner,
+        branch,
+        reason: 'default branch missing on remote',
+      });
+      continue;
+    }
+
     summary.errors.push({
       repo: repo.nameWithOwner,
       branch,
