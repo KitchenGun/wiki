@@ -125,6 +125,7 @@ for (const repo of repos) {
 
     const range = computeRange(clonePath, previousSha, headSha, maxWindow);
     const commitCount = Number(git(clonePath, ['rev-list', '--count', `${range.base}..${headSha}`]));
+    const subjects = commitSubjects(clonePath, range.base, headSha);
     const trigger = triggerName(repo.nameWithOwner, branch, range.base, headSha);
     summary.changed.push({
       repo: repo.nameWithOwner,
@@ -133,6 +134,7 @@ for (const repo of repos) {
       to: shortSha(headSha),
       commits: commitCount,
       forced: range.forced,
+      subjects,
     });
 
     const ingestOutput = runCapture(npmCommand, [
@@ -174,6 +176,7 @@ for (const repo of repos) {
       candidate_id: ingestMetadata.candidateId,
       candidate_path: ingestMetadata.candidatePath,
       risk: ingestMetadata.risk,
+      subjects,
       output: ingestOutput.split(/\r?\n/u).filter(Boolean).slice(-4),
     });
   } catch (error) {
@@ -505,7 +508,7 @@ function hasNotableDiscordEvent(item) {
 }
 
 async function sendDiscord(item) {
-  const content = renderDiscordMessage(item);
+  const content = renderReadableDiscordMessage(item);
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL ?? process.env.HERMES_DISCORD_WEBHOOK_URL;
   const botToken = process.env.DISCORD_BOT_TOKEN;
   const channelId = process.env.HERMES_DISCORD_CHANNEL_ID ?? process.env.DISCORD_CHANNEL_ID ?? '1504020211194662994';
@@ -577,6 +580,78 @@ function renderDiscordMessage(item) {
   }
 
   const message = lines.join('\n');
+  return message.length > 1900 ? `${message.slice(0, 1890)}\n...` : message;
+}
+
+function commitSubjects(repo, base, head) {
+  try {
+    return git(repo, ['log', '--reverse', '--format=%s', `${base}..${head}`])
+      .split(/\r?\n/u)
+      .map((line) => line.trim())
+      .filter(Boolean)
+      .slice(0, 6);
+  } catch {
+    return [];
+  }
+}
+
+function renderReadableDiscordMessage(item) {
+  if (item.errors.length > 0) {
+    const lines = [
+      '[Hermes 확인 필요]',
+      'GitHub 커밋 감시 중 오류가 발생했습니다.',
+      '',
+      `오류: ${item.errors.length}개`,
+    ];
+    for (const entry of item.errors.slice(0, 5)) {
+      lines.push(`- ${entry.repo}: ${String(entry.error).slice(0, 180)}`);
+    }
+    return clipDiscordMessage(lines.join('\n'));
+  }
+
+  if (item.ingested.length > 0) {
+    const lines = [
+      '[Hermes 검토 요청]',
+      '새 커밋을 공개 메모리 후보로 만들었습니다.',
+      '승인 전에는 블로그/wiki 공개 파일에 반영되지 않습니다.',
+    ];
+
+    for (const entry of item.ingested.slice(0, 5)) {
+      const candidateId = entry.candidate_id || entry.package_id || '(unknown)';
+      const riskLabel = entry.risk === 'low' ? '자동 검사 통과' : `확인 필요(${entry.risk || 'unknown'})`;
+      lines.push('');
+      lines.push(`대상: ${entry.repo} (${entry.branch})`);
+      lines.push(`커밋: ${entry.commits}개`);
+      lines.push(`공개 안전성: ${riskLabel}`);
+      if (entry.subjects?.length) {
+        lines.push('내용:');
+        for (const subject of entry.subjects.slice(0, 4)) {
+          lines.push(`- ${subject}`);
+        }
+      }
+      lines.push(`후보 ID: ${candidateId}`);
+      lines.push('');
+      lines.push(`내용 보기: !memory show ${candidateId}`);
+      lines.push(`공개 반영: !memory approve ${candidateId} wiki`);
+      lines.push(`버리기: !memory deny ${candidateId}`);
+    }
+
+    return clipDiscordMessage(lines.join('\n'));
+  }
+
+  if (item.bootstrapped.length > 0) {
+    const lines = [
+      '[Hermes 등록 완료]',
+      `${item.bootstrapped.length}개 repo를 처음 등록했습니다.`,
+      '이번 등록은 기준점을 저장한 것이며, 다음 검사부터 새 커밋만 검토합니다.',
+    ];
+    return clipDiscordMessage(lines.join('\n'));
+  }
+
+  return '';
+}
+
+function clipDiscordMessage(message) {
   return message.length > 1900 ? `${message.slice(0, 1890)}\n...` : message;
 }
 

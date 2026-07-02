@@ -4,12 +4,12 @@
 - cluster-only mode — file stats not available
 
 ## Summary
-- 319 nodes · 374 edges · 35 communities (33 shown, 2 thin omitted)
+- 323 nodes · 381 edges · 35 communities (33 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a9ba30f2`
+- Built from commit: `19be2fab`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -39,10 +39,10 @@
 3. `runCapture()` - 9 edges
 4. `Personal Wiki` - 8 edges
 5. `scanText()` - 7 edges
-6. `slugify()` - 6 edges
-7. `toRelativePortable()` - 6 edges
-8. `골목길: 귀흔` - 6 edges
-9. `git()` - 5 edges
+6. `git()` - 6 edges
+7. `slugify()` - 6 edges
+8. `toRelativePortable()` - 6 edges
+9. `골목길: 귀흔` - 6 edges
 10. `checkPublicContent()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -61,11 +61,11 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
-Nodes (46): loadState(), printSummary(), repoClonePath(), allCommits, args, blockers, candidate, candidatePath (+38 more)
+Nodes (46): gitDirtyFor(), args, askpassPath, clipDiscordMessage(), cloneDepth, cloneFilter, clonePath, cloneProtocol (+38 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.05
-Nodes (42): gitDirtyFor(), args, askpassPath, cloneDepth, cloneFilter, clonePath, cloneProtocol, commitCount (+34 more)
+Nodes (46): loadState(), printSummary(), repoClonePath(), allCommits, args, blockers, candidate, candidatePath (+38 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.09
@@ -124,21 +124,21 @@ Cohesion: 0.4
 Nodes (4): code:yaml (status: evergreen), Layer roles, Operating loop, Public note contract
 
 ## Knowledge Gaps
-- **164 isolated node(s):** `argv`, `root`, `publishRoot`, `strictMemory`, `root` (+159 more)
+- **165 isolated node(s):** `argv`, `root`, `publishRoot`, `strictMemory`, `root` (+160 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `toRelativePortable()` connect `Community 0` to `Community 1`, `Community 5`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `parseArgs()` connect `Community 0` to `Community 1`, `Community 5`?**
+- **Why does `toRelativePortable()` connect `Community 1` to `Community 0`, `Community 5`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `parseArgs()` connect `Community 1` to `Community 0`, `Community 5`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **Why does `slugify()` connect `Community 0` to `Community 1`, `Community 5`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `slugify()` connect `Community 1` to `Community 0`, `Community 5`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **What connects `argv`, `root`, `publishRoot` to the rest of the system?**
-  _164 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _165 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
