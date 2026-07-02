@@ -28,6 +28,7 @@ const processFirstRun = args.processFirstRun === true || args.processFirstRun ==
 const maxWindow = Number(args.maxWindow ?? process.env.HERMES_MAX_COMMIT_WINDOW ?? 50);
 const onlyRepos = new Set(arrayValue(args.only).map((value) => String(value)));
 const cloneProtocol = String(args.cloneProtocol ?? process.env.HERMES_CLONE_PROTOCOL ?? 'auto');
+const cloneFilter = String(args.cloneFilter ?? process.env.HERMES_GIT_CLONE_FILTER ?? 'blob:none');
 const repoRoot = repoRootArg ? path.resolve(String(repoRootArg)) : '';
 const ghAvailable = hasCommand('gh', ['--version']);
 const askpassPath = path.join(stateRoot, 'github-askpass.sh');
@@ -339,7 +340,20 @@ async function ensureClone(repo, clonePath) {
 
   await ensureAskpass();
   const url = cloneProtocol === 'ssh' ? repo.sshUrl : (repo.cloneUrl ?? `${repo.url}.git`);
-  runCapture('git', ['clone', url, clonePath], {
+  const cloneArgs = ['clone', '--no-tags'];
+  const branch = repo.defaultBranchRef?.name;
+
+  if (cloneFilter && cloneFilter !== 'off') {
+    cloneArgs.push(`--filter=${cloneFilter}`);
+  }
+
+  if (branch) {
+    cloneArgs.push('--single-branch', '--branch', branch);
+  }
+
+  cloneArgs.push(url, clonePath);
+
+  runCapture('git', cloneArgs, {
     cwd: root,
     env: gitAuthEnv(),
     maxBuffer: 1024 * 1024 * 16,
