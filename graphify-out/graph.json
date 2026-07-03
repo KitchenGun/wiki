@@ -805,28 +805,37 @@
       "id": "scripts_memory_github_watch_range"
     },
     {
-      "label": "commitCount",
+      "label": "commits",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L129",
       "community": 0,
-      "norm_label": "commitcount",
-      "id": "scripts_memory_github_watch_commitcount"
+      "norm_label": "commits",
+      "id": "scripts_memory_github_watch_commits"
     },
     {
       "label": "subjects",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L130",
+      "source_location": "L134",
       "community": 0,
       "norm_label": "subjects",
       "id": "scripts_memory_github_watch_subjects"
     },
     {
+      "label": "ingestedPackages",
+      "file_type": "code",
+      "source_file": "scripts/memory-github-watch.mjs",
+      "source_location": "L145",
+      "community": 0,
+      "norm_label": "ingestedpackages",
+      "id": "scripts_memory_github_watch_ingestedpackages"
+    },
+    {
       "label": "trigger",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L131",
+      "source_location": "L147",
       "community": 0,
       "norm_label": "trigger",
       "id": "scripts_memory_github_watch_trigger"
@@ -835,7 +844,7 @@
       "label": "ingestOutput",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L142",
+      "source_location": "L148",
       "community": 0,
       "norm_label": "ingestoutput",
       "id": "scripts_memory_github_watch_ingestoutput"
@@ -844,7 +853,7 @@
       "label": "detectOwner()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L219",
+      "source_location": "L230",
       "community": 2,
       "norm_label": "detectowner()",
       "id": "scripts_memory_github_watch_detectowner"
@@ -853,7 +862,7 @@
       "label": "arrayValue()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L227",
+      "source_location": "L238",
       "community": 0,
       "norm_label": "arrayvalue()",
       "id": "scripts_memory_github_watch_arrayvalue"
@@ -862,7 +871,7 @@
       "label": "loadState()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L232",
+      "source_location": "L243",
       "community": 0,
       "norm_label": "loadstate()",
       "id": "scripts_memory_github_watch_loadstate"
@@ -871,7 +880,7 @@
       "label": "loadDefaultEnvFiles()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L246",
+      "source_location": "L257",
       "community": 0,
       "norm_label": "loaddefaultenvfiles()",
       "id": "scripts_memory_github_watch_loaddefaultenvfiles"
@@ -880,7 +889,7 @@
       "label": "saveState()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L270",
+      "source_location": "L281",
       "community": 0,
       "norm_label": "savestate()",
       "id": "scripts_memory_github_watch_savestate"
@@ -889,7 +898,7 @@
       "label": "listRepos()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L276",
+      "source_location": "L287",
       "community": 0,
       "norm_label": "listrepos()",
       "id": "scripts_memory_github_watch_listrepos"
@@ -898,7 +907,7 @@
       "label": "listReposFromApi()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L294",
+      "source_location": "L305",
       "community": 0,
       "norm_label": "listreposfromapi()",
       "id": "scripts_memory_github_watch_listreposfromapi"
@@ -907,7 +916,7 @@
       "label": "filterRepos()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L337",
+      "source_location": "L348",
       "community": 0,
       "norm_label": "filterrepos()",
       "id": "scripts_memory_github_watch_filterrepos"
@@ -916,7 +925,7 @@
       "label": "getRepoState()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L346",
+      "source_location": "L357",
       "community": 0,
       "norm_label": "getrepostate()",
       "id": "scripts_memory_github_watch_getrepostate"
@@ -925,7 +934,7 @@
       "label": "repoClonePath()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L350",
+      "source_location": "L361",
       "community": 2,
       "norm_label": "repoclonepath()",
       "id": "scripts_memory_github_watch_repoclonepath"
@@ -934,7 +943,7 @@
       "label": "ensureClone()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L355",
+      "source_location": "L366",
       "community": 0,
       "norm_label": "ensureclone()",
       "id": "scripts_memory_github_watch_ensureclone"
@@ -943,7 +952,7 @@
       "label": "fetchRepo()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L394",
+      "source_location": "L405",
       "community": 0,
       "norm_label": "fetchrepo()",
       "id": "scripts_memory_github_watch_fetchrepo"
@@ -952,7 +961,7 @@
       "label": "git()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L403",
+      "source_location": "L414",
       "community": 0,
       "norm_label": "git()",
       "id": "scripts_memory_github_watch_git"
@@ -961,7 +970,7 @@
       "label": "ensureAskpass()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L411",
+      "source_location": "L422",
       "community": 0,
       "norm_label": "ensureaskpass()",
       "id": "scripts_memory_github_watch_ensureaskpass"
@@ -970,7 +979,7 @@
       "label": "gitAuthEnv()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L428",
+      "source_location": "L439",
       "community": 0,
       "norm_label": "gitauthenv()",
       "id": "scripts_memory_github_watch_gitauthenv"
@@ -979,7 +988,7 @@
       "label": "githubToken()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L441",
+      "source_location": "L452",
       "community": 0,
       "norm_label": "githubtoken()",
       "id": "scripts_memory_github_watch_githubtoken"
@@ -988,7 +997,7 @@
       "label": "hasCommand()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L445",
+      "source_location": "L456",
       "community": 0,
       "norm_label": "hascommand()",
       "id": "scripts_memory_github_watch_hascommand"
@@ -997,7 +1006,7 @@
       "label": "isAncestor()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L454",
+      "source_location": "L465",
       "community": 0,
       "norm_label": "isancestor()",
       "id": "scripts_memory_github_watch_isancestor"
@@ -1006,7 +1015,7 @@
       "label": "computeRange()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L463",
+      "source_location": "L474",
       "community": 0,
       "norm_label": "computerange()",
       "id": "scripts_memory_github_watch_computerange"
@@ -1015,7 +1024,7 @@
       "label": "triggerName()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L478",
+      "source_location": "L489",
       "community": 0,
       "norm_label": "triggername()",
       "id": "scripts_memory_github_watch_triggername"
@@ -1024,7 +1033,7 @@
       "label": "shortSha()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L482",
+      "source_location": "L493",
       "community": 0,
       "norm_label": "shortsha()",
       "id": "scripts_memory_github_watch_shortsha"
@@ -1033,7 +1042,7 @@
       "label": "parseIngestMetadata()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L486",
+      "source_location": "L497",
       "community": 0,
       "norm_label": "parseingestmetadata()",
       "id": "scripts_memory_github_watch_parseingestmetadata"
@@ -1042,7 +1051,7 @@
       "label": "printSummary()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L516",
+      "source_location": "L527",
       "community": 9,
       "norm_label": "printsummary()",
       "id": "scripts_memory_github_watch_printsummary"
@@ -1051,7 +1060,7 @@
       "label": "hasNotableDiscordEvent()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L524",
+      "source_location": "L535",
       "community": 0,
       "norm_label": "hasnotablediscordevent()",
       "id": "scripts_memory_github_watch_hasnotablediscordevent"
@@ -1060,7 +1069,7 @@
       "label": "sendDiscord()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L531",
+      "source_location": "L542",
       "community": 0,
       "norm_label": "senddiscord()",
       "id": "scripts_memory_github_watch_senddiscord"
@@ -1069,25 +1078,25 @@
       "label": "renderDiscordMessage()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L558",
+      "source_location": "L569",
       "community": 0,
       "norm_label": "renderdiscordmessage()",
       "id": "scripts_memory_github_watch_renderdiscordmessage"
     },
     {
-      "label": "commitSubjects()",
+      "label": "commitsInRange()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L607",
+      "source_location": "L618",
       "community": 0,
-      "norm_label": "commitsubjects()",
-      "id": "scripts_memory_github_watch_commitsubjects"
+      "norm_label": "commitsinrange()",
+      "id": "scripts_memory_github_watch_commitsinrange"
     },
     {
       "label": "renderReadableDiscordMessage()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L619",
+      "source_location": "L633",
       "community": 0,
       "norm_label": "renderreadablediscordmessage()",
       "id": "scripts_memory_github_watch_renderreadablediscordmessage"
@@ -1096,7 +1105,7 @@
       "label": "clipDiscordMessage()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L690",
+      "source_location": "L704",
       "community": 0,
       "norm_label": "clipdiscordmessage()",
       "id": "scripts_memory_github_watch_clipdiscordmessage"
@@ -1105,7 +1114,7 @@
       "label": "postJson()",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L694",
+      "source_location": "L708",
       "community": 0,
       "norm_label": "postjson()",
       "id": "scripts_memory_github_watch_postjson"
@@ -3190,6 +3199,24 @@
       "id": "src_content_publish_wiki_unreal_mcp_md"
     },
     {
+      "label": "commitCount",
+      "file_type": "code",
+      "source_file": "scripts/memory-github-watch.mjs",
+      "source_location": "L129",
+      "community": 0,
+      "norm_label": "commitcount",
+      "id": "scripts_memory_github_watch_commitcount"
+    },
+    {
+      "label": "commitSubjects()",
+      "file_type": "code",
+      "source_file": "scripts/memory-github-watch.mjs",
+      "source_location": "L607",
+      "community": 0,
+      "norm_label": "commitsubjects()",
+      "id": "scripts_memory_github_watch_commitsubjects"
+    },
+    {
       "label": "ingestMetadata",
       "file_type": "code",
       "source_file": "scripts/memory-github-watch.mjs",
@@ -4692,11 +4719,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L116",
+      "source_location": "L129",
       "weight": 1,
       "confidence_score": 1,
       "source": "scripts_memory_github_watch_mjs",
-      "target": "scripts_memory_github_watch_commitcount"
+      "target": "scripts_memory_github_watch_commits"
     },
     {
       "relation": "contains",
@@ -4707,6 +4734,16 @@
       "confidence_score": 1,
       "source": "scripts_memory_github_watch_mjs",
       "target": "scripts_memory_github_watch_subjects"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/memory-github-watch.mjs",
+      "source_location": "L145",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_memory_github_watch_mjs",
+      "target": "scripts_memory_github_watch_ingestedpackages"
     },
     {
       "relation": "contains",
@@ -4992,11 +5029,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L586",
+      "source_location": "L618",
       "weight": 1,
       "confidence_score": 1,
       "source": "scripts_memory_github_watch_mjs",
-      "target": "scripts_memory_github_watch_commitsubjects"
+      "target": "scripts_memory_github_watch_commitsinrange"
     },
     {
       "relation": "contains",
@@ -5027,6 +5064,26 @@
       "confidence_score": 1,
       "source": "scripts_memory_github_watch_mjs",
       "target": "scripts_memory_github_watch_postjson"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/memory-github-watch.mjs",
+      "source_location": "L116",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_memory_github_watch_mjs",
+      "target": "scripts_memory_github_watch_commitcount"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/memory-github-watch.mjs",
+      "source_location": "L586",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_memory_github_watch_mjs",
+      "target": "scripts_memory_github_watch_commitsubjects"
     },
     {
       "relation": "contains",
@@ -5185,10 +5242,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/memory-github-watch.mjs",
-      "source_location": "L588",
+      "source_location": "L620",
       "weight": 1,
       "confidence_score": 1,
-      "source": "scripts_memory_github_watch_commitsubjects",
+      "source": "scripts_memory_github_watch_commitsinrange",
       "target": "scripts_memory_github_watch_git"
     },
     {
@@ -5201,6 +5258,17 @@
       "weight": 1,
       "source": "scripts_memory_github_watch_git",
       "target": "scripts_memory_utils_runcapture"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/memory-github-watch.mjs",
+      "source_location": "L588",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "scripts_memory_github_watch_commitsubjects",
+      "target": "scripts_memory_github_watch_git"
     },
     {
       "relation": "calls",
@@ -8232,5 +8300,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "94296d3580074f78224daa50119d52edab9bfbba"
+  "built_at_commit": "15f500e9d37b9cd55e842d7848240439f0fdaa77"
 }

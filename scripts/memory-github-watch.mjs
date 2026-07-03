@@ -126,9 +126,12 @@ for (const repo of repos) {
     }
 
     const range = computeRange(clonePath, previousSha, headSha, maxWindow);
-    const commitCount = Number(git(clonePath, ['rev-list', '--count', `${range.base}..${headSha}`]));
-    const subjects = commitSubjects(clonePath, range.base, headSha);
-    const trigger = triggerName(repo.nameWithOwner, branch, range.base, headSha);
+    const commits = commitsInRange(clonePath, range.base, headSha);
+    if (commits.length === 0) {
+      throw new Error(`No commits found for ${range.base}..${headSha}`);
+    }
+    const commitCount = commits.length;
+    const subjects = commits.map((commit) => commit.subject).filter(Boolean);
     summary.changed.push({
       repo: repo.nameWithOwner,
       branch,
@@ -139,28 +142,33 @@ for (const repo of repos) {
       subjects,
     });
 
-    const ingestOutput = runCapture(npmCommand, [
-      'run',
-      'memory:ingest',
-      '--',
-      '--repo',
-      clonePath,
-      '--range',
-      `${range.base}..${headSha}`,
-      '--trigger',
-      trigger,
-      '--source-visibility',
-      repo.isPrivate ? 'private' : 'public',
-      '--source-full-name',
-      repo.nameWithOwner,
-      '--source-branch',
-      branch,
-    ], {
-      cwd: root,
-      env: gitAuthEnv(),
-      maxBuffer: 1024 * 1024 * 16,
-    });
-    const ingestMetadata = await parseIngestMetadata(ingestOutput);
+    const ingestedPackages = [];
+    for (const commit of commits) {
+      const trigger = triggerName(repo.nameWithOwner, branch, commit.sha, commit.sha);
+      const ingestOutput = runCapture(npmCommand, [
+        'run',
+        'memory:ingest',
+        '--',
+        '--repo',
+        clonePath,
+        '--range',
+        `${commit.sha}^!`,
+        '--trigger',
+        trigger,
+        '--source-visibility',
+        repo.isPrivate ? 'private' : 'public',
+        '--source-full-name',
+        repo.nameWithOwner,
+        '--source-branch',
+        branch,
+      ], {
+        cwd: root,
+        env: gitAuthEnv(),
+        maxBuffer: 1024 * 1024 * 16,
+      });
+      const ingestMetadata = await parseIngestMetadata(ingestOutput);
+      ingestedPackages.push({ commit, ingestMetadata, ingestOutput });
+    }
 
     state.repos[repo.nameWithOwner].refs[branch].last_processed_sha = headSha;
     state.repos[repo.nameWithOwner].refs[branch].last_processed_at = isoStamp();
@@ -170,22 +178,25 @@ for (const repo of repos) {
       base_sha: range.base,
       head_sha: headSha,
       commit_count: commitCount,
-      trigger,
+      package_count: ingestedPackages.length,
       ingested_at: isoStamp(),
     };
-    summary.ingested.push({
-      repo: repo.nameWithOwner,
-      branch,
-      commits: commitCount,
-      visibility: repo.isPrivate ? 'private' : 'public',
-      package_id: ingestMetadata.packageId,
-      candidate_id: ingestMetadata.candidateId,
-      candidate_path: ingestMetadata.candidatePath,
-      risk: ingestMetadata.risk,
-      recommendation: ingestMetadata.recommendation,
-      subjects,
-      output: ingestOutput.split(/\r?\n/u).filter(Boolean).slice(-4),
-    });
+    for (const { commit, ingestMetadata, ingestOutput } of ingestedPackages) {
+      summary.ingested.push({
+        repo: repo.nameWithOwner,
+        branch,
+        commits: 1,
+        sha: commit.sha,
+        visibility: repo.isPrivate ? 'private' : 'public',
+        package_id: ingestMetadata.packageId,
+        candidate_id: ingestMetadata.candidateId,
+        candidate_path: ingestMetadata.candidatePath,
+        risk: ingestMetadata.risk,
+        recommendation: ingestMetadata.recommendation,
+        subjects: [commit.subject].filter(Boolean),
+        output: ingestOutput.split(/\r?\n/u).filter(Boolean).slice(-4),
+      });
+    }
   } catch (error) {
     if (/Remote branch .* not found in upstream origin/u.test(error.message)) {
       summary.skipped.push({
@@ -604,13 +615,16 @@ function renderDiscordMessage(item) {
   return message.length > 1900 ? `${message.slice(0, 1890)}\n...` : message;
 }
 
-function commitSubjects(repo, base, head) {
+function commitsInRange(repo, base, head) {
   try {
-    return git(repo, ['log', '--reverse', '--format=%s', `${base}..${head}`])
+    return git(repo, ['log', '--reverse', '--format=%H%x09%s', `${base}..${head}`])
       .split(/\r?\n/u)
       .map((line) => line.trim())
       .filter(Boolean)
-      .slice(0, 6);
+      .map((line) => {
+        const [sha, ...subjectParts] = line.split('\t');
+        return { sha, subject: subjectParts.join('\t') };
+      });
   } catch {
     return [];
   }

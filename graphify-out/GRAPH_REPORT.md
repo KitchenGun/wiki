@@ -4,12 +4,12 @@
 - cluster-only mode — file stats not available
 
 ## Summary
-- 385 nodes · 461 edges · 38 communities (36 shown, 2 thin omitted)
+- 388 nodes · 465 edges · 38 communities (36 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `94296d35`
+- Built from commit: `15f500e9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,8 +42,8 @@
 3. `runCapture()` - 9 edges
 4. `toRelativePortable()` - 8 edges
 5. `Personal Wiki` - 8 edges
-6. `scanText()` - 7 edges
-7. `git()` - 6 edges
+6. `git()` - 7 edges
+7. `scanText()` - 7 edges
 8. `parseArgs()` - 6 edges
 9. `slugify()` - 6 edges
 10. `골목길: 귀흔` - 6 edges
@@ -64,7 +64,7 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
-Nodes (46): args, askpassPath, clipDiscordMessage(), cloneDepth, cloneFilter, clonePath, cloneProtocol, commitCount (+38 more)
+Nodes (49): args, askpassPath, clipDiscordMessage(), cloneDepth, cloneFilter, clonePath, cloneProtocol, commitCount (+41 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.04
@@ -139,7 +139,7 @@ Cohesion: 0.4
 Nodes (4): code:yaml (status: evergreen), Layer roles, Operating loop, Public note contract
 
 ## Knowledge Gaps
-- **209 isolated node(s):** `argv`, `root`, `publishRoot`, `strictMemory`, `root` (+204 more)
+- **211 isolated node(s):** `argv`, `root`, `publishRoot`, `strictMemory`, `root` (+206 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -147,13 +147,13 @@ Nodes (4): code:yaml (status: evergreen), Layer roles, Operating loop, Public no
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `toRelativePortable()` connect `Community 9` to `Community 0`, `Community 1`, `Community 2`, `Community 7`?**
-  _High betweenness centrality (0.041) - this node is a cross-community bridge._
+  _High betweenness centrality (0.042) - this node is a cross-community bridge._
 - **Why does `parseArgs()` connect `Community 2` to `Community 0`, `Community 1`, `Community 9`, `Community 7`?**
   _High betweenness centrality (0.037) - this node is a cross-community bridge._
 - **Why does `recommendMemoryAction()` connect `Community 0` to `Community 1`, `Community 14`, `Community 6`?**
   _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **What connects `argv`, `root`, `publishRoot` to the rest of the system?**
-  _209 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _211 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
