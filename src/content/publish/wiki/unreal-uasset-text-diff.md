@@ -40,7 +40,7 @@ DualFire에 `Content/Python/uasset_diff.py`를 추가했다.
 
 이번 작업의 가치는 수치로도 확인할 수 있다.
 
-![AI가 게임 파일 변경을 읽는 방식 개선 비교 카드](/sns/2026/unreal-mcp-uasset-comparison.png)
+![AI가 게임 파일 변경을 읽는 방식 개선 비교 카드](./assets/unreal-mcp-uasset-comparison.png)
 
 | 항목 | 기존 방식 | 개선 후 |
 | --- | --- | --- |
