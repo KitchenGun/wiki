@@ -4,12 +4,12 @@
 - cluster-only mode — file stats not available
 
 ## Summary
-- 388 nodes · 465 edges · 38 communities (36 shown, 2 thin omitted)
+- 393 nodes · 469 edges · 38 communities (36 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `15f500e9`
+- Built from commit: `37107006`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -64,15 +64,15 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
-Nodes (49): args, askpassPath, clipDiscordMessage(), cloneDepth, cloneFilter, clonePath, cloneProtocol, commitCount (+41 more)
+Nodes (51): gitDirtyFor(), args, askpassPath, clipDiscordMessage(), cloneDepth, cloneFilter, clonePath, cloneProtocol (+43 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.04
-Nodes (39): allCommits, args, blockers, candidate, candidatePath, candidateRoot, changedFiles, commitRange (+31 more)
+Cohesion: 0.05
+Nodes (35): args, blockers, candidatePath, parsed, publicData, publicNote, root, scriptDir (+27 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.07
-Nodes (27): args, blockers, candidatePath, gitDirtyFor(), parsed, publicData, publicNote, root (+19 more)
+Cohesion: 0.04
+Nodes (39): allCommits, args, blockers, candidate, candidatePath, candidateRoot, changedFiles, commitRange (+31 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.09
@@ -83,80 +83,80 @@ Cohesion: 0.1
 Nodes (25): argv, blockedPatterns, failures, parsed, publishRoot, relative, requiredMemoryFields, root (+17 more)
 
 ### Community 5 - "Community 5"
+Cohesion: 0.09
+Nodes (20): approvedPath, approver, args, body, candidateData, candidateId, candidatePath, data (+12 more)
+
+### Community 6 - "Community 6"
 Cohesion: 0.12
 Nodes (15): splitWikiText(), extractWikiLinks(), slugifyAnchor(), slugifyWikiTarget(), wikiHref(), contentRoot, edges, entries (+7 more)
 
-### Community 6 - "Community 6"
-Cohesion: 0.1
-Nodes (18): approvalCandidate, approvalCandidateId, approvedPath, approvedRelative, deniedDecisionPath, fixtureRepo, highRiskPackage, internalOpsRecommendation (+10 more)
-
 ### Community 7 - "Community 7"
 Cohesion: 0.1
-Nodes (18): approvedPath, approver, args, body, candidateData, candidateId, candidatePath, data (+10 more)
+Nodes (18): approvalCandidate, approvalCandidateId, approvedPath, approvedRelative, deniedDecisionPath, fixtureRepo, highRiskPackage, internalOpsRecommendation (+10 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.12
 Nodes (16): 사용, 콘텐츠, 배포, 배포, code:bash (npm install), code:bash (PUBLIC_SITE_URL=https://USER.github.io), code:text (src/content/publish/blog), code:yaml (title: Note title) (+8 more)
 
 ### Community 9 - "Community 9"
-Cohesion: 0.13
-Nodes (12): printSummary(), approvedMarkers, args, candidatePath(), deniedMarkers, enriched, groups, packageRoot (+4 more)
-
-### Community 10 - "Community 10"
 Cohesion: 0.15
 Nodes (11): additions, defaults, formatCapturedAt(), formatDate(), match, nextFrontmatter, nextRaw, parsed (+3 more)
 
-### Community 11 - "Community 11"
+### Community 10 - "Community 10"
 Cohesion: 0.24
 Nodes (5): backlinkEntries(), entryHref(), entrySlug(), hasWikiLink(), normalizeTarget()
 
-### Community 12 - "Community 12"
+### Community 11 - "Community 11"
 Cohesion: 0.25
 Nodes (7): existingIds, graph, index, next, semanticIds, semantics, validIds
 
-### Community 13 - "Community 13"
+### Community 12 - "Community 12"
 Cohesion: 0.25
 Nodes (7): 적용 목표, 설정, 실제 해결 작업, 의미, 공개 기준, Claude에서 확인한 공식 Toolset, code:text (BeginPlay())
 
-### Community 14 - "Community 14"
+### Community 13 - "Community 13"
 Cohesion: 0.29
 Nodes (6): recommendationMoc(), renderCompiledNote(), recommendationReasonCodes, summarizeChangedFiles(), summarizeCommitSubjects(), summarizeDiffStats()
 
-### Community 15 - "Community 15"
+### Community 14 - "Community 14"
 Cohesion: 0.29
 Nodes (6): 목표, 사용자 흐름, 구현 구조, 개인화 기준, 안전장치, 포트폴리오 기준 의미
 
-### Community 16 - "Community 16"
+### Community 15 - "Community 15"
 Cohesion: 0.33
 Nodes (5): blog, collections, pages, publicNoteSchema, wiki
 
-### Community 17 - "Community 17"
+### Community 16 - "Community 16"
 Cohesion: 0.33
 Nodes (5): 사용자 흐름, 구현 구조, 데이터 기반 루틴 생성, 안전장치, 포트폴리오 기준 의미
 
-### Community 18 - "Community 18"
+### Community 17 - "Community 17"
 Cohesion: 0.4
 Nodes (4): code:yaml (status: evergreen), Layer roles, Operating loop, Public note contract
 
+### Community 18 - "Community 18"
+Cohesion: 0.4
+Nodes (4): Approach, Limits, Reuse Notes, Why It Matters
+
 ## Knowledge Gaps
-- **211 isolated node(s):** `argv`, `root`, `publishRoot`, `strictMemory`, `root` (+206 more)
+- **215 isolated node(s):** `argv`, `root`, `publishRoot`, `strictMemory`, `root` (+210 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `toRelativePortable()` connect `Community 9` to `Community 0`, `Community 1`, `Community 2`, `Community 7`?**
-  _High betweenness centrality (0.042) - this node is a cross-community bridge._
-- **Why does `parseArgs()` connect `Community 2` to `Community 0`, `Community 1`, `Community 9`, `Community 7`?**
-  _High betweenness centrality (0.037) - this node is a cross-community bridge._
-- **Why does `recommendMemoryAction()` connect `Community 0` to `Community 1`, `Community 14`, `Community 6`?**
+- **Why does `toRelativePortable()` connect `Community 1` to `Community 0`, `Community 2`, `Community 5`?**
+  _High betweenness centrality (0.041) - this node is a cross-community bridge._
+- **Why does `parseArgs()` connect `Community 1` to `Community 0`, `Community 2`, `Community 5`?**
   _High betweenness centrality (0.036) - this node is a cross-community bridge._
+- **Why does `recommendMemoryAction()` connect `Community 0` to `Community 2`, `Community 13`, `Community 7`?**
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
 - **What connects `argv`, `root`, `publishRoot` to the rest of the system?**
-  _211 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _215 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.04 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.07 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.04 - nodes in this community are weakly interconnected._
