@@ -51,6 +51,7 @@ if (!ghAvailable && !githubToken()) {
 }
 
 await fs.mkdir(stateRoot, { recursive: true });
+await ensureAskpass();
 if (repoRoot) {
   await fs.mkdir(repoRoot, { recursive: true });
 }
@@ -154,7 +155,11 @@ for (const repo of repos) {
       repo.nameWithOwner,
       '--source-branch',
       branch,
-    ], { cwd: root, maxBuffer: 1024 * 1024 * 16 });
+    ], {
+      cwd: root,
+      env: gitAuthEnv(),
+      maxBuffer: 1024 * 1024 * 16,
+    });
     const ingestMetadata = await parseIngestMetadata(ingestOutput);
 
     state.repos[repo.nameWithOwner].refs[branch].last_processed_sha = headSha;
