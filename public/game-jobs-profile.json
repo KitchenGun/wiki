@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-07-11",
+  "experience_years": 3.33,
+  "experience_display": "약 3년 4개월",
+  "roles": ["Client", "Gameplay", "AI", "Tools"],
+  "engines": ["Unreal", "Unity", "Verse"],
+  "languages": ["C++", "C#", "Python"],
+  "keywords": ["unreal", "gameplay", "ai", "ui", "localization", "metasound", "sequencer", "steamworks", "directx"],
+  "summary": "Unreal Engine client programmer focused on gameplay systems, UI, AI, localization, release operations, and AI-assisted tooling."
+}
