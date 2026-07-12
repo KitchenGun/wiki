@@ -71,6 +71,24 @@ export function toPosix(value) {
   return value.replace(/\\/g, '/');
 }
 
+function extractPrintableAssetText(binary) {
+  const chunks = [];
+  let current = '';
+
+  for (const byte of binary) {
+    if (byte >= 0x20 && byte <= 0x7e) {
+      current += String.fromCharCode(byte);
+      continue;
+    }
+
+    if (current.length >= 8) chunks.push(current);
+    current = '';
+  }
+
+  if (current.length >= 8) chunks.push(current);
+  return chunks.join('\n');
+}
+
 function extractAssetLinks(content) {
   const links = [];
   const markdownImage = /!\[[^\]]*\]\(([^)\s]+)(?:\s+["'][^"']*["'])?\)/gu;
@@ -177,7 +195,8 @@ export async function inspectLinkedAssets({ content, file, root, assetOcr = 'aut
     }
 
     const binary = await fs.readFile(resolved);
-    const binaryText = binary.toString('utf8');
+    // Scan embedded metadata strings without treating compressed pixel bytes as UTF-8 text.
+    const binaryText = extractPrintableAssetText(binary);
     for (const failureText of scanText(binaryText)) {
       failures.push(`${clean}: ${failureText}`);
     }

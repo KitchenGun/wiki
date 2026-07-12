@@ -1795,10 +1795,19 @@
       "norm_label": "toposix()"
     },
     {
-      "label": "extractAssetLinks()",
+      "label": "extractPrintableAssetText()",
       "file_type": "code",
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L74",
+      "id": "scripts_memory_safety_extractprintableassettext",
+      "community": 4,
+      "norm_label": "extractprintableassettext()"
+    },
+    {
+      "label": "extractAssetLinks()",
+      "file_type": "code",
+      "source_file": "scripts/memory-safety.mjs",
+      "source_location": "L92",
       "id": "scripts_memory_safety_extractassetlinks",
       "community": 4,
       "norm_label": "extractassetlinks()"
@@ -1807,7 +1816,7 @@
       "label": "shouldSkipAsset()",
       "file_type": "code",
       "source_file": "scripts/memory-safety.mjs",
-      "source_location": "L90",
+      "source_location": "L108",
       "id": "scripts_memory_safety_shouldskipasset",
       "community": 4,
       "norm_label": "shouldskipasset()"
@@ -1816,7 +1825,7 @@
       "label": "resolveAssetPath()",
       "file_type": "code",
       "source_file": "scripts/memory-safety.mjs",
-      "source_location": "L98",
+      "source_location": "L116",
       "id": "scripts_memory_safety_resolveassetpath",
       "community": 4,
       "norm_label": "resolveassetpath()"
@@ -1825,7 +1834,7 @@
       "label": "hasExifMarker()",
       "file_type": "code",
       "source_file": "scripts/memory-safety.mjs",
-      "source_location": "L112",
+      "source_location": "L130",
       "id": "scripts_memory_safety_hasexifmarker",
       "community": 4,
       "norm_label": "hasexifmarker()"
@@ -1834,7 +1843,7 @@
       "label": "canRunTesseract()",
       "file_type": "code",
       "source_file": "scripts/memory-safety.mjs",
-      "source_location": "L120",
+      "source_location": "L138",
       "id": "scripts_memory_safety_canruntesseract",
       "community": 4,
       "norm_label": "canruntesseract()"
@@ -1843,7 +1852,7 @@
       "label": "runOcr()",
       "file_type": "code",
       "source_file": "scripts/memory-safety.mjs",
-      "source_location": "L130",
+      "source_location": "L148",
       "id": "scripts_memory_safety_runocr",
       "community": 4,
       "norm_label": "runocr()"
@@ -1852,7 +1861,7 @@
       "label": "inspectLinkedAssets()",
       "file_type": "code",
       "source_file": "scripts/memory-safety.mjs",
-      "source_location": "L143",
+      "source_location": "L161",
       "id": "scripts_memory_safety_inspectlinkedassets",
       "community": 4,
       "norm_label": "inspectlinkedassets()"
@@ -1861,7 +1870,7 @@
       "label": "checkPublicContent()",
       "file_type": "code",
       "source_file": "scripts/memory-safety.mjs",
-      "source_location": "L206",
+      "source_location": "L225",
       "id": "scripts_memory_safety_checkpubliccontent",
       "community": 4,
       "norm_label": "checkpubliccontent()"
@@ -6600,6 +6609,16 @@
       "confidence": "EXTRACTED",
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_memory_safety_mjs",
+      "target": "scripts_memory_safety_extractprintableassettext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/memory-safety.mjs",
+      "source_location": "L74",
       "weight": 1,
       "confidence_score": 1,
       "source": "scripts_memory_safety_mjs",
@@ -6718,6 +6737,17 @@
       "confidence_score": 1,
       "source": "scripts_memory_safety_checkpubliccontent",
       "target": "scripts_memory_safety_toposix"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/memory-safety.mjs",
+      "source_location": "L199",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_memory_safety_inspectlinkedassets",
+      "target": "scripts_memory_safety_extractprintableassettext"
     },
     {
       "relation": "calls",
@@ -8584,5 +8614,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "23a06aca1f9e8dd66e11203b60ce39e286b45bb2"
+  "built_at_commit": "f5306acc76281836d6877fd5676496f7dc9f77f9"
 }

@@ -1,16 +1,16 @@
 # Graph Report - Wiki  (2026-07-12)
 
 ## Corpus Check
-- 47 files · ~89,833 words
+- 47 files · ~107,252 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 404 nodes · 479 edges · 40 communities (38 shown, 2 thin omitted)
+- 405 nodes · 481 edges · 40 communities (38 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `23a06aca`
+- Built from commit: `f5306acc`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -41,7 +41,7 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `강건 (Keon Kang)` - 15 edges
-2. `inspectLinkedAssets()` - 10 edges
+2. `inspectLinkedAssets()` - 11 edges
 3. `runCapture()` - 9 edges
 4. `toRelativePortable()` - 8 edges
 5. `Personal Wiki` - 8 edges
@@ -83,7 +83,7 @@ Nodes (27): 2024 하반기 이달의 우수게임, 2025 스토브인디 어워�
 
 ### Community 4 - "Community 4"
 Cohesion: 0.1
-Nodes (25): argv, blockedPatterns, failures, parsed, publishRoot, relative, requiredMemoryFields, root (+17 more)
+Nodes (26): argv, blockedPatterns, failures, parsed, publishRoot, relative, requiredMemoryFields, root (+18 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.12
