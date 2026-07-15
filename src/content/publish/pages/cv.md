@@ -21,7 +21,7 @@ next_actions: []
 
 ## Public Profile
 
-Unreal Engine client programmer focused on gameplay systems, UI, AI, localization, release operations, and AI-assisted tooling.
+플레이어가 직접 만지는 게임 시스템을 구현하고, 현지화·Steamworks·빌드 운영까지 출시 조건으로 연결해 온 Unreal Engine 클라이언트 프로그래머입니다. 각 경력은 담당 범위와 검증 가능한 결과를 기준으로 정리했습니다.
 
 Public contact and project links are managed through the GitHub profile: [KitchenGun](https://github.com/KitchenGun).
 

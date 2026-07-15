@@ -17,7 +17,7 @@ related: [obsidian-publication-workflow, personal-hermes-agent]
 slug: llm-wiki-memory-architecture
 ---
 
-This wiki is the public compiled layer of a longer memory system.
+I operate this wiki as the public compiled layer of a longer memory system. I keep raw notes, private project records, and public technical conclusions separate so that published writing remains useful without exposing private context.
 
 The private layer is an Obsidian vault outside this repository. It can contain inbox notes, raw logs, project records, source links, decisions, and next actions. The public layer is `src/content/publish`, which contains only sanitized notes that can be built into this Astro site.
 
@@ -56,4 +56,4 @@ Raw logs, private file paths, personal contact details, company secrets, unrelea
 6. Run `npm run graph` for the public wikilink graph.
 7. Run `npm run graphify:update` after code or content changes when the agent graph needs to stay current.
 
-This keeps [[obsidian-publication-workflow]] as the publishing gate and keeps [[personal-hermes-agent]] from treating the public site as a raw memory dump.
+This makes [[obsidian-publication-workflow]] the publishing gate and prevents [[personal-hermes-agent]] from treating the public site as a raw memory dump. The same boundary lets this Wiki document implementation decisions with enough context to review them later.

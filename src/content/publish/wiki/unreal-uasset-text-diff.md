@@ -17,11 +17,11 @@ decision_summary: Unreal asset changes were hard for Codex/Hermes to verify from
 next_actions: []
 ---
 
-이 작업은 쉽게 말해 **AI가 Unreal 게임 제작 파일의 변경 내용을 글로 읽을 수 있게 만드는 도구**다.
+이 작업은 제가 AI 도구와 Unreal 프로젝트를 함께 검토할 때, `.uasset` 변경 근거가 화면 캡처에만 남는 문제를 해결하기 위해 만든 도구다. 핵심은 **AI가 Unreal 게임 제작 파일의 변경 내용을 텍스트로 읽을 수 있게 만드는 것**이다.
 
 게임을 만들 때 캐릭터, 카메라, Blueprint 같은 설정은 Unreal 전용 `.uasset` 파일에 저장된다. 문제는 이 파일이 GitHub에서 일반 문서처럼 보이지 않는다는 점이다. 파일이 바뀐 것은 알 수 있지만, 실제로 어떤 설정이 바뀌었는지는 바로 읽기 어렵다.
 
-그래서 Codex/Hermes가 Unreal 프로젝트를 도와도, 에셋 변경을 확인하려면 사람이 에디터 화면을 열거나 스크린샷을 보고 판단해야 했다. 이번 작업은 그 확인 과정을 텍스트 기록으로 바꿔 **Unreal MCP 탐색 효율**을 높이는 데 초점을 둔다.
+그래서 Codex/Hermes가 Unreal 프로젝트를 도와도, 에셋 변경을 확인하려면 사람이 에디터 화면을 열거나 스크린샷을 보고 판단해야 했다. 저는 그 확인 과정을 텍스트 기록으로 바꿔, 사람이 검토하는 근거와 AI가 읽는 입력을 같은 형태로 남기려 했다.
 
 ## What Changed
 
@@ -38,7 +38,7 @@ DualFire에 `Content/Python/uasset_diff.py`를 추가했다.
 
 ## Measured Improvement
 
-이번 작업의 가치는 수치로도 확인할 수 있다.
+측정은 BP_Test 조사 흐름을 기준으로 했다.
 
 ![AI가 게임 파일 변경을 읽는 방식 개선 비교 카드](./assets/unreal-mcp-uasset-comparison.png)
 

@@ -14,7 +14,7 @@ decision_summary: "How to write private-first Obsidian notes and publish only sa
 next_actions: []
 ---
 
-Use Obsidian as the private source of thought, then publish only deliberate public notes.
+I use Obsidian as the private source of thought, then publish only deliberate public notes. This workflow lets me retain the problem, implementation decision, and verification record while keeping company and personal context out of the public portfolio.
 
 This repository is the public compiled layer, not the private vault. The full memory architecture is described in [[llm-wiki-memory-architecture]].
 

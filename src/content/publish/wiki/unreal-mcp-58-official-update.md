@@ -17,7 +17,7 @@ decision_summary: "Unreal Engine 5.8 공식 Model Context Protocol 지원을 Dua
 next_actions: []
 ---
 
-Unreal MCP 5.8 Official Update는 기존 커스텀 UnrealMCP 플러그인 중심 흐름을 정리하고, Unreal Engine 5.8의 공식 Model Context Protocol 플러그인과 EditorToolset을 DualFire 개발 루틴에 적용한 기록이다.
+기존 커스텀 UnrealMCP 플러그인 중심 흐름을 정리하고, Unreal Engine 5.8의 공식 Model Context Protocol 플러그인과 EditorToolset을 DualFire 개발 루틴에 적용한 기록이다. 저는 단순 연결 데모가 아니라 실제 게임 초기화 구조를 수정하고 테스트하는 데까지 적용 범위를 잡았다.
 
 이번 적용의 기준은 Epic의 Unreal Engine 5.8 업데이트와 Unreal MCP 공식 문서다.
 
@@ -82,7 +82,7 @@ BeginPlay()
 
 ## 의미
 
-이번 업데이트는 "AI가 Unreal Editor를 열 수 있다" 수준의 연결 검증이 아니다. UE 5.8 공식 MCP를 사용해 프로젝트 설정, Blueprint 생성, ini 등록, C++ 구조 정리, DataTable 기반 초기화 흐름까지 실제 게임 개발 작업에 연결했다.
+이번 업데이트는 "AI가 Unreal Editor를 열 수 있다" 수준의 연결 검증이 아니다. UE 5.8 공식 MCP를 사용해 프로젝트 설정, Blueprint 생성, ini 등록, C++ 구조 정리, DataTable 기반 초기화 흐름까지 실제 게임 개발 작업에 적용하고 결과를 확인했다.
 
 개인 [[unreal-mcp]] 흐름에서는 앞으로 커스텀 플러그인을 직접 유지하기보다, UE 공식 MCP endpoint와 필요한 프로젝트 전용 Python 초기화만 얇게 조합하는 방향이 더 유지보수하기 좋다.
 
