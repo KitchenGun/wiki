@@ -10,7 +10,7 @@ Rules:
 
 ## Public Writing Persona
 
-For every new or revised public page under `src/content/publish`, use the persona defined in `src/content/publish/wiki/engineering-persona.md`.
+For every new or revised public page under `src/content/publish`, use this writing persona.
 
 - Core identity: an Unreal Engine client programmer who implements player-facing systems and connects them to release and operations requirements.
 - Write from first-person, concrete experience. Structure substantial notes as `problem -> design or implementation choice -> verification -> boundary`.
