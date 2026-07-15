@@ -35,4 +35,14 @@ next_actions: []
 
 옵션은 기능 구현보다 저장, 적용 시점, 재시작 필요 여부, 플랫폼별 지원 범위를 명확히 나누는 것이 중요하다.
 
+포트폴리오에 기록된 성능 개선:
+
+- RTX 2080 Ti와 4K 환경 테스트에서 DLSS/FSR 적용 후 평균 45fps를 75fps까지 높여 약 66%의 성능 향상을 달성했습니다.
+- String Table과 언어별 Font Family 및 Material/Texture 로딩으로 다국어 출시 환경을 구성했습니다.
+
+![FSR 옵션 설정 화면](./assets/portfolio/portfolio-fsr-options.jpg)
+![DLSS 옵션 설정 화면](./assets/portfolio/portfolio-dlss-options.jpg)
+![현지화 적용 전 화면](./assets/portfolio/portfolio-localization-before.jpg)
+![현지화 적용 후 화면](./assets/portfolio/portfolio-localization-after.jpg)
+
 관련 노트: [[unreal-client-programming]], [[common-ui-workflow]], [[audio-visual-sequencer]]

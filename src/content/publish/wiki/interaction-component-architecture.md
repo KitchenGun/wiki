@@ -27,4 +27,9 @@ next_actions: []
 
 목표는 기믹을 빠르게 늘리는 것이 아니라, 기획 변경에도 안정적으로 조립 가능한 구조를 만드는 것이다.
 
+포트폴리오에서는 다이얼, 레버, 자물쇠, 키패드처럼 반복되는 퍼즐 기믹을 동일한 컴포넌트와 인터페이스 구조로 구현해 신규 기믹 제작 시간을 줄인 사례를 확인할 수 있습니다.
+
+![다이얼 컴포넌트](./assets/portfolio/portfolio-dial-component.jpg)
+![키패드 컴포넌트](./assets/portfolio/portfolio-keypad-component.jpg)
+
 관련 노트: [[unreal-client-programming]], [[inventory-system]]

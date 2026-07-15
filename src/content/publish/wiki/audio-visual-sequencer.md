@@ -35,4 +35,10 @@ next_actions: []
 
 시퀀스는 컷신이 아니라 게임 상태를 바꾸는 연출 시스템으로 다뤄야 한다.
 
+포트폴리오에서는 Occlusion을 활용한 폐쇄 공간 사운드와 Sequencer 기반 연출을 함께 확인할 수 있습니다. MetaSound와 Attenuation을 적용한 사운드 구현은 유저와 리뷰어의 긍정적인 평가로 이어졌고, 사운드 수정 시간도 줄였습니다.
+
+![Occlusion을 적용한 폐쇄 공간 사운드 장면](./assets/portfolio/portfolio-audio-occlusion.jpg)
+![Sequencer 기반 연출 장면](./assets/portfolio/portfolio-sequencer-scene.jpg)
+![연출 중 상호작용을 구현한 장면](./assets/portfolio/portfolio-sequencer-interaction.jpg)
+
 관련 노트: [[game-options-localization]], [[interaction-component-architecture]], [[unreal-client-programming]]

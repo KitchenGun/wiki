@@ -29,4 +29,8 @@ Steamworks 작업은 게임 기능과 출시 운영 사이에 있다.
 
 Steam 연동은 코드 구현만으로 끝나지 않는다. 빌드 파이프라인, 업적 ID, Depot 구성, 테스트 계정, 배포 상태까지 함께 관리해야 한다.
 
+Forbidden Art에서는 Steamworks SDK를 프로젝트에 통합하고 도전과제 API와 Depot 빌드·업로드를 관리해 2024.03.25 Steam 출시까지 연결했습니다.
+
+![Steam 도전과제 화면](./assets/portfolio/portfolio-steam-achievements.jpg)
+
 관련 노트: [[unreal-client-programming]]

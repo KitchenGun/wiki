@@ -9,7 +9,7 @@
       "source_file": "astro.config.mjs",
       "source_location": "L1",
       "id": "astro_config_mjs",
-      "community": 5,
+      "community": 6,
       "norm_label": "astro.config.mjs"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L1",
       "id": "scripts_check_public_content_mjs",
-      "community": 4,
+      "community": 5,
       "norm_label": "check-public-content.mjs"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L4",
       "id": "scripts_check_public_content_flagvalue",
-      "community": 4,
+      "community": 5,
       "norm_label": "flagvalue()"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L10",
       "id": "scripts_check_public_content_argv",
-      "community": 4,
+      "community": 5,
       "norm_label": "argv"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L11",
       "id": "scripts_check_public_content_root",
-      "community": 4,
+      "community": 5,
       "norm_label": "root"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L12",
       "id": "scripts_check_public_content_publishroot",
-      "community": 4,
+      "community": 5,
       "norm_label": "publishroot"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L13",
       "id": "scripts_check_public_content_strictmemory",
-      "community": 4,
+      "community": 5,
       "norm_label": "strictmemory"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L1",
       "id": "scripts_generate_graph_data_mjs",
-      "community": 5,
+      "community": 6,
       "norm_label": "generate-graph-data.mjs"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L7",
       "id": "scripts_generate_graph_data_root",
-      "community": 5,
+      "community": 6,
       "norm_label": "root"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L8",
       "id": "scripts_generate_graph_data_contentroot",
-      "community": 5,
+      "community": 6,
       "norm_label": "contentroot"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L9",
       "id": "scripts_generate_graph_data_outputpath",
-      "community": 5,
+      "community": 6,
       "norm_label": "outputpath"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L16",
       "id": "scripts_generate_graph_data_entries",
-      "community": 5,
+      "community": 6,
       "norm_label": "entries"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L18",
       "id": "scripts_generate_graph_data_serializedate",
-      "community": 5,
+      "community": 6,
       "norm_label": "serializedate()"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L26",
       "id": "scripts_generate_graph_data_parsed",
-      "community": 5,
+      "community": 6,
       "norm_label": "parsed"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L32",
       "id": "scripts_generate_graph_data_relative",
-      "community": 5,
+      "community": 6,
       "norm_label": "relative"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L34",
       "id": "scripts_generate_graph_data_id",
-      "community": 5,
+      "community": 6,
       "norm_label": "id"
     },
     {
@@ -153,7 +153,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L61",
       "id": "scripts_generate_graph_data_nodes",
-      "community": 5,
+      "community": 6,
       "norm_label": "nodes"
     },
     {
@@ -162,7 +162,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L62",
       "id": "scripts_generate_graph_data_knownwikiids",
-      "community": 5,
+      "community": 6,
       "norm_label": "knownwikiids"
     },
     {
@@ -171,7 +171,7 @@
       "source_file": "scripts/generate-graph-data.mjs",
       "source_location": "L63",
       "id": "scripts_generate_graph_data_edges",
-      "community": 5,
+      "community": 6,
       "norm_label": "edges"
     },
     {
@@ -180,7 +180,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L1",
       "id": "scripts_graphify_codex_semantics_mjs",
-      "community": 13,
+      "community": 12,
       "norm_label": "graphify-codex-semantics.mjs"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L6",
       "id": "scripts_graphify_codex_semantics_graph",
-      "community": 13,
+      "community": 12,
       "norm_label": "graph"
     },
     {
@@ -198,7 +198,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L7",
       "id": "scripts_graphify_codex_semantics_semantics",
-      "community": 13,
+      "community": 12,
       "norm_label": "semantics"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L9",
       "id": "scripts_graphify_codex_semantics_existingids",
-      "community": 13,
+      "community": 12,
       "norm_label": "existingids"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L10",
       "id": "scripts_graphify_codex_semantics_semanticids",
-      "community": 13,
+      "community": 12,
       "norm_label": "semanticids"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L16",
       "id": "scripts_graphify_codex_semantics_next",
-      "community": 13,
+      "community": 12,
       "norm_label": "next"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L21",
       "id": "scripts_graphify_codex_semantics_index",
-      "community": 13,
+      "community": 12,
       "norm_label": "index"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "scripts/graphify-codex-semantics.mjs",
       "source_location": "L30",
       "id": "scripts_graphify_codex_semantics_validids",
-      "community": 13,
+      "community": 12,
       "norm_label": "validids"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "scripts/graphify-update.mjs",
       "source_location": "L1",
       "id": "scripts_graphify_update_mjs",
-      "community": 22,
+      "community": 21,
       "norm_label": "graphify-update.mjs"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "scripts/graphify-update.mjs",
       "source_location": "L3",
       "id": "scripts_graphify_update_run",
-      "community": 22,
+      "community": 21,
       "norm_label": "run()"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L1",
       "id": "scripts_memory_approve_mjs",
-      "community": 2,
+      "community": 4,
       "norm_label": "memory-approve.mjs"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L15",
       "id": "scripts_memory_approve_root",
-      "community": 2,
+      "community": 4,
       "norm_label": "root"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L16",
       "id": "scripts_memory_approve_scriptdir",
-      "community": 2,
+      "community": 4,
       "norm_label": "scriptdir"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L17",
       "id": "scripts_memory_approve_args",
-      "community": 2,
+      "community": 4,
       "norm_label": "args"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L24",
       "id": "scripts_memory_approve_validation",
-      "community": 2,
+      "community": 4,
       "norm_label": "validation"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L41",
       "id": "scripts_memory_approve_resolvecandidate",
-      "community": 2,
+      "community": 4,
       "norm_label": "resolvecandidate()"
     },
     {
@@ -324,7 +324,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L50",
       "id": "scripts_memory_approve_readpackagerisk",
-      "community": 2,
+      "community": 4,
       "norm_label": "readpackagerisk()"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L66",
       "id": "scripts_memory_approve_stripinternalfields",
-      "community": 2,
+      "community": 4,
       "norm_label": "stripinternalfields()"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L76",
       "id": "scripts_memory_approve_gitdirtyfor",
-      "community": 2,
+      "community": 4,
       "norm_label": "gitdirtyfor()"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L84",
       "id": "scripts_memory_approve_npmrunargs",
-      "community": 2,
+      "community": 4,
       "norm_label": "npmrunargs()"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L90",
       "id": "scripts_memory_approve_pathexists",
-      "community": 2,
+      "community": 4,
       "norm_label": "pathexists()"
     },
     {
@@ -369,7 +369,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L99",
       "id": "scripts_memory_approve_candidatepath",
-      "community": 2,
+      "community": 4,
       "norm_label": "candidatepath"
     },
     {
@@ -378,7 +378,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L101",
       "id": "scripts_memory_approve_parsed",
-      "community": 2,
+      "community": 4,
       "norm_label": "parsed"
     },
     {
@@ -387,7 +387,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L105",
       "id": "scripts_memory_approve_blockers",
-      "community": 2,
+      "community": 4,
       "norm_label": "blockers"
     },
     {
@@ -396,7 +396,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L130",
       "id": "scripts_memory_approve_today",
-      "community": 2,
+      "community": 4,
       "norm_label": "today"
     },
     {
@@ -405,7 +405,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L131",
       "id": "scripts_memory_approve_slug",
-      "community": 2,
+      "community": 4,
       "norm_label": "slug"
     },
     {
@@ -414,7 +414,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L132",
       "id": "scripts_memory_approve_targetdir",
-      "community": 2,
+      "community": 4,
       "norm_label": "targetdir"
     },
     {
@@ -423,7 +423,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L133",
       "id": "scripts_memory_approve_targetpath",
-      "community": 2,
+      "community": 4,
       "norm_label": "targetpath"
     },
     {
@@ -432,7 +432,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L147",
       "id": "scripts_memory_approve_publicdata",
-      "community": 2,
+      "community": 4,
       "norm_label": "publicdata"
     },
     {
@@ -441,7 +441,7 @@
       "source_file": "scripts/memory-approve.mjs",
       "source_location": "L163",
       "id": "scripts_memory_approve_publicnote",
-      "community": 2,
+      "community": 4,
       "norm_label": "publicnote"
     },
     {
@@ -450,7 +450,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L1",
       "id": "scripts_memory_decide_mjs",
-      "community": 7,
+      "community": 2,
       "norm_label": "memory-decide.mjs"
     },
     {
@@ -459,7 +459,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L6",
       "id": "scripts_memory_decide_root",
-      "community": 7,
+      "community": 2,
       "norm_label": "root"
     },
     {
@@ -468,7 +468,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L7",
       "id": "scripts_memory_decide_args",
-      "community": 7,
+      "community": 2,
       "norm_label": "args"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L8",
       "id": "scripts_memory_decide_candidateid",
-      "community": 7,
+      "community": 2,
       "norm_label": "candidateid"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L9",
       "id": "scripts_memory_decide_decision",
-      "community": 7,
+      "community": 2,
       "norm_label": "decision"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L10",
       "id": "scripts_memory_decide_reason",
-      "community": 7,
+      "community": 2,
       "norm_label": "reason"
     },
     {
@@ -504,7 +504,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L11",
       "id": "scripts_memory_decide_target",
-      "community": 7,
+      "community": 2,
       "norm_label": "target"
     },
     {
@@ -513,7 +513,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L12",
       "id": "scripts_memory_decide_approvedpath",
-      "community": 7,
+      "community": 2,
       "norm_label": "approvedpath"
     },
     {
@@ -522,7 +522,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L13",
       "id": "scripts_memory_decide_approver",
-      "community": 7,
+      "community": 2,
       "norm_label": "approver"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L31",
       "id": "scripts_memory_decide_packagepath",
-      "community": 7,
+      "community": 2,
       "norm_label": "packagepath"
     },
     {
@@ -540,7 +540,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L32",
       "id": "scripts_memory_decide_candidatepath",
-      "community": 7,
+      "community": 2,
       "norm_label": "candidatepath"
     },
     {
@@ -549,7 +549,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L33",
       "id": "scripts_memory_decide_markerdir",
-      "community": 7,
+      "community": 2,
       "norm_label": "markerdir"
     },
     {
@@ -558,7 +558,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L34",
       "id": "scripts_memory_decide_markerpath",
-      "community": 7,
+      "community": 2,
       "norm_label": "markerpath"
     },
     {
@@ -567,7 +567,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L35",
       "id": "scripts_memory_decide_now",
-      "community": 7,
+      "community": 2,
       "norm_label": "now"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L36",
       "id": "scripts_memory_decide_packagedata",
-      "community": 7,
+      "community": 2,
       "norm_label": "packagedata"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L37",
       "id": "scripts_memory_decide_candidatedata",
-      "community": 7,
+      "community": 2,
       "norm_label": "candidatedata"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L39",
       "id": "scripts_memory_decide_upsertmoc",
-      "community": 7,
+      "community": 2,
       "norm_label": "upsertmoc()"
     },
     {
@@ -603,7 +603,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L78",
       "id": "scripts_memory_decide_markerdata",
-      "community": 7,
+      "community": 2,
       "norm_label": "markerdata"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L111",
       "id": "scripts_memory_decide_data",
-      "community": 7,
+      "community": 2,
       "norm_label": "data"
     },
     {
@@ -621,7 +621,7 @@
       "source_file": "scripts/memory-decide.mjs",
       "source_location": "L125",
       "id": "scripts_memory_decide_body",
-      "community": 7,
+      "community": 2,
       "norm_label": "body"
     },
     {
@@ -855,7 +855,7 @@
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L230",
       "id": "scripts_memory_github_watch_detectowner",
-      "community": 2,
+      "community": 4,
       "norm_label": "detectowner()"
     },
     {
@@ -936,7 +936,7 @@
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L361",
       "id": "scripts_memory_github_watch_repoclonepath",
-      "community": 2,
+      "community": 4,
       "norm_label": "repoclonepath()"
     },
     {
@@ -1053,7 +1053,7 @@
       "source_file": "scripts/memory-github-watch.mjs",
       "source_location": "L527",
       "id": "scripts_memory_github_watch_printsummary",
-      "community": 8,
+      "community": 2,
       "norm_label": "printsummary()"
     },
     {
@@ -1314,7 +1314,7 @@
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L87",
       "id": "scripts_memory_ingest_collectcommitdetails",
-      "community": 4,
+      "community": 5,
       "norm_label": "collectcommitdetails()"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L171",
       "id": "scripts_memory_ingest_recommendationmoc",
-      "community": 15,
+      "community": 14,
       "norm_label": "recommendationmoc()"
     },
     {
@@ -1359,7 +1359,7 @@
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L181",
       "id": "scripts_memory_ingest_rendercompilednote",
-      "community": 15,
+      "community": 14,
       "norm_label": "rendercompilednote()"
     },
     {
@@ -1368,7 +1368,7 @@
       "source_file": "scripts/memory-ingest.mjs",
       "source_location": "L237",
       "id": "scripts_memory_ingest_rendercandidate",
-      "community": 2,
+      "community": 4,
       "norm_label": "rendercandidate()"
     },
     {
@@ -1566,7 +1566,7 @@
       "source_file": "scripts/memory-recommendation.mjs",
       "source_location": "L1",
       "id": "scripts_memory_recommendation_mjs",
-      "community": 15,
+      "community": 14,
       "norm_label": "memory-recommendation.mjs"
     },
     {
@@ -1575,7 +1575,7 @@
       "source_file": "scripts/memory-recommendation.mjs",
       "source_location": "L1",
       "id": "scripts_memory_recommendation_recommendationreasoncodes",
-      "community": 15,
+      "community": 14,
       "norm_label": "recommendationreasoncodes"
     },
     {
@@ -1584,7 +1584,7 @@
       "source_file": "scripts/memory-recommendation.mjs",
       "source_location": "L12",
       "id": "scripts_memory_recommendation_summarizecommitsubjects",
-      "community": 15,
+      "community": 14,
       "norm_label": "summarizecommitsubjects()"
     },
     {
@@ -1593,7 +1593,7 @@
       "source_file": "scripts/memory-recommendation.mjs",
       "source_location": "L19",
       "id": "scripts_memory_recommendation_summarizechangedfiles",
-      "community": 15,
+      "community": 14,
       "norm_label": "summarizechangedfiles()"
     },
     {
@@ -1602,7 +1602,7 @@
       "source_file": "scripts/memory-recommendation.mjs",
       "source_location": "L31",
       "id": "scripts_memory_recommendation_summarizediffstats",
-      "community": 15,
+      "community": 14,
       "norm_label": "summarizediffstats()"
     },
     {
@@ -1620,7 +1620,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L1",
       "id": "scripts_memory_report_mjs",
-      "community": 8,
+      "community": 2,
       "norm_label": "memory-report.mjs"
     },
     {
@@ -1629,7 +1629,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L6",
       "id": "scripts_memory_report_root",
-      "community": 8,
+      "community": 2,
       "norm_label": "root"
     },
     {
@@ -1638,7 +1638,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L7",
       "id": "scripts_memory_report_args",
-      "community": 8,
+      "community": 2,
       "norm_label": "args"
     },
     {
@@ -1647,7 +1647,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L8",
       "id": "scripts_memory_report_workroot",
-      "community": 8,
+      "community": 2,
       "norm_label": "workroot"
     },
     {
@@ -1656,7 +1656,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L9",
       "id": "scripts_memory_report_packageroot",
-      "community": 8,
+      "community": 2,
       "norm_label": "packageroot"
     },
     {
@@ -1665,7 +1665,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L14",
       "id": "scripts_memory_report_readjsonfiles",
-      "community": 8,
+      "community": 2,
       "norm_label": "readjsonfiles()"
     },
     {
@@ -1674,7 +1674,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L33",
       "id": "scripts_memory_report_markerbyid",
-      "community": 8,
+      "community": 2,
       "norm_label": "markerbyid()"
     },
     {
@@ -1683,7 +1683,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L37",
       "id": "scripts_memory_report_candidatepath",
-      "community": 8,
+      "community": 2,
       "norm_label": "candidatepath()"
     },
     {
@@ -1692,7 +1692,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L45",
       "id": "scripts_memory_report_approvedmarkers",
-      "community": 8,
+      "community": 2,
       "norm_label": "approvedmarkers"
     },
     {
@@ -1701,7 +1701,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L46",
       "id": "scripts_memory_report_deniedmarkers",
-      "community": 8,
+      "community": 2,
       "norm_label": "deniedmarkers"
     },
     {
@@ -1710,7 +1710,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L48",
       "id": "scripts_memory_report_enriched",
-      "community": 8,
+      "community": 2,
       "norm_label": "enriched"
     },
     {
@@ -1719,7 +1719,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L62",
       "id": "scripts_memory_report_groups",
-      "community": 8,
+      "community": 2,
       "norm_label": "groups"
     },
     {
@@ -1728,7 +1728,7 @@
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L82",
       "id": "scripts_memory_report_printitem",
-      "community": 8,
+      "community": 2,
       "norm_label": "printitem()"
     },
     {
@@ -1737,7 +1737,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L1",
       "id": "scripts_memory_safety_mjs",
-      "community": 4,
+      "community": 5,
       "norm_label": "memory-safety.mjs"
     },
     {
@@ -1746,7 +1746,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L7",
       "id": "scripts_memory_safety_requiredmemoryfields",
-      "community": 4,
+      "community": 5,
       "norm_label": "requiredmemoryfields"
     },
     {
@@ -1755,7 +1755,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L16",
       "id": "scripts_memory_safety_blockedpatterns",
-      "community": 4,
+      "community": 5,
       "norm_label": "blockedpatterns"
     },
     {
@@ -1764,7 +1764,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L49",
       "id": "scripts_memory_safety_allowedassetextensions",
-      "community": 4,
+      "community": 5,
       "norm_label": "allowedassetextensions"
     },
     {
@@ -1773,7 +1773,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L53",
       "id": "scripts_memory_safety_scantext",
-      "community": 4,
+      "community": 5,
       "norm_label": "scantext()"
     },
     {
@@ -1782,7 +1782,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L66",
       "id": "scripts_memory_safety_hasblockedtext",
-      "community": 4,
+      "community": 5,
       "norm_label": "hasblockedtext()"
     },
     {
@@ -1791,7 +1791,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L70",
       "id": "scripts_memory_safety_toposix",
-      "community": 4,
+      "community": 5,
       "norm_label": "toposix()"
     },
     {
@@ -1800,7 +1800,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L74",
       "id": "scripts_memory_safety_extractprintableassettext",
-      "community": 4,
+      "community": 5,
       "norm_label": "extractprintableassettext()"
     },
     {
@@ -1809,7 +1809,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L92",
       "id": "scripts_memory_safety_extractassetlinks",
-      "community": 4,
+      "community": 5,
       "norm_label": "extractassetlinks()"
     },
     {
@@ -1818,7 +1818,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L108",
       "id": "scripts_memory_safety_shouldskipasset",
-      "community": 4,
+      "community": 5,
       "norm_label": "shouldskipasset()"
     },
     {
@@ -1827,7 +1827,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L116",
       "id": "scripts_memory_safety_resolveassetpath",
-      "community": 4,
+      "community": 5,
       "norm_label": "resolveassetpath()"
     },
     {
@@ -1836,7 +1836,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L130",
       "id": "scripts_memory_safety_hasexifmarker",
-      "community": 4,
+      "community": 5,
       "norm_label": "hasexifmarker()"
     },
     {
@@ -1845,7 +1845,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L138",
       "id": "scripts_memory_safety_canruntesseract",
-      "community": 4,
+      "community": 5,
       "norm_label": "canruntesseract()"
     },
     {
@@ -1854,7 +1854,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L148",
       "id": "scripts_memory_safety_runocr",
-      "community": 4,
+      "community": 5,
       "norm_label": "runocr()"
     },
     {
@@ -1863,7 +1863,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L161",
       "id": "scripts_memory_safety_inspectlinkedassets",
-      "community": 4,
+      "community": 5,
       "norm_label": "inspectlinkedassets()"
     },
     {
@@ -1872,7 +1872,7 @@
       "source_file": "scripts/memory-safety.mjs",
       "source_location": "L225",
       "id": "scripts_memory_safety_checkpubliccontent",
-      "community": 4,
+      "community": 5,
       "norm_label": "checkpubliccontent()"
     },
     {
@@ -1881,7 +1881,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L1",
       "id": "scripts_memory_utils_mjs",
-      "community": 2,
+      "community": 4,
       "norm_label": "memory-utils.mjs"
     },
     {
@@ -1890,7 +1890,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L5",
       "id": "scripts_memory_utils_parseargs",
-      "community": 8,
+      "community": 2,
       "norm_label": "parseargs()"
     },
     {
@@ -1899,7 +1899,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L32",
       "id": "scripts_memory_utils_arrayarg",
-      "community": 2,
+      "community": 4,
       "norm_label": "arrayarg()"
     },
     {
@@ -1908,7 +1908,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L37",
       "id": "scripts_memory_utils_datestamp",
-      "community": 2,
+      "community": 4,
       "norm_label": "datestamp()"
     },
     {
@@ -1926,7 +1926,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L45",
       "id": "scripts_memory_utils_slugify",
-      "community": 2,
+      "community": 4,
       "norm_label": "slugify()"
     },
     {
@@ -1935,7 +1935,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L57",
       "id": "scripts_memory_utils_hashid",
-      "community": 2,
+      "community": 4,
       "norm_label": "hashid()"
     },
     {
@@ -1944,7 +1944,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L61",
       "id": "scripts_memory_utils_runcapture",
-      "community": 2,
+      "community": 4,
       "norm_label": "runcapture()"
     },
     {
@@ -1953,7 +1953,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L78",
       "id": "scripts_memory_utils_runinherit",
-      "community": 2,
+      "community": 4,
       "norm_label": "runinherit()"
     },
     {
@@ -1962,7 +1962,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L91",
       "id": "scripts_memory_utils_git",
-      "community": 2,
+      "community": 4,
       "norm_label": "git()"
     },
     {
@@ -1971,7 +1971,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L95",
       "id": "scripts_memory_utils_reponame",
-      "community": 2,
+      "community": 4,
       "norm_label": "reponame()"
     },
     {
@@ -1980,7 +1980,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L99",
       "id": "scripts_memory_utils_splitrepoenv",
-      "community": 2,
+      "community": 4,
       "norm_label": "splitrepoenv()"
     },
     {
@@ -1989,7 +1989,7 @@
       "source_file": "scripts/memory-utils.mjs",
       "source_location": "L107",
       "id": "scripts_memory_utils_torelativeportable",
-      "community": 8,
+      "community": 2,
       "norm_label": "torelativeportable()"
     },
     {
@@ -1998,7 +1998,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L1",
       "id": "scripts_normalize_llm_frontmatter_mjs",
-      "community": 10,
+      "community": 9,
       "norm_label": "normalize-llm-frontmatter.mjs"
     },
     {
@@ -2007,7 +2007,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L6",
       "id": "scripts_normalize_llm_frontmatter_root",
-      "community": 10,
+      "community": 9,
       "norm_label": "root"
     },
     {
@@ -2016,7 +2016,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L7",
       "id": "scripts_normalize_llm_frontmatter_publishroot",
-      "community": 10,
+      "community": 9,
       "norm_label": "publishroot"
     },
     {
@@ -2025,7 +2025,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L8",
       "id": "scripts_normalize_llm_frontmatter_today",
-      "community": 10,
+      "community": 9,
       "norm_label": "today"
     },
     {
@@ -2034,7 +2034,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L15",
       "id": "scripts_normalize_llm_frontmatter_yamlstring",
-      "community": 10,
+      "community": 9,
       "norm_label": "yamlstring()"
     },
     {
@@ -2043,7 +2043,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L19",
       "id": "scripts_normalize_llm_frontmatter_hasfrontmatterkey",
-      "community": 10,
+      "community": 9,
       "norm_label": "hasfrontmatterkey()"
     },
     {
@@ -2052,7 +2052,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L23",
       "id": "scripts_normalize_llm_frontmatter_formatdate",
-      "community": 10,
+      "community": 9,
       "norm_label": "formatdate()"
     },
     {
@@ -2061,7 +2061,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L35",
       "id": "scripts_normalize_llm_frontmatter_formatcapturedat",
-      "community": 10,
+      "community": 9,
       "norm_label": "formatcapturedat()"
     },
     {
@@ -2070,7 +2070,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L49",
       "id": "scripts_normalize_llm_frontmatter_match",
-      "community": 10,
+      "community": 9,
       "norm_label": "match"
     },
     {
@@ -2079,7 +2079,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L55",
       "id": "scripts_normalize_llm_frontmatter_parsed",
-      "community": 10,
+      "community": 9,
       "norm_label": "parsed"
     },
     {
@@ -2088,7 +2088,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L56",
       "id": "scripts_normalize_llm_frontmatter_additions",
-      "community": 10,
+      "community": 9,
       "norm_label": "additions"
     },
     {
@@ -2097,7 +2097,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L59",
       "id": "scripts_normalize_llm_frontmatter_defaults",
-      "community": 10,
+      "community": 9,
       "norm_label": "defaults"
     },
     {
@@ -2106,7 +2106,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L86",
       "id": "scripts_normalize_llm_frontmatter_nextfrontmatter",
-      "community": 10,
+      "community": 9,
       "norm_label": "nextfrontmatter"
     },
     {
@@ -2115,7 +2115,7 @@
       "source_file": "scripts/normalize-llm-frontmatter.mjs",
       "source_location": "L97",
       "id": "scripts_normalize_llm_frontmatter_nextraw",
-      "community": 10,
+      "community": 9,
       "norm_label": "nextraw"
     },
     {
@@ -2124,7 +2124,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L1",
       "id": "scripts_test_memory_workflow_mjs",
-      "community": 6,
+      "community": 7,
       "norm_label": "test-memory-workflow.mjs"
     },
     {
@@ -2133,7 +2133,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L8",
       "id": "scripts_test_memory_workflow_projectroot",
-      "community": 6,
+      "community": 7,
       "norm_label": "projectroot"
     },
     {
@@ -2142,7 +2142,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L10",
       "id": "scripts_test_memory_workflow_wikiroot",
-      "community": 6,
+      "community": 7,
       "norm_label": "wikiroot"
     },
     {
@@ -2151,7 +2151,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L11",
       "id": "scripts_test_memory_workflow_publishroot",
-      "community": 6,
+      "community": 7,
       "norm_label": "publishroot"
     },
     {
@@ -2160,7 +2160,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L12",
       "id": "scripts_test_memory_workflow_fixturerepo",
-      "community": 6,
+      "community": 7,
       "norm_label": "fixturerepo"
     },
     {
@@ -2169,7 +2169,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L13",
       "id": "scripts_test_memory_workflow_privatevault",
-      "community": 6,
+      "community": 7,
       "norm_label": "privatevault"
     },
     {
@@ -2178,7 +2178,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L16",
       "id": "scripts_test_memory_workflow_internalopsrecommendation",
-      "community": 6,
+      "community": 7,
       "norm_label": "internalopsrecommendation"
     },
     {
@@ -2187,7 +2187,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L27",
       "id": "scripts_test_memory_workflow_portfoliorecommendation",
-      "community": 6,
+      "community": 7,
       "norm_label": "portfoliorecommendation"
     },
     {
@@ -2196,7 +2196,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L38",
       "id": "scripts_test_memory_workflow_run",
-      "community": 6,
+      "community": 7,
       "norm_label": "run()"
     },
     {
@@ -2205,7 +2205,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L48",
       "id": "scripts_test_memory_workflow_git",
-      "community": 6,
+      "community": 7,
       "norm_label": "git()"
     },
     {
@@ -2214,7 +2214,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L57",
       "id": "scripts_test_memory_workflow_write",
-      "community": 6,
+      "community": 7,
       "norm_label": "write()"
     },
     {
@@ -2223,7 +2223,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L62",
       "id": "scripts_test_memory_workflow_writevalidationpackage",
-      "community": 6,
+      "community": 7,
       "norm_label": "writevalidationpackage()"
     },
     {
@@ -2232,7 +2232,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L95",
       "id": "scripts_test_memory_workflow_result",
-      "community": 6,
+      "community": 7,
       "norm_label": "result"
     },
     {
@@ -2241,7 +2241,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L144",
       "id": "scripts_test_memory_workflow_highriskpackage",
-      "community": 6,
+      "community": 7,
       "norm_label": "highriskpackage"
     },
     {
@@ -2250,7 +2250,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L180",
       "id": "scripts_test_memory_workflow_privatecandidate",
-      "community": 6,
+      "community": 7,
       "norm_label": "privatecandidate"
     },
     {
@@ -2259,7 +2259,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L204",
       "id": "scripts_test_memory_workflow_denieddecisionpath",
-      "community": 6,
+      "community": 7,
       "norm_label": "denieddecisionpath"
     },
     {
@@ -2268,7 +2268,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L227",
       "id": "scripts_test_memory_workflow_approvalcandidate",
-      "community": 6,
+      "community": 7,
       "norm_label": "approvalcandidate"
     },
     {
@@ -2277,7 +2277,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L229",
       "id": "scripts_test_memory_workflow_approvalcandidateid",
-      "community": 6,
+      "community": 7,
       "norm_label": "approvalcandidateid"
     },
     {
@@ -2286,7 +2286,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L234",
       "id": "scripts_test_memory_workflow_approvedrelative",
-      "community": 6,
+      "community": 7,
       "norm_label": "approvedrelative"
     },
     {
@@ -2295,7 +2295,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L236",
       "id": "scripts_test_memory_workflow_approvedpath",
-      "community": 6,
+      "community": 7,
       "norm_label": "approvedpath"
     },
     {
@@ -2304,7 +2304,7 @@
       "source_file": "scripts/test-memory-workflow.mjs",
       "source_location": "L250",
       "id": "scripts_test_memory_workflow_report",
-      "community": 6,
+      "community": 7,
       "norm_label": "report"
     },
     {
@@ -2313,7 +2313,7 @@
       "source_file": "src/content.config.ts",
       "source_location": "L1",
       "id": "src_content_config_ts",
-      "community": 17,
+      "community": 16,
       "norm_label": "content.config.ts"
     },
     {
@@ -2322,7 +2322,7 @@
       "source_file": "src/content.config.ts",
       "source_location": "L4",
       "id": "src_content_config_publicnoteschema",
-      "community": 17,
+      "community": 16,
       "norm_label": "publicnoteschema"
     },
     {
@@ -2331,7 +2331,7 @@
       "source_file": "src/content.config.ts",
       "source_location": "L23",
       "id": "src_content_config_blog",
-      "community": 17,
+      "community": 16,
       "norm_label": "blog"
     },
     {
@@ -2340,7 +2340,7 @@
       "source_file": "src/content.config.ts",
       "source_location": "L28",
       "id": "src_content_config_wiki",
-      "community": 17,
+      "community": 16,
       "norm_label": "wiki"
     },
     {
@@ -2349,7 +2349,7 @@
       "source_file": "src/content.config.ts",
       "source_location": "L33",
       "id": "src_content_config_pages",
-      "community": 17,
+      "community": 16,
       "norm_label": "pages"
     },
     {
@@ -2358,7 +2358,7 @@
       "source_file": "src/content.config.ts",
       "source_location": "L43",
       "id": "src_content_config_collections",
-      "community": 17,
+      "community": 16,
       "norm_label": "collections"
     },
     {
@@ -2385,7 +2385,7 @@
       "source_file": "src/lib/content.ts",
       "source_location": "L1",
       "id": "src_lib_content_ts",
-      "community": 11,
+      "community": 10,
       "norm_label": "content.ts"
     },
     {
@@ -2394,7 +2394,7 @@
       "source_file": "src/lib/content.ts",
       "source_location": "L5",
       "id": "lib_content_ispublicentry",
-      "community": 11,
+      "community": 10,
       "norm_label": "ispublicentry()"
     },
     {
@@ -2403,7 +2403,7 @@
       "source_file": "src/lib/content.ts",
       "source_location": "L9",
       "id": "lib_content_bydatedesc",
-      "community": 11,
+      "community": 10,
       "norm_label": "bydatedesc()"
     },
     {
@@ -2412,7 +2412,7 @@
       "source_file": "src/lib/content.ts",
       "source_location": "L13",
       "id": "lib_content_formatdate",
-      "community": 11,
+      "community": 10,
       "norm_label": "formatdate()"
     },
     {
@@ -2421,7 +2421,7 @@
       "source_file": "src/lib/content.ts",
       "source_location": "L22",
       "id": "lib_content_entryhref",
-      "community": 11,
+      "community": 10,
       "norm_label": "entryhref()"
     },
     {
@@ -2430,7 +2430,7 @@
       "source_file": "src/lib/content.ts",
       "source_location": "L26",
       "id": "lib_content_entryslug",
-      "community": 11,
+      "community": 10,
       "norm_label": "entryslug()"
     },
     {
@@ -2439,7 +2439,7 @@
       "source_file": "src/lib/content.ts",
       "source_location": "L30",
       "id": "lib_content_collecttags",
-      "community": 11,
+      "community": 10,
       "norm_label": "collecttags()"
     },
     {
@@ -2448,7 +2448,7 @@
       "source_file": "src/lib/content.ts",
       "source_location": "L34",
       "id": "lib_content_relatedentries",
-      "community": 11,
+      "community": 10,
       "norm_label": "relatedentries()"
     },
     {
@@ -2457,7 +2457,7 @@
       "source_file": "src/lib/content.ts",
       "source_location": "L51",
       "id": "lib_content_backlinkentries",
-      "community": 11,
+      "community": 10,
       "norm_label": "backlinkentries()"
     },
     {
@@ -2466,7 +2466,7 @@
       "source_file": "src/lib/content.ts",
       "source_location": "L60",
       "id": "lib_content_haswikilink",
-      "community": 11,
+      "community": 10,
       "norm_label": "haswikilink()"
     },
     {
@@ -2475,7 +2475,7 @@
       "source_file": "src/lib/content.ts",
       "source_location": "L72",
       "id": "lib_content_normalizetarget",
-      "community": 11,
+      "community": 10,
       "norm_label": "normalizetarget()"
     },
     {
@@ -2484,7 +2484,7 @@
       "source_file": "src/lib/remark-wikilinks.mjs",
       "source_location": "L1",
       "id": "src_lib_remark_wikilinks_mjs",
-      "community": 5,
+      "community": 6,
       "norm_label": "remark-wikilinks.mjs"
     },
     {
@@ -2493,7 +2493,7 @@
       "source_file": "src/lib/remark-wikilinks.mjs",
       "source_location": "L3",
       "id": "lib_remark_wikilinks_remarkwikilinks",
-      "community": 5,
+      "community": 6,
       "norm_label": "remarkwikilinks()"
     },
     {
@@ -2502,7 +2502,7 @@
       "source_file": "src/lib/remark-wikilinks.mjs",
       "source_location": "L18",
       "id": "lib_remark_wikilinks_walk",
-      "community": 5,
+      "community": 6,
       "norm_label": "walk()"
     },
     {
@@ -2511,7 +2511,7 @@
       "source_file": "src/lib/remark-wikilinks.mjs",
       "source_location": "L28",
       "id": "lib_remark_wikilinks_splitwikitext",
-      "community": 5,
+      "community": 6,
       "norm_label": "splitwikitext()"
     },
     {
@@ -2520,7 +2520,7 @@
       "source_file": "src/lib/site.ts",
       "source_location": "L1",
       "id": "src_lib_site_ts",
-      "community": 25,
+      "community": 24,
       "norm_label": "site.ts"
     },
     {
@@ -2529,7 +2529,7 @@
       "source_file": "src/lib/url.ts",
       "source_location": "L1",
       "id": "src_lib_url_ts",
-      "community": 23,
+      "community": 22,
       "norm_label": "url.ts"
     },
     {
@@ -2538,7 +2538,7 @@
       "source_file": "src/lib/url.ts",
       "source_location": "L1",
       "id": "lib_url_withbase",
-      "community": 23,
+      "community": 22,
       "norm_label": "withbase()"
     },
     {
@@ -2547,7 +2547,7 @@
       "source_file": "src/lib/wiki-links.mjs",
       "source_location": "L1",
       "id": "src_lib_wiki_links_mjs",
-      "community": 5,
+      "community": 6,
       "norm_label": "wiki-links.mjs"
     },
     {
@@ -2556,7 +2556,7 @@
       "source_file": "src/lib/wiki-links.mjs",
       "source_location": "L1",
       "id": "lib_wiki_links_slugifywikitarget",
-      "community": 5,
+      "community": 6,
       "norm_label": "slugifywikitarget()"
     },
     {
@@ -2565,7 +2565,7 @@
       "source_file": "src/lib/wiki-links.mjs",
       "source_location": "L15",
       "id": "lib_wiki_links_slugifyanchor",
-      "community": 5,
+      "community": 6,
       "norm_label": "slugifyanchor()"
     },
     {
@@ -2574,7 +2574,7 @@
       "source_file": "src/lib/wiki-links.mjs",
       "source_location": "L25",
       "id": "lib_wiki_links_wikihref",
-      "community": 5,
+      "community": 6,
       "norm_label": "wikihref()"
     },
     {
@@ -2583,7 +2583,7 @@
       "source_file": "src/lib/wiki-links.mjs",
       "source_location": "L33",
       "id": "lib_wiki_links_extractwikilinks",
-      "community": 5,
+      "community": 6,
       "norm_label": "extractwikilinks()"
     },
     {
@@ -2592,7 +2592,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "agents_md",
-      "community": 24,
+      "community": 23,
       "norm_label": "agents.md"
     },
     {
@@ -2601,7 +2601,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "wiki_agents_graphify",
-      "community": 24,
+      "community": 23,
       "norm_label": "graphify"
     },
     {
@@ -2610,7 +2610,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 9,
+      "community": 8,
       "norm_label": "readme.md"
     },
     {
@@ -2619,7 +2619,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "wiki_readme_personal_wiki",
-      "community": 9,
+      "community": 8,
       "norm_label": "personal wiki"
     },
     {
@@ -2628,7 +2628,7 @@
       "source_file": "README.md",
       "source_location": "L5",
       "id": "wiki_readme",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u1109\u1161\u110b\u116d\u11bc"
     },
     {
@@ -2637,7 +2637,7 @@
       "source_file": "README.md",
       "source_location": "L7",
       "id": "wiki_readme_codeblock_1",
-      "community": 9,
+      "community": 8,
       "norm_label": "code:bash (npm install)"
     },
     {
@@ -2646,7 +2646,7 @@
       "source_file": "README.md",
       "source_location": "L15",
       "id": "wiki_readme_codeblock_2",
-      "community": 9,
+      "community": 8,
       "norm_label": "code:bash (public_site_url=https://user.github.io)"
     },
     {
@@ -2655,7 +2655,7 @@
       "source_file": "README.md",
       "source_location": "L20",
       "id": "wiki_readme_20",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u110f\u1169\u11ab\u1110\u1166\u11ab\u110e\u1173"
     },
     {
@@ -2664,7 +2664,7 @@
       "source_file": "README.md",
       "source_location": "L24",
       "id": "wiki_readme_codeblock_3",
-      "community": 9,
+      "community": 8,
       "norm_label": "code:text (src/content/publish/blog)"
     },
     {
@@ -2673,7 +2673,7 @@
       "source_file": "README.md",
       "source_location": "L31",
       "id": "wiki_readme_codeblock_4",
-      "community": 9,
+      "community": 8,
       "norm_label": "code:yaml (title: note title)"
     },
     {
@@ -2682,7 +2682,7 @@
       "source_file": "README.md",
       "source_location": "L49",
       "id": "wiki_readme_llm_wiki_memory",
-      "community": 9,
+      "community": 8,
       "norm_label": "llm wiki memory"
     },
     {
@@ -2691,7 +2691,7 @@
       "source_file": "README.md",
       "source_location": "L53",
       "id": "wiki_readme_codeblock_5",
-      "community": 9,
+      "community": 8,
       "norm_label": "code:text (private obsidian vault)"
     },
     {
@@ -2700,7 +2700,7 @@
       "source_file": "README.md",
       "source_location": "L63",
       "id": "wiki_readme_codeblock_6",
-      "community": 9,
+      "community": 8,
       "norm_label": "code:bash (npm run memory:normalize)"
     },
     {
@@ -2709,7 +2709,7 @@
       "source_file": "README.md",
       "source_location": "L70",
       "id": "wiki_readme_wikilink",
-      "community": 9,
+      "community": 8,
       "norm_label": "wikilink"
     },
     {
@@ -2718,7 +2718,7 @@
       "source_file": "README.md",
       "source_location": "L74",
       "id": "wiki_readme_graph_data",
-      "community": 9,
+      "community": 8,
       "norm_label": "graph data"
     },
     {
@@ -2727,7 +2727,7 @@
       "source_file": "README.md",
       "source_location": "L76",
       "id": "wiki_readme_codeblock_7",
-      "community": 9,
+      "community": 8,
       "norm_label": "code:bash (npm run graph)"
     },
     {
@@ -2736,7 +2736,7 @@
       "source_file": "README.md",
       "source_location": "L84",
       "id": "wiki_readme_codeblock_8",
-      "community": 9,
+      "community": 8,
       "norm_label": "code:bash (npm run graphify:update)"
     },
     {
@@ -2745,7 +2745,7 @@
       "source_file": "README.md",
       "source_location": "L88",
       "id": "wiki_readme_88",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u1107\u1162\u1111\u1169"
     },
     {
@@ -2754,7 +2754,7 @@
       "source_file": "src/content/publish/blog/2026-04-29-portfolio-case-notes.md",
       "source_location": "L1",
       "id": "src_content_publish_blog_2026_04_29_portfolio_case_notes_md",
-      "community": 26,
+      "community": 25,
       "norm_label": "2026-04-29-portfolio-case-notes.md"
     },
     {
@@ -2763,7 +2763,7 @@
       "source_file": "src/content/publish/blog/2026-04-29-public-wiki.md",
       "source_location": "L1",
       "id": "src_content_publish_blog_2026_04_29_public_wiki_md",
-      "community": 27,
+      "community": 26,
       "norm_label": "2026-04-29-public-wiki.md"
     },
     {
@@ -2772,7 +2772,7 @@
       "source_file": "src/content/publish/blog/iteration-loop.mdx",
       "source_location": "L1",
       "id": "src_content_publish_blog_iteration_loop_mdx",
-      "community": 28,
+      "community": 27,
       "norm_label": "iteration-loop.mdx"
     },
     {
@@ -2812,11 +2812,20 @@
       "norm_label": "\u1112\u1161\u11a8\u1105\u1167\u11a8\u1109\u1161\u1112\u1161\u11bc"
     },
     {
+      "label": "\uae30\uc220 \uc2a4\ud0dd",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L37",
+      "id": "pages_cv_37",
+      "community": 3,
+      "norm_label": "\u1100\u1175\u1109\u116e\u11af \u1109\u1173\u1110\u1162\u11a8"
+    },
+    {
       "label": "\uacbd\ub825\uc0ac\ud56d",
       "file_type": "document",
       "source_file": "src/content/publish/pages/cv.md",
-      "source_location": "L35",
-      "id": "pages_cv_35",
+      "source_location": "L44",
+      "id": "pages_cv_44",
       "community": 3,
       "norm_label": "\u1100\u1167\u11bc\u1105\u1167\u11a8\u1109\u1161\u1112\u1161\u11bc"
     },
@@ -2824,16 +2833,25 @@
       "label": "AIXLAB",
       "file_type": "document",
       "source_file": "src/content/publish/pages/cv.md",
-      "source_location": "L37",
+      "source_location": "L46",
       "id": "pages_cv_aixlab",
       "community": 3,
       "norm_label": "aixlab"
     },
     {
+      "label": "\uc218\uc0c1 \ub0b4\uc5ed",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L55",
+      "id": "pages_cv_55",
+      "community": 3,
+      "norm_label": "\u1109\u116e\u1109\u1161\u11bc \u1102\u1162\u110b\u1167\u11a8"
+    },
+    {
       "label": "Ribbon Games",
       "file_type": "document",
       "source_file": "src/content/publish/pages/cv.md",
-      "source_location": "L51",
+      "source_location": "L66",
       "id": "pages_cv_ribbon_games",
       "community": 3,
       "norm_label": "ribbon games"
@@ -2842,8 +2860,8 @@
       "label": "\uac1c\uc778 \ud504\ub85c\uc81d\ud2b8",
       "file_type": "document",
       "source_file": "src/content/publish/pages/cv.md",
-      "source_location": "L59",
-      "id": "pages_cv_59",
+      "source_location": "L74",
+      "id": "pages_cv_74",
       "community": 3,
       "norm_label": "\u1100\u1162\u110b\u1175\u11ab \u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173"
     },
@@ -2853,7 +2871,7 @@
       "source_file": "src/content/publish/pages/home.md",
       "source_location": "L1",
       "id": "src_content_publish_pages_home_md",
-      "community": 29,
+      "community": 28,
       "norm_label": "home.md"
     },
     {
@@ -2862,7 +2880,7 @@
       "source_file": "src/content/publish/wiki/audio-visual-sequencer.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_audio_visual_sequencer_md",
-      "community": 30,
+      "community": 29,
       "norm_label": "audio-visual-sequencer.md"
     },
     {
@@ -2871,7 +2889,7 @@
       "source_file": "src/content/publish/wiki/common-ui-workflow.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_common_ui_workflow_md",
-      "community": 31,
+      "community": 30,
       "norm_label": "common-ui-workflow.md"
     },
     {
@@ -2880,7 +2898,7 @@
       "source_file": "src/content/publish/wiki/game-options-localization.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_game_options_localization_md",
-      "community": 32,
+      "community": 31,
       "norm_label": "game-options-localization.md"
     },
     {
@@ -2889,7 +2907,7 @@
       "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_hermes_daily_dev_brief_md",
-      "community": 16,
+      "community": 15,
       "norm_label": "hermes-daily-dev-brief.md"
     },
     {
@@ -2898,7 +2916,7 @@
       "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
       "source_location": "L19",
       "id": "wiki_hermes_daily_dev_brief",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -2907,7 +2925,7 @@
       "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
       "source_location": "L25",
       "id": "wiki_hermes_daily_dev_brief_25",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u1109\u1161\u110b\u116d\u11bc\u110c\u1161 \u1112\u1173\u1105\u1173\u11b7"
     },
     {
@@ -2916,7 +2934,7 @@
       "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
       "source_location": "L33",
       "id": "wiki_hermes_daily_dev_brief_33",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u1100\u116e\u1112\u1167\u11ab \u1100\u116e\u110c\u1169"
     },
     {
@@ -2925,7 +2943,7 @@
       "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
       "source_location": "L41",
       "id": "wiki_hermes_daily_dev_brief_41",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u1100\u1162\u110b\u1175\u11ab\u1112\u116a \u1100\u1175\u110c\u116e\u11ab"
     },
     {
@@ -2934,7 +2952,7 @@
       "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
       "source_location": "L52",
       "id": "wiki_hermes_daily_dev_brief_52",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u110b\u1161\u11ab\u110c\u1165\u11ab\u110c\u1161\u11bc\u110e\u1175"
     },
     {
@@ -2943,7 +2961,7 @@
       "source_file": "src/content/publish/wiki/hermes-daily-dev-brief.md",
       "source_location": "L60",
       "id": "wiki_hermes_daily_dev_brief_60",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u1111\u1169\u1110\u1173\u1111\u1169\u11af\u1105\u1175\u110b\u1169 \u1100\u1175\u110c\u116e\u11ab \u110b\u1174\u1106\u1175"
     },
     {
@@ -2952,7 +2970,7 @@
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_hermes_game_jobs_pipeline_md",
-      "community": 18,
+      "community": 17,
       "norm_label": "hermes-game-jobs-pipeline.md"
     },
     {
@@ -2961,7 +2979,7 @@
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L24",
       "id": "wiki_hermes_game_jobs_pipeline",
-      "community": 18,
+      "community": 17,
       "norm_label": "\u1109\u1161\u110b\u116d\u11bc\u110c\u1161 \u1112\u1173\u1105\u1173\u11b7"
     },
     {
@@ -2970,7 +2988,7 @@
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L37",
       "id": "wiki_hermes_game_jobs_pipeline_37",
-      "community": 18,
+      "community": 17,
       "norm_label": "\u1100\u116e\u1112\u1167\u11ab \u1100\u116e\u110c\u1169"
     },
     {
@@ -2979,7 +2997,7 @@
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L46",
       "id": "wiki_hermes_game_jobs_pipeline_46",
-      "community": 18,
+      "community": 17,
       "norm_label": "\u110b\u116e\u11ab\u110b\u1167\u11bc \u1112\u1167\u11ab\u1112\u116a\u11bc"
     },
     {
@@ -2988,7 +3006,7 @@
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L56",
       "id": "wiki_hermes_game_jobs_pipeline_56",
-      "community": 18,
+      "community": 17,
       "norm_label": "\u1111\u1161\u11ab\u1103\u1161\u11ab \u1100\u1167\u11bc\u1100\u1168"
     },
     {
@@ -2997,7 +3015,7 @@
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L66",
       "id": "wiki_hermes_game_jobs_pipeline_66",
-      "community": 18,
+      "community": 17,
       "norm_label": "\u1111\u1169\u1110\u1173\u1111\u1169\u11af\u1105\u1175\u110b\u1169 \u1100\u1175\u110c\u116e\u11ab \u110b\u1174\u1106\u1175"
     },
     {
@@ -3006,7 +3024,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_hermes_personal_pt_md",
-      "community": 19,
+      "community": 18,
       "norm_label": "hermes-personal-pt.md"
     },
     {
@@ -3015,7 +3033,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L20",
       "id": "wiki_hermes_personal_pt",
-      "community": 19,
+      "community": 18,
       "norm_label": "\u1109\u1161\u110b\u116d\u11bc\u110c\u1161 \u1112\u1173\u1105\u1173\u11b7"
     },
     {
@@ -3024,7 +3042,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L29",
       "id": "wiki_hermes_personal_pt_29",
-      "community": 19,
+      "community": 18,
       "norm_label": "\u1100\u116e\u1112\u1167\u11ab \u1100\u116e\u110c\u1169"
     },
     {
@@ -3033,7 +3051,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L41",
       "id": "wiki_hermes_personal_pt_41",
-      "community": 19,
+      "community": 18,
       "norm_label": "\u1103\u1166\u110b\u1175\u1110\u1165 \u1100\u1175\u1107\u1161\u11ab \u1105\u116e\u1110\u1175\u11ab \u1109\u1162\u11bc\u1109\u1165\u11bc"
     },
     {
@@ -3042,7 +3060,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L56",
       "id": "wiki_hermes_personal_pt_56",
-      "community": 19,
+      "community": 18,
       "norm_label": "\u110b\u1161\u11ab\u110c\u1165\u11ab\u110c\u1161\u11bc\u110e\u1175"
     },
     {
@@ -3051,7 +3069,7 @@
       "source_file": "src/content/publish/wiki/hermes-personal-pt.md",
       "source_location": "L71",
       "id": "wiki_hermes_personal_pt_71",
-      "community": 19,
+      "community": 18,
       "norm_label": "\u1111\u1169\u1110\u1173\u1111\u1169\u11af\u1105\u1175\u110b\u1169 \u1100\u1175\u110c\u116e\u11ab \u110b\u1174\u1106\u1175"
     },
     {
@@ -3060,7 +3078,7 @@
       "source_file": "src/content/publish/wiki/interaction-component-architecture.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_interaction_component_architecture_md",
-      "community": 33,
+      "community": 32,
       "norm_label": "interaction-component-architecture.md"
     },
     {
@@ -3069,7 +3087,7 @@
       "source_file": "src/content/publish/wiki/inventory-system.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_inventory_system_md",
-      "community": 34,
+      "community": 33,
       "norm_label": "inventory-system.md"
     },
     {
@@ -3078,7 +3096,7 @@
       "source_file": "src/content/publish/wiki/llm-wiki-memory-architecture.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_llm_wiki_memory_architecture_md",
-      "community": 20,
+      "community": 19,
       "norm_label": "llm-wiki-memory-architecture.md"
     },
     {
@@ -3087,7 +3105,7 @@
       "source_file": "src/content/publish/wiki/llm-wiki-memory-architecture.md",
       "source_location": "L24",
       "id": "wiki_llm_wiki_memory_architecture_layer_roles",
-      "community": 20,
+      "community": 19,
       "norm_label": "layer roles"
     },
     {
@@ -3096,7 +3114,7 @@
       "source_file": "src/content/publish/wiki/llm-wiki-memory-architecture.md",
       "source_location": "L34",
       "id": "wiki_llm_wiki_memory_architecture_public_note_contract",
-      "community": 20,
+      "community": 19,
       "norm_label": "public note contract"
     },
     {
@@ -3105,7 +3123,7 @@
       "source_file": "src/content/publish/wiki/llm-wiki-memory-architecture.md",
       "source_location": "L38",
       "id": "wiki_llm_wiki_memory_architecture_codeblock_1",
-      "community": 20,
+      "community": 19,
       "norm_label": "code:yaml (status: evergreen)"
     },
     {
@@ -3114,7 +3132,7 @@
       "source_file": "src/content/publish/wiki/llm-wiki-memory-architecture.md",
       "source_location": "L49",
       "id": "wiki_llm_wiki_memory_architecture_operating_loop",
-      "community": 20,
+      "community": 19,
       "norm_label": "operating loop"
     },
     {
@@ -3123,7 +3141,7 @@
       "source_file": "src/content/publish/wiki/obsidian-publication-workflow.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_obsidian_publication_workflow_md",
-      "community": 21,
+      "community": 20,
       "norm_label": "obsidian-publication-workflow.md"
     },
     {
@@ -3132,7 +3150,7 @@
       "source_file": "src/content/publish/wiki/obsidian-publication-workflow.md",
       "source_location": "L33",
       "id": "wiki_obsidian_publication_workflow_codeblock_1",
-      "community": 21,
+      "community": 20,
       "norm_label": "code:yaml (draft: false)"
     },
     {
@@ -3141,7 +3159,7 @@
       "source_file": "src/content/publish/wiki/obsidian-publication-workflow.md",
       "source_location": "L48",
       "id": "wiki_obsidian_publication_workflow_codeblock_2",
-      "community": 21,
+      "community": 20,
       "norm_label": "code:bash (npm run content:check)"
     },
     {
@@ -3150,7 +3168,7 @@
       "source_file": "src/content/publish/wiki/personal-hermes-agent.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_personal_hermes_agent_md",
-      "community": 35,
+      "community": 34,
       "norm_label": "personal-hermes-agent.md"
     },
     {
@@ -3159,7 +3177,7 @@
       "source_file": "src/content/publish/wiki/steamworks-integration.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_steamworks_integration_md",
-      "community": 36,
+      "community": 35,
       "norm_label": "steamworks-integration.md"
     },
     {
@@ -3168,7 +3186,7 @@
       "source_file": "src/content/publish/wiki/unreal-ai-behavior-tree-eqs.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_ai_behavior_tree_eqs_md",
-      "community": 37,
+      "community": 36,
       "norm_label": "unreal-ai-behavior-tree-eqs.md"
     },
     {
@@ -3177,7 +3195,7 @@
       "source_file": "src/content/publish/wiki/unreal-client-programming.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_client_programming_md",
-      "community": 38,
+      "community": 37,
       "norm_label": "unreal-client-programming.md"
     },
     {
@@ -3186,7 +3204,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_mcp_58_official_update_md",
-      "community": 14,
+      "community": 13,
       "norm_label": "unreal-mcp-58-official-update.md"
     },
     {
@@ -3195,7 +3213,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
       "source_location": "L20",
       "id": "wiki_unreal_mcp_58_official_update",
-      "community": 14,
+      "community": 13,
       "norm_label": "\u110c\u1165\u11a8\u110b\u116d\u11bc \u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -3204,7 +3222,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
       "source_location": "L27",
       "id": "wiki_unreal_mcp_58_official_update_27",
-      "community": 14,
+      "community": 13,
       "norm_label": "\u1109\u1165\u11af\u110c\u1165\u11bc"
     },
     {
@@ -3213,7 +3231,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
       "source_location": "L35",
       "id": "wiki_unreal_mcp_58_official_update_claude_toolset",
-      "community": 14,
+      "community": 13,
       "norm_label": "claude\u110b\u1166\u1109\u1165 \u1112\u116a\u11a8\u110b\u1175\u11ab\u1112\u1161\u11ab \u1100\u1169\u11bc\u1109\u1175\u11a8 toolset"
     },
     {
@@ -3222,7 +3240,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
       "source_location": "L51",
       "id": "wiki_unreal_mcp_58_official_update_51",
-      "community": 14,
+      "community": 13,
       "norm_label": "\u1109\u1175\u11af\u110c\u1166 \u1112\u1162\u1100\u1167\u11af \u110c\u1161\u11a8\u110b\u1165\u11b8"
     },
     {
@@ -3231,7 +3249,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
       "source_location": "L68",
       "id": "wiki_unreal_mcp_58_official_update_codeblock_1",
-      "community": 14,
+      "community": 13,
       "norm_label": "code:text (beginplay())"
     },
     {
@@ -3240,7 +3258,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
       "source_location": "L76",
       "id": "wiki_unreal_mcp_58_official_update_76",
-      "community": 14,
+      "community": 13,
       "norm_label": "\u110b\u1174\u1106\u1175"
     },
     {
@@ -3249,7 +3267,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp-58-official-update.md",
       "source_location": "L82",
       "id": "wiki_unreal_mcp_58_official_update_82",
-      "community": 14,
+      "community": 13,
       "norm_label": "\u1100\u1169\u11bc\u1100\u1162 \u1100\u1175\u110c\u116e\u11ab"
     },
     {
@@ -3258,7 +3276,7 @@
       "source_file": "src/content/publish/wiki/unreal-mcp.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_mcp_md",
-      "community": 39,
+      "community": 38,
       "norm_label": "unreal-mcp.md"
     },
     {
@@ -3267,7 +3285,7 @@
       "source_file": "src/content/publish/wiki/unreal-uasset-text-diff.md",
       "source_location": "L1",
       "id": "src_content_publish_wiki_unreal_uasset_text_diff_md",
-      "community": 12,
+      "community": 11,
       "norm_label": "unreal-uasset-text-diff.md"
     },
     {
@@ -3276,7 +3294,7 @@
       "source_file": "src/content/publish/wiki/unreal-uasset-text-diff.md",
       "source_location": "L26",
       "id": "wiki_unreal_uasset_text_diff_what_changed",
-      "community": 12,
+      "community": 11,
       "norm_label": "what changed"
     },
     {
@@ -3285,7 +3303,7 @@
       "source_file": "src/content/publish/wiki/unreal-uasset-text-diff.md",
       "source_location": "L39",
       "id": "wiki_unreal_uasset_text_diff_measured_improvement",
-      "community": 12,
+      "community": 11,
       "norm_label": "measured improvement"
     },
     {
@@ -3294,7 +3312,7 @@
       "source_file": "src/content/publish/wiki/unreal-uasset-text-diff.md",
       "source_location": "L54",
       "id": "wiki_unreal_uasset_text_diff_why_it_matters",
-      "community": 12,
+      "community": 11,
       "norm_label": "why it matters"
     },
     {
@@ -3303,7 +3321,7 @@
       "source_file": "src/content/publish/wiki/unreal-uasset-text-diff.md",
       "source_location": "L65",
       "id": "wiki_unreal_uasset_text_diff_how_it_works",
-      "community": 12,
+      "community": 11,
       "norm_label": "how it works"
     },
     {
@@ -3312,7 +3330,7 @@
       "source_file": "src/content/publish/wiki/unreal-uasset-text-diff.md",
       "source_location": "L77",
       "id": "wiki_unreal_uasset_text_diff_image_suggestion",
-      "community": 12,
+      "community": 11,
       "norm_label": "image suggestion"
     },
     {
@@ -3321,7 +3339,7 @@
       "source_file": "src/content/publish/wiki/unreal-uasset-text-diff.md",
       "source_location": "L81",
       "id": "wiki_unreal_uasset_text_diff_codeblock_1",
-      "community": 12,
+      "community": 11,
       "norm_label": "code:text (ai\u1100\u1161 \u1100\u1166\u110b\u1175\u11b7 \u1111\u1161\u110b\u1175\u11af \u1107\u1167\u11ab\u1100\u1167\u11bc\u110b\u1173\u11af \u110b\u1175\u11b0\u1102\u1173\u11ab \u1107\u1161\u11bc\u1109\u1175\u11a8 \u1100\u1162\u1109\u1165\u11ab)"
     },
     {
@@ -3330,15 +3348,33 @@
       "source_file": "src/content/publish/wiki/unreal-uasset-text-diff.md",
       "source_location": "L99",
       "id": "wiki_unreal_uasset_text_diff_limits",
-      "community": 12,
+      "community": 11,
       "norm_label": "limits"
+    },
+    {
+      "label": "\uacbd\ub825\uc0ac\ud56d",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L35",
+      "community": 3,
+      "norm_label": "\u1100\u1167\u11bc\u1105\u1167\u11a8\u1109\u1161\u1112\u1161\u11bc",
+      "id": "pages_cv_35"
+    },
+    {
+      "label": "\uac1c\uc778 \ud504\ub85c\uc81d\ud2b8",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L59",
+      "community": 3,
+      "norm_label": "\u1100\u1162\u110b\u1175\u11ab \u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173",
+      "id": "pages_cv_59"
     },
     {
       "label": "Approach",
       "file_type": "document",
       "source_file": "src/content/publish/wiki/unreal-uasset-text-diff.md",
       "source_location": "L24",
-      "community": 12,
+      "community": 11,
       "norm_label": "approach",
       "id": "wiki_unreal_uasset_text_diff_approach"
     },
@@ -3347,7 +3383,7 @@
       "file_type": "document",
       "source_file": "src/content/publish/wiki/unreal-uasset-text-diff.md",
       "source_location": "L52",
-      "community": 12,
+      "community": 11,
       "norm_label": "reuse notes",
       "id": "wiki_unreal_uasset_text_diff_reuse_notes"
     },
@@ -3401,7 +3437,7 @@
       "file_type": "code",
       "source_file": "scripts/memory-report.mjs",
       "source_location": "L16",
-      "community": 8,
+      "community": 2,
       "norm_label": "packages",
       "id": "scripts_memory_report_packages"
     },
@@ -3410,7 +3446,7 @@
       "file_type": "code",
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L10",
-      "community": 4,
+      "community": 5,
       "norm_label": "requiredmemoryfields",
       "id": "scripts_check_public_content_requiredmemoryfields"
     },
@@ -3419,7 +3455,7 @@
       "file_type": "code",
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L19",
-      "community": 4,
+      "community": 5,
       "norm_label": "blockedpatterns",
       "id": "scripts_check_public_content_blockedpatterns"
     },
@@ -3428,7 +3464,7 @@
       "file_type": "code",
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L36",
-      "community": 4,
+      "community": 5,
       "norm_label": "failures",
       "id": "scripts_check_public_content_failures"
     },
@@ -3437,7 +3473,7 @@
       "file_type": "code",
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L37",
-      "community": 4,
+      "community": 5,
       "norm_label": "warnings",
       "id": "scripts_check_public_content_warnings"
     },
@@ -3446,7 +3482,7 @@
       "file_type": "code",
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L41",
-      "community": 4,
+      "community": 5,
       "norm_label": "parsed",
       "id": "scripts_check_public_content_parsed"
     },
@@ -3455,7 +3491,7 @@
       "file_type": "code",
       "source_file": "scripts/check-public-content.mjs",
       "source_location": "L42",
-      "community": 4,
+      "community": 5,
       "norm_label": "relative",
       "id": "scripts_check_public_content_relative"
     },
@@ -3464,7 +3500,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L55",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u1107\u1162\u1111\u1169",
       "id": "wiki_readme_55"
     },
@@ -7900,6 +7936,46 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_37",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_44",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_55",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_74",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
       "source_location": "L35",
       "weight": 1,
       "confidence_score": 1,
@@ -7941,21 +8017,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/publish/pages/cv.md",
-      "source_location": "L37",
-      "weight": 1,
-      "confidence_score": 1,
-      "source": "pages_cv_35",
-      "target": "pages_cv_aixlab"
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "pages_cv_44",
+      "target": "pages_cv_aixlab",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content/publish/pages/cv.md",
-      "source_location": "L51",
+      "source_location": "L37",
       "weight": 1,
       "confidence_score": 1,
       "source": "pages_cv_35",
-      "target": "pages_cv_ribbon_games"
+      "target": "pages_cv_aixlab"
     },
     {
       "relation": "worked_at",
@@ -7989,6 +8065,26 @@
       "semantic_provider": "codex",
       "source": "pages_cv_aixlab",
       "target": "project_forbidden_art"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "pages_cv_55",
+      "target": "pages_cv_ribbon_games",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L51",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "pages_cv_35",
+      "target": "pages_cv_ribbon_games"
     },
     {
       "relation": "worked_at",
@@ -8614,5 +8710,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f5306acc76281836d6877fd5676496f7dc9f77f9"
+  "built_at_commit": "06032412dcb49a00902c119116318fcae5296729"
 }

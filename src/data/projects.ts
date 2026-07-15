@@ -1,18 +1,18 @@
 export const projects = [
   {
     title: '골목길: 귀흔',
-    displayTitle: '골목길: 귀흔 (PC/STOVE, 2024.04.09~2026.05.01)',
-    description: 'Unreal Engine PC horror project. Worked on AI, UI, options, inventory, localization, audio, sequence, and puzzle/content systems.',
+    displayTitle: '골목길: 귀흔 (PC/STOVE, 출시 2025.10.29, 2024.04.09~2026.05.01)',
+    description: 'Unreal Engine PC horror project distributed by Smilegate. Worked on AI, Common UI, options, inventory, localization, audio, sequence, and puzzle/content systems.',
     role: 'Client Programmer',
     period: '2024.04.09~2026.05.01',
     platform: 'PC/STOVE',
-    tags: ['Unreal Engine', 'AI', 'UI', 'Localization', 'MetaSound'],
+    tags: ['Unreal Engine', 'AI', 'Common UI', 'UI', 'Localization', 'MetaSound', 'Sequencer', 'DLSS/FSR'],
     status: 'Released',
   },
   {
     title: 'Forbidden Art',
-    displayTitle: 'Forbidden Art (PC VR/Steam/STOVE, 2023.04.15~2024.05.02)',
-    description: 'Unreal Engine PC VR horror project. Implemented puzzle logic, input, inventory, Steam achievements, AI, localization, and options.',
+    displayTitle: 'Forbidden Art (PC VR/Steam/STOVE, Steam 출시 2024.03.25, 2023.04.15~2024.05.02)',
+    description: 'Unreal Engine PC VR horror project. Implemented puzzle logic, input, inventory, Steam achievements, Depot/build operations, AI, localization, and options.',
     role: 'Client Programmer',
     period: '2023.04.15~2024.05.02',
     platform: 'PC VR/Steam/STOVE',
