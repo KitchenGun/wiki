@@ -1,6 +1,6 @@
 import type { CollectionEntry } from 'astro:content';
 
-export type PublishEntry = CollectionEntry<'blog'> | CollectionEntry<'wiki'>;
+export type PublishEntry = CollectionEntry<'wiki'>;
 
 export function isPublicEntry(entry: PublishEntry) {
   return entry.data.visibility === 'public' && !entry.data.draft;

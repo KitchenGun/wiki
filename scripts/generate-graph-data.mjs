@@ -8,7 +8,7 @@ const root = process.cwd();
 const contentRoot = path.join(root, 'src/content/publish');
 const outputPath = path.join(root, 'public/graph-data.json');
 
-const files = await fg(['blog/**/*.{md,mdx}', 'wiki/**/*.{md,mdx}'], {
+const files = await fg(['wiki/**/*.{md,mdx}'], {
   cwd: contentRoot,
   absolute: true,
 });

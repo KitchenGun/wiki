@@ -7,7 +7,6 @@ import { byDateDesc, collectTags, isPublicEntry } from '../lib/content';
 import { site } from '../lib/site';
 import { withBase } from '../lib/url';
 
-const posts = (await getCollection('blog')).filter(isPublicEntry).sort(byDateDesc);
 const wiki = (await getCollection('wiki')).filter(isPublicEntry).sort(byDateDesc);
 const home = (await getCollection('pages')).find((entry) => entry.id === 'home' && entry.data.visibility === 'public' && !entry.data.draft);
 if (!home) throw new Error('Missing public page: home');
@@ -49,10 +48,10 @@ const { Content } = await render(home);
   <section class="mt-14 grid gap-10 lg:grid-cols-[1fr_18rem]">
     <div>
       <div class="mb-4 flex items-end justify-between gap-4">
-        <h2 class="cyber-section-title text-xl font-semibold">Latest Posts</h2>
-        <a class="text-sm" href={withBase('/blog/')}>All posts</a>
+        <h2 class="cyber-section-title text-xl font-semibold">Latest Wiki Notes</h2>
+        <a class="text-sm" href={withBase('/wiki/')}>All notes</a>
       </div>
-      <EntryList entries={posts.slice(0, 3)} />
+      <EntryList entries={wiki.slice(0, 3)} />
     </div>
 
     <div>

@@ -12,9 +12,8 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const wikiNotes = (await getCollection('wiki')).filter(isPublicEntry).sort(byDateDesc);
-const blogPosts = (await getCollection('blog')).filter(isPublicEntry).sort(byDateDesc);
 const related = relatedEntries(entry, wikiNotes);
-const backlinks = backlinkEntries(entry, [...wikiNotes, ...blogPosts]);
+const backlinks = backlinkEntries(entry, wikiNotes);
 const { Content } = await render(entry);
 ---
 

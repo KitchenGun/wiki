@@ -20,11 +20,6 @@ const publicNoteSchema = z.object({
   slug: z.string().optional(),
 });
 
-const blog = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/publish/blog' }),
-  schema: publicNoteSchema,
-});
-
 const wiki = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/publish/wiki' }),
   schema: publicNoteSchema,
@@ -40,4 +35,4 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { blog, wiki, pages };
+export const collections = { wiki, pages };

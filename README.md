@@ -22,7 +22,6 @@ PUBLIC_BASE_PATH=/REPO
 공개 콘텐츠만 여기에 둔다.
 
 ```text
-src/content/publish/blog
 src/content/publish/wiki
 ```
 

@@ -280,7 +280,7 @@ function renderCandidate({ id, risk, blockers, commits, recommendation, changedF
     '',
     `- ${recommendation.label}: ${recommendation.reason_code}`,
     `- ${recommendation.reason}`,
-    '- Approval promotes this candidate to a public wiki/blog note and runs content:check, graph, and build validation.',
+    '- Approval promotes this candidate to a public wiki note and runs content:check, graph, and build validation.',
     '- Denial keeps only the private memory record and does not create public content.',
     '',
     '## Commit Themes',

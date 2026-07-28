@@ -16,7 +16,7 @@ const root = process.cwd();
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const args = parseArgs(process.argv.slice(2));
 const candidateArg = args.candidate;
-const target = args.target;
+const target = args.target ?? 'wiki';
 const overwrite = args.overwrite === true || args.overwrite === 'true';
 const runGraphify = args.graphify === true || args.graphify === 'true';
 const npmCommand = process.platform === 'win32' ? 'npm.cmd' : 'npm';
@@ -28,13 +28,13 @@ const validation = [
   'build',
 ];
 
-if (!candidateArg || !target) {
-  console.error('Usage: npm run memory:approve -- --candidate <id-or-path> --target blog|wiki');
+if (!candidateArg) {
+  console.error('Usage: npm run memory:approve -- --candidate <id-or-path> [--target wiki]');
   process.exit(1);
 }
 
-if (!['blog', 'wiki'].includes(String(target))) {
-  console.error('--target must be blog or wiki.');
+if (String(target) !== 'wiki') {
+  console.error('--target must be wiki.');
   process.exit(1);
 }
 
