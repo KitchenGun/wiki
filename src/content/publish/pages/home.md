@@ -2,7 +2,9 @@
 title: Home
 description: 강건 == 게임 개발과 AI 자동화를 깊이 파고들어, 아이디어를 실제 결과물로 완성하는 개발자
 eyebrow: Unreal Client Programmer / public notebook
-heading: 강건 == 게임 개발과 AI 자동화를 깊이 파고들어, 아이디어를 실제 결과물로 완성하는 개발자
+heading: |-
+  강건의
+  개발 기록장
 summary: DirectX와 Unity로 시작해 Unreal Engine을 중심으로 AI, UI, 인게임 콘텐츠와 출시·운영 기능을 구현해 왔습니다.
 draft: false
 visibility: public
@@ -12,9 +14,9 @@ related: []
 status: "evergreen"
 source_type: "compiled"
 source_url: ""
-captured_at: "2026-07-28"
+captured_at: "2026-07-29"
 owner: "kang"
-decision_summary: "강건 == 게임 개발과 AI 자동화를 깊이 파고들어, 아이디어를 실제 결과물로 완성하는 개발자"
+decision_summary: "홈 페이지 타이틀을 '강건의 개발 기록장'으로 변경."
 next_actions: []
 ---
 

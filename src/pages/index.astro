@@ -18,7 +18,7 @@ const { Content } = await render(home);
   <section class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
     <div>
       <p class="cyber-eyebrow text-sm font-medium">{home.data.eyebrow || `${site.role} / public notebook`}</p>
-      <h1 class="cyber-title mt-3 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">
+      <h1 class="cyber-title mt-3 max-w-3xl whitespace-pre-line text-4xl font-black leading-tight sm:text-5xl">
         {home.data.heading ?? home.data.title}
       </h1>
       <p class="cyber-copy mt-5 max-w-2xl text-base leading-7">
