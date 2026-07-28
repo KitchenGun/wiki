@@ -25,21 +25,16 @@ next_actions: []
 
 Public contact and project links are managed through the GitHub profile: [KitchenGun](https://github.com/KitchenGun).
 
-## 학력사항
+## 수상경력
 
-| 기간 | 학교 | 전공 | 학위 |
-|---|---|---|---|
-| 2012.03 ~ 2016.02 | 대광고등학교 (서울) | - | 졸업 |
-| 2016.03 ~ 2023.02 | 우송대학교 (대전) | 게임멀티미디어 | 졸업 (공학사) |
-| 학점 | 3.94/4.5 |||
-| 병역 | 병장 만기 전역 |||
-
-## 기술 스택
-
-- C++ 객체지향 설계, Unreal Engine 4/5 소스 분석 및 시스템 확장
-- AI Behavior Tree, Blackboard, AI Perception, EQS, Common UI, Enhanced Input
-- Custom GameUserSettings, DLSS 3.5, FSR 3, MetaSound, Animation Blueprint, Sequencer, Steamworks
-- C#, Python, Verse, Unity, UEFN, Perforce(P4V), GitHub, SVN
+- 2025 스토브인디 어워즈 Top 10(골목길: 귀흔) / 스마일게이트 / 2026.02.11
+- 2024 하반기 이달의 우수게임(금지된 예술) / 문화체육관광부 / 2024.11.01
+- 강철포폴 공모전 / SGA 게임 아카데미 / 2021.09.30
+- 2020년 제3회 WSU SOL Dream-up+ 창업아이디어 경진대회 / 우송대학교 / 2021.01.12
+- 2020년 제2회 WSU SOL Dream-up+ 창업아이디어 경진대회 / 우송대학교 / 2020.10.31
+- Learning Concert 경진대회 / 우송대학교 / 2016.12.12
+- 2016 2학기 학술제 / 우송대학교 / 2016.11.30
+- 대전스마트 콘텐츠 공모전 / 대전정보문화산업진흥원 / 2016.10.27
 
 ## 경력사항
 
@@ -54,17 +49,6 @@ Public contact and project links are managed through the GitHub profile: [Kitche
 
 두 프로젝트의 초기 개발부터 출시와 운영까지 참여했습니다. GitHub Copilot 사내 도입을 추진하고, Claude Code를 활용한 코드 컨벤션 검토와 로직 최적화, 자연어로 Unreal Editor 작업을 수행하는 Unreal MCP 구현도 진행했습니다.
 
-## 수상 내역
-
-- 대전스마트 콘텐츠 공모전 / 대전정보문화산업진흥원 / 2016.10.27
-- 2016 2학기 학술제 / 우송대학교 / 2016.11.30
-- Learning Concert 경진대회 / 우송대학교 / 2016.12.12
-- 2020년 제2회 WSU SOL Dream-up+ 창업아이디어 경진대회 / 우송대학교 / 2020.10.31
-- 2020년 제3회 WSU SOL Dream-up+ 창업아이디어 경진대회 / 우송대학교 / 2021.01.12
-- 강철포폴 공모전 / SGA 게임 아카데미 / 2021.09.30
-- 2024 하반기 이달의 우수게임(금지된 예술) / 문화체육관광부 / 2024.11.01
-- 2025 스토브인디 어워즈 Top 10(골목길 : 귀흔) / 스마일게이트 / 2026.02.11
-
 ### Ribbon Games
 
 **언리얼 개발팀 / 사원 / 클라이언트 프로그래머, 정규직** / 2022.10 ~ 2022.12 (3개월)
@@ -76,6 +60,24 @@ Public contact and project links are managed through the GitHub profile: [Kitche
 - 인벤토리 Widget, UI, 주요 기능 구현 및 아이템 데이터 분리 구조 설계
 - 소규모 개발팀과 협업해 시스템 완성
 
+## 기술 스택
+
+- **C++ / 프로그래밍 언어**: C++ 객체지향 설계, C#, Python, Verse
+- **Unreal Engine / 게임플레이**: Unreal Engine 4/5 소스 분석 및 시스템 확장, AI Behavior Tree, Blackboard, AI Perception, EQS, Common UI, Enhanced Input, Animation Blueprint, Sequencer
+- **엔진 확장 / 렌더링 / 오디오**: Custom GameUserSettings, DLSS 3.5, FSR 3, MetaSound
+- **플랫폼 / 엔진 / 협업 도구**: Steamworks, Unity, UEFN, Perforce(P4V), GitHub, SVN
+
 ## 개인 프로젝트
 
-- **personal-hermes-agent** (2026): 개인 Hermes Agent 운영 프로필과 Job Registry를 공개 가능한 형태로 정리한 저장소. Memory, Skills, Gateway, Cron, Delegation, Provider Routing 구조와 검증 스크립트를 문서화. [GitHub](https://github.com/KitchenGun/personal-hermes-agent)
+- **[personal-hermes-agent](https://github.com/KitchenGun/personal-hermes-agent)**: Hermes Agent의 VM 운영 소스, Jobs, Skills, Prompts, Scripts와 Dashboard/Control API를 관리합니다. 인증, allowlist 응답, 비밀정보 검사와 smoke test를 적용했습니다.
+- **kis-trading-lab** (비공개): KIS Open API 기반 주식 데이터 수집·연구·모의투자 도구입니다. SQLite 데이터 파이프라인, feature·backtest·paper simulation·report를 구성하고, 운영 환경 차단과 수동 승인 경계를 적용했습니다.
+- **DualFire** (비공개): Unreal Engine 5.5와 Paper2D 기반 2D 스크롤 슈팅 게임입니다. Enhanced Input 기반 XZ 평면 이동, 직교 스테이지 카메라와 화면 경계, 커스텀 충돌 채널을 구현했습니다.
+
+## 학력사항
+
+| 기간 | 학교 | 전공 | 학위 |
+|---|---|---|---|
+| 2012.03 ~ 2016.02 | 대광고등학교 (서울) | - | 졸업 |
+| 2016.03 ~ 2023.02 | 우송대학교 (대전) | 게임멀티미디어 | 졸업 (공학사) |
+| 학점 | 3.94/4.5 |||
+| 병역 | 병장 만기 전역 |||
