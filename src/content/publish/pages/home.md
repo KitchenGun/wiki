@@ -1,9 +1,9 @@
 ---
 title: Home
-description: 플레이어가 직접 만지는 게임 시스템을 출시와 운영 조건까지 연결해 온 Unreal Engine 클라이언트 프로그래머.
+description: 강건 == 게임 개발과 AI 자동화를 깊이 파고들어, 아이디어를 실제 결과물로 완성하는 개발자
 eyebrow: Unreal Client Programmer / public notebook
-heading: 강건의 Unreal client programming portfolio and public knowledge base.
-summary: AI, UI, 옵션, 인벤토리, 현지화, Steamworks, Sequencer, Unreal MCP 작업을 문제·구현·검증 기준으로 기록합니다. 비공개 자료와 내부 정보는 공개 빌드에서 제외합니다.
+heading: 강건 == 게임 개발과 AI 자동화를 깊이 파고들어, 아이디어를 실제 결과물로 완성하는 개발자
+summary: DirectX와 Unity로 시작해 Unreal Engine을 중심으로 AI, UI, 인게임 콘텐츠와 출시·운영 기능을 구현해 왔습니다.
 draft: false
 visibility: public
 tags: []
@@ -12,10 +12,10 @@ related: []
 status: "evergreen"
 source_type: "compiled"
 source_url: ""
-captured_at: "2026-07-02"
+captured_at: "2026-07-28"
 owner: "kang"
-decision_summary: "플레이어가 직접 만지는 게임 시스템을 출시와 운영 조건까지 연결해 온 Unreal Engine 클라이언트 프로그래머."
+decision_summary: "강건 == 게임 개발과 AI 자동화를 깊이 파고들어, 아이디어를 실제 결과물로 완성하는 개발자"
 next_actions: []
 ---
 
-플레이어가 직접 만지는 AI, UI, 옵션, 인벤토리 시스템을 Unreal Engine으로 구현하고, 현지화·Steamworks·빌드 운영까지 연결해 온 클라이언트 프로그래머입니다. 이 노트에는 출시 프로젝트와 개인 R&D에서 실제로 선택한 구조, 검증한 범위, 남겨 둔 경계를 기록합니다.
+대학교 시절 DirectX와 Unity로 12개 이상의 게임을 만들었고, AIXLAB에서 호러 어드벤처 **골목길: 귀흔**과 **금지된 예술**의 초기 개발부터 출시까지 클라이언트 프로그래머로 참여했습니다. Unreal Engine을 중심으로 AI, Animation, 인게임 콘텐츠, Common UI, 옵션, 현지화와 Steamworks 기능을 구현해 왔습니다.
