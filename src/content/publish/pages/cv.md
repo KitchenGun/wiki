@@ -19,9 +19,7 @@ decision_summary: "강건의 이력서."
 next_actions: []
 ---
 
-## Public Profile
-
-플레이어가 직접 만지는 게임 시스템을 구현하고, 현지화·Steamworks·빌드 운영까지 출시 조건으로 연결해 온 Unreal Engine 클라이언트 프로그래머입니다. 각 경력은 담당 범위와 검증 가능한 결과를 기준으로 정리했습니다.
+**강건 == 게임 개발과 AI 자동화를 깊이 파고들어, 아이디어를 실제 결과물로 완성하는 개발자**
 
 Public contact and project links are managed through the GitHub profile: [KitchenGun](https://github.com/KitchenGun).
 
@@ -62,10 +60,9 @@ Public contact and project links are managed through the GitHub profile: [Kitche
 
 ## 기술 스택
 
-- **C++ / 프로그래밍 언어**: C++ 객체지향 설계, C#, Python, Verse
-- **Unreal Engine / 게임플레이**: Unreal Engine 4/5 소스 분석 및 시스템 확장, AI Behavior Tree, Blackboard, AI Perception, EQS, Common UI, Enhanced Input, Animation Blueprint, Sequencer
-- **엔진 확장 / 렌더링 / 오디오**: Custom GameUserSettings, DLSS 3.5, FSR 3, MetaSound
-- **플랫폼 / 엔진 / 협업 도구**: Steamworks, Unity, UEFN, Perforce(P4V), GitHub, SVN
+- **프로그래밍 언어**: C++, C#, Python, Verse
+- **엔진 / 그래픽스**: Unreal, Unity, DirectX
+- **버전 관리 / AI 도구**: Perforce(P4V), GitHub, SVN, Codex, Claude Code, HermesAgent
 
 ## 개인 프로젝트
 
