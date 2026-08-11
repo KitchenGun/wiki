@@ -20,6 +20,16 @@ export const projects = [
     status: 'Released',
   },
   {
+    title: 'Gulag',
+    description: 'Unity WebGL arena shooter prototype with three fixed-loadout classes, class skills, score/combo rules, enemy spawning, and an online leaderboard.',
+    role: 'Game Programmer / Designer',
+    period: '2026',
+    platform: 'WebGL',
+    href: 'https://kitchengun.github.io/wiki/games/gulag/',
+    tags: ['Unity', 'WebGL', 'Game Design', 'Cloudflare Workers'],
+    status: 'Playable Prototype',
+  },
+  {
     title: 'UnrealMCP',
     description: 'MCP, Claude Skill, Codex, and Discord bot experiment for controlling Unreal editor tasks with natural language.',
     role: 'Tool Developer',
