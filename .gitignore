@@ -1,6 +1,8 @@
 # build output
 dist/
 public/graph-data.json
+output/
+tmp/
 # generated types
 .astro/
 
