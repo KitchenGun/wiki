@@ -2330,7 +2330,7 @@
       "file_type": "code",
       "source_file": "src/content.config.ts",
       "source_location": "L1",
-      "community": 20,
+      "community": 21,
       "norm_label": "content.config.ts",
       "id": "src_content_config_ts"
     },
@@ -2339,7 +2339,7 @@
       "file_type": "code",
       "source_file": "src/content.config.ts",
       "source_location": "L4",
-      "community": 20,
+      "community": 21,
       "norm_label": "publicnoteschema",
       "id": "src_content_config_publicnoteschema"
     },
@@ -2348,7 +2348,7 @@
       "file_type": "code",
       "source_file": "src/content.config.ts",
       "source_location": "L23",
-      "community": 20,
+      "community": 21,
       "norm_label": "wiki",
       "id": "src_content_config_wiki"
     },
@@ -2357,7 +2357,7 @@
       "file_type": "code",
       "source_file": "src/content.config.ts",
       "source_location": "L28",
-      "community": 20,
+      "community": 21,
       "norm_label": "pages",
       "id": "src_content_config_pages"
     },
@@ -2366,7 +2366,7 @@
       "file_type": "code",
       "source_file": "src/content.config.ts",
       "source_location": "L38",
-      "community": 20,
+      "community": 21,
       "norm_label": "collections",
       "id": "src_content_config_collections"
     },
@@ -2639,6 +2639,15 @@
       "community": 23,
       "norm_label": "public writing persona",
       "id": "wiki_agents_public_writing_persona"
+    },
+    {
+      "label": "Project Codex Rules",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L21",
+      "community": 23,
+      "norm_label": "project codex rules",
+      "id": "wiki_agents_project_codex_rules"
     },
     {
       "label": "README.md",
@@ -3140,7 +3149,7 @@
       "file_type": "document",
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L1",
-      "community": 21,
+      "community": 20,
       "norm_label": "hermes-game-jobs-pipeline.md",
       "id": "src_content_publish_wiki_hermes_game_jobs_pipeline_md"
     },
@@ -3149,7 +3158,7 @@
       "file_type": "document",
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L24",
-      "community": 21,
+      "community": 20,
       "norm_label": "\u1109\u1161\u110b\u116d\u11bc\u110c\u1161 \u1112\u1173\u1105\u1173\u11b7",
       "id": "wiki_hermes_game_jobs_pipeline"
     },
@@ -3158,7 +3167,7 @@
       "file_type": "document",
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L37",
-      "community": 21,
+      "community": 20,
       "norm_label": "\u1100\u116e\u1112\u1167\u11ab \u1100\u116e\u110c\u1169",
       "id": "wiki_hermes_game_jobs_pipeline_37"
     },
@@ -3167,7 +3176,7 @@
       "file_type": "document",
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L46",
-      "community": 21,
+      "community": 20,
       "norm_label": "\u110b\u116e\u11ab\u110b\u1167\u11bc \u1112\u1167\u11ab\u1112\u116a\u11bc",
       "id": "wiki_hermes_game_jobs_pipeline_46"
     },
@@ -3176,7 +3185,7 @@
       "file_type": "document",
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L56",
-      "community": 21,
+      "community": 20,
       "norm_label": "\u1111\u1161\u11ab\u1103\u1161\u11ab \u1100\u1167\u11bc\u1100\u1168",
       "id": "wiki_hermes_game_jobs_pipeline_56"
     },
@@ -3185,7 +3194,7 @@
       "file_type": "document",
       "source_file": "src/content/publish/wiki/hermes-game-jobs-pipeline.md",
       "source_location": "L66",
-      "community": 21,
+      "community": 20,
       "norm_label": "\u1111\u1169\u1110\u1173\u1111\u1169\u11af\u1105\u1175\u110b\u1169 \u1100\u1175\u110c\u116e\u11ab \u110b\u1174\u1106\u1175",
       "id": "wiki_hermes_game_jobs_pipeline_66"
     },
@@ -3604,15 +3613,6 @@
       "id": "wiki_unreal_uasset_text_diff_limits"
     },
     {
-      "label": "blog",
-      "file_type": "code",
-      "source_file": "src/content.config.ts",
-      "source_location": "L23",
-      "community": 20,
-      "norm_label": "blog",
-      "id": "src_content_config_blog"
-    },
-    {
       "label": "\ubc30\ud3ec",
       "file_type": "document",
       "source_file": "README.md",
@@ -3620,33 +3620,6 @@
       "community": 8,
       "norm_label": "\u1107\u1162\u1111\u1169",
       "id": "wiki_readme_88"
-    },
-    {
-      "label": "2026-04-29-portfolio-case-notes.md",
-      "file_type": "document",
-      "source_file": "src/content/publish/blog/2026-04-29-portfolio-case-notes.md",
-      "source_location": "L1",
-      "community": 43,
-      "norm_label": "2026-04-29-portfolio-case-notes.md",
-      "id": "src_content_publish_blog_2026_04_29_portfolio_case_notes_md"
-    },
-    {
-      "label": "2026-04-29-public-wiki.md",
-      "file_type": "document",
-      "source_file": "src/content/publish/blog/2026-04-29-public-wiki.md",
-      "source_location": "L1",
-      "community": 44,
-      "norm_label": "2026-04-29-public-wiki.md",
-      "id": "src_content_publish_blog_2026_04_29_public_wiki_md"
-    },
-    {
-      "label": "iteration-loop.mdx",
-      "file_type": "document",
-      "source_file": "src/content/publish/blog/iteration-loop.mdx",
-      "source_location": "L1",
-      "community": 45,
-      "norm_label": "iteration-loop.mdx",
-      "id": "src_content_publish_blog_iteration_loop_mdx"
     },
     {
       "label": "Public Profile",
@@ -4170,16 +4143,61 @@
       "norm_label": "youtube @kangkeon4500",
       "community": 2,
       "id": "contact_youtube_kangkeon4500"
+    },
+    {
+      "label": "\uacbd\ub825\uc0ac\ud56d",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L39",
+      "community": 2,
+      "norm_label": "\u1100\u1167\u11bc\u1105\u1167\u11a8\u1109\u1161\u1112\u1161\u11bc",
+      "id": "pages_cv_39"
+    },
+    {
+      "label": "\uae30\uc220 \uc2a4\ud0dd",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L63",
+      "community": 2,
+      "norm_label": "\u1100\u1175\u1109\u116e\u11af \u1109\u1173\u1110\u1162\u11a8",
+      "id": "pages_cv_63"
+    },
+    {
+      "label": "\uac1c\uc778 \ud504\ub85c\uc81d\ud2b8",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L70",
+      "community": 2,
+      "norm_label": "\u1100\u1162\u110b\u1175\u11ab \u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173",
+      "id": "pages_cv_70"
+    },
+    {
+      "label": "\ud559\ub825\uc0ac\ud56d",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L76",
+      "community": 2,
+      "norm_label": "\u1112\u1161\u11a8\u1105\u1167\u11a8\u1109\u1161\u1112\u1161\u11bc",
+      "id": "pages_cv_76"
+    },
+    {
+      "label": "\ud559\ub825\uc0ac\ud56d",
+      "file_type": "document",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L77",
+      "community": 2,
+      "norm_label": "\u1112\u1161\u11a8\u1105\u1167\u11a8\u1109\u1161\u1112\u1161\u11bc",
+      "id": "pages_cv_77"
     }
   ],
   "links": [
     {
       "relation": "imports_from",
-      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "astro.config.mjs",
       "source_location": "L5",
       "weight": 1,
+      "context": "import",
       "confidence_score": 1,
       "source": "astro_config_mjs",
       "target": "src_lib_remark_wikilinks_mjs"
@@ -7867,16 +7885,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/content.config.ts",
-      "source_location": "L23",
-      "weight": 1,
-      "confidence_score": 1,
-      "source": "src_content_config_ts",
-      "target": "src_content_config_blog"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "src/data/projects.ts",
       "source_location": "L1",
       "weight": 1,
@@ -8084,25 +8092,14 @@
     },
     {
       "relation": "imports_from",
-      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/remark-wikilinks.mjs",
       "source_location": "L1",
       "weight": 1,
+      "context": "import",
       "confidence_score": 1,
       "source": "src_lib_remark_wikilinks_mjs",
       "target": "src_lib_wiki_links_mjs"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/remark-wikilinks.mjs",
-      "source_location": "L1",
-      "weight": 1,
-      "confidence_score": 1,
-      "source": "src_lib_remark_wikilinks_mjs",
-      "target": "lib_wiki_links_wikihref"
     },
     {
       "relation": "contains",
@@ -8133,6 +8130,17 @@
       "confidence_score": 1,
       "source": "src_lib_remark_wikilinks_mjs",
       "target": "lib_remark_wikilinks_splitwikitext"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/remark-wikilinks.mjs",
+      "source_location": "L1",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_lib_remark_wikilinks_mjs",
+      "target": "lib_wiki_links_wikihref"
     },
     {
       "relation": "calls",
@@ -8207,33 +8215,33 @@
     },
     {
       "relation": "calls",
-      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/wiki-links.mjs",
       "source_location": "L28",
       "weight": 1,
+      "context": "call",
       "confidence_score": 1,
       "source": "lib_wiki_links_slugifywikitarget",
       "target": "lib_wiki_links_wikihref"
     },
     {
       "relation": "calls",
-      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/wiki-links.mjs",
       "source_location": "L43",
       "weight": 1,
+      "context": "call",
       "confidence_score": 1,
       "source": "lib_wiki_links_slugifywikitarget",
       "target": "lib_wiki_links_extractwikilinks"
     },
     {
       "relation": "calls",
-      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/wiki-links.mjs",
       "source_location": "L29",
       "weight": 1,
+      "context": "call",
       "confidence_score": 1,
       "source": "lib_wiki_links_slugifyanchor",
       "target": "lib_wiki_links_wikihref"
@@ -8257,6 +8265,16 @@
       "confidence_score": 1,
       "source": "agents_md",
       "target": "wiki_agents_public_writing_persona"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L21",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "agents_md",
+      "target": "wiki_agents_project_codex_rules"
     },
     {
       "relation": "contains",
@@ -8590,6 +8608,56 @@
       "target": "pages_cv_28"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L39",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_39"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L63",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_63"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L70",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_70"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L76",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_76"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L77",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "src_content_publish_pages_cv_md",
+      "target": "pages_cv_77"
+    },
+    {
       "relation": "describes",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
@@ -8638,6 +8706,16 @@
       "weight": 1,
       "confidence_score": 1,
       "source": "pages_cv_35",
+      "target": "pages_cv_aixlab"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L41",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "pages_cv_39",
       "target": "pages_cv_aixlab"
     },
     {
@@ -8701,6 +8779,16 @@
       "weight": 1,
       "confidence_score": 1,
       "source": "pages_cv_35",
+      "target": "pages_cv_ribbon_games"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/publish/pages/cv.md",
+      "source_location": "L52",
+      "weight": 1,
+      "confidence_score": 1,
+      "source": "pages_cv_39",
       "target": "pages_cv_ribbon_games"
     },
     {
@@ -9687,5 +9775,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d9fc6d15197537b6035f1ebb2c503d45da8cde86"
+  "built_at_commit": "49e1b52d3c2eda4cc477360830fb70395cc2f5d8"
 }

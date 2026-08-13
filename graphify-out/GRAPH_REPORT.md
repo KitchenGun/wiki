@@ -1,15 +1,15 @@
-# Graph Report - .  (2026-08-11)
+# Graph Report - .  (2026-08-13)
 
 ## Corpus Check
 - cluster-only mode — file stats not available
 
 ## Summary
-- 461 nodes · 537 edges · 46 communities (43 shown, 3 thin omitted)
+- 463 nodes · 544 edges · 43 communities (41 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d9fc6d15`
+- Built from commit: `49e1b52d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -49,9 +49,9 @@
 5. `toRelativePortable()` - 8 edges
 6. `git()` - 7 edges
 7. `scanText()` - 7 edges
-8. `parseArgs()` - 6 edges
-9. `slugify()` - 6 edges
-10. `AIXLAB` - 6 edges
+8. `AIXLAB` - 7 edges
+9. `parseArgs()` - 6 edges
+10. `slugify()` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `골목길: 귀흔` --uses_skill--> `Common UI Plugin 기반 레이어 Widget 설계`  [INFERRED]
@@ -65,7 +65,7 @@
 - `Unreal MCP` --conceptually_related_to--> `AI 로직, Animation, 인게임 콘텐츠 구현`  [INFERRED]
   src/data/projects.ts → src/content/publish/pages/about.md
 
-## Communities (46 total, 3 thin omitted)
+## Communities (43 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
@@ -76,8 +76,8 @@ Cohesion: 0.04
 Nodes (39): allCommits, args, blockers, candidate, candidatePath, candidateRoot, changedFiles, commitRange (+31 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.07
-Nodes (36): 2024 하반기 이달의 우수게임, 2025 스토브인디 어워즈 Top 10, YouTube @kangkeon4500, projects, 우송대학교 게임멀티미디어공학과, 수상경력, 학력사항, 경력사항 (+28 more)
+Cohesion: 0.06
+Nodes (41): 2024 하반기 이달의 우수게임, 2025 스토브인디 어워즈 Top 10, YouTube @kangkeon4500, projects, 우송대학교 게임멀티미디어공학과, 수상경력, 학력사항, 경력사항 (+33 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.06
@@ -149,20 +149,24 @@ Nodes (6): 관찰한 커밋 흐름, 릴리스와 변경을 연결하는 기록, 
 
 ### Community 20 - "Community 20"
 Cohesion: 0.33
-Nodes (5): blog, collections, pages, publicNoteSchema, wiki
+Nodes (5): 사용자 흐름, 구현 구조, 운영 현황, 판단 경계, 포트폴리오 기준 의미
 
 ### Community 21 - "Community 21"
-Cohesion: 0.33
-Nodes (5): 사용자 흐름, 구현 구조, 운영 현황, 판단 경계, 포트폴리오 기준 의미
+Cohesion: 0.4
+Nodes (4): collections, pages, publicNoteSchema, wiki
 
 ### Community 22 - "Community 22"
 Cohesion: 0.4
 Nodes (4): code:yaml (status: evergreen), Layer roles, Operating loop, Public note contract
 
+### Community 23 - "Community 23"
+Cohesion: 0.5
+Nodes (3): graphify, Project Codex Rules, Public Writing Persona
+
 ## Knowledge Gaps
-- **261 isolated node(s):** `argv`, `root`, `publishRoot`, `strictMemory`, `root` (+256 more)
+- **265 isolated node(s):** `argv`, `root`, `publishRoot`, `strictMemory`, `root` (+260 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -174,10 +178,10 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `recommendMemoryAction()` connect `Community 0` to `Community 1`, `Community 18`, `Community 7`?**
   _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **What connects `argv`, `root`, `publishRoot` to the rest of the system?**
-  _261 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _265 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.04 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.07 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06 - nodes in this community are weakly interconnected._
