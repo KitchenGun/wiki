@@ -1,5 +1,5 @@
 ---
-title: "OpenAI Game Builders Seoul을 향한 2주: Codex로 만든 Gulag-project"
+title: "OpenAI Game Builders Seoul을 향한 2주: Codex로 만든 LAST MAG"
 description: "기획과 구현 방향을 제시하고, Codex 에이전트와 Unity MCP, Meshy API로 게임 구현·아트 제작·플레이테스트·WebGL 배포를 연결한 기록."
 date: 2026-08-15
 tags: [unity, codex, ai-workflow, game-development, webgl]
@@ -10,23 +10,23 @@ related: [gpt-56-parallel-agent-workflow, dualfire-commit-explanation-workflow, 
 slug: gulag-codex-ai-game-production
 status: "evergreen"
 source_type: "compiled"
-source_url: "https://github.com/KitchenGun/Gulag-project"
+source_url: "https://github.com/KitchenGun/LAST-MAG"
 captured_at: "2026-08-15"
 owner: "kang"
 decision_summary: "기획과 구현 방향은 사람이 정하고, Codex 에이전트·Unity MCP·Meshy API가 구현과 아트 제작, 플레이테스트, WebGL 배포를 수행하는 AI 중심 게임 제작 흐름을 검증했다."
 next_actions: ["밸런스 고도화", "레벨 디자인 고도화", "디자이너 사운드 반영", "대회 제출"]
 ---
 
-[OpenAI Game Builders Seoul](https://www.openaigame2026.com/#main)에 참가하기 위해 약 2주 동안 Unity WebGL 게임 `Gulag-project`를 개발했다.
+[OpenAI Game Builders Seoul](https://www.openaigame2026.com/#main)에 참가하기 위해 약 2주 동안 Unity WebGL 게임 `LAST MAG`을 개발했다.
 
 이번 프로젝트의 목표는 AI를 보조 도구로 사용하는 수준을 넘어, 기획 이후의 제작 과정을 AI 에이전트와 연결해 실제로 플레이 가능한 게임을 완성하는 것이었다.
 
-- [Gulag-project 플레이](https://kitchengun.github.io/wiki/games/gulag/)
-- [GitHub 저장소](https://github.com/KitchenGun/Gulag-project)
+- [LAST MAG 플레이](https://kitchengun.github.io/wiki/games/last-mag/)
+- [GitHub 저장소](https://github.com/KitchenGun/LAST-MAG)
 
 ## 문서 기반의 게임 설명
 
-`Gulag-project`는 SF 배경의 아레나에서 세 클래스 중 하나를 선택하고, 적이 떨어뜨린 탄약을 회수하며 높은 점수에 도전하는 1인칭 생존 슈팅 게임이다.
+`LAST MAG`은 SF 배경의 아레나에서 세 클래스 중 하나를 선택하고, 적이 떨어뜨린 탄약을 회수하며 높은 점수에 도전하는 1인칭 생존 슈팅 게임이다.
 
 플레이어는 척탄병, 공병, 저격수 중 하나를 선택한다.
 
@@ -38,7 +38,7 @@ next_actions: ["밸런스 고도화", "레벨 디자인 고도화", "디자이�
 
 헤드샷, 연속 처치, 무기 전환과 클래스 스킬 활용은 점수와 콤보로 이어진다. 사망 후에는 점수, 생존 시간, 처치 기록을 확인하고 닉네임을 입력해 랭킹에 도전할 수 있다.
 
-![Gulag-project 인게임 플레이 화면](./assets/gulag-codex-gameplay.png)
+![LAST MAG 인게임 플레이 화면](./assets/gulag-codex-gameplay.png)
 
 _Codex 에이전트와 Unity MCP로 구현하고 플레이테스트한 현재 WebGL 전투 화면._
 
@@ -106,8 +106,8 @@ AI를 단순히 코드를 추천하는 도구로 사용하지 않고 다음 역�
 
 ## 현재 버전과 제출 계획
 
-현재 공개된 버전은 `0.1.4`다. [WebGL 실행 페이지](https://kitchengun.github.io/wiki/games/gulag/)에서 클래스 선택부터 전투, 사망, 결과와 재시작으로 이어지는 현재 플레이 흐름을 확인할 수 있다.
+현재 공개된 버전은 `0.1.9`다. [WebGL 실행 페이지](https://kitchengun.github.io/wiki/games/last-mag/)에서 클래스 선택부터 전투, 사망, 결과와 재시작으로 이어지는 현재 플레이 흐름을 확인할 수 있다.
 
 앞으로 밸런스와 레벨 디자인을 고도화하고, 디자이너가 제작한 사운드를 추가한 뒤 대회에 제출할 예정이다.
 
-이번 2주는 AI가 게임 개발의 일부를 돕는 수준을 넘어, 기획을 실제 결과물로 변환하는 제작 파이프라인 전체에 참여할 수 있는지를 확인한 시간이었다. `Gulag-project`는 그 실험이 실제로 플레이할 수 있는 결과물까지 이어졌다는 기록이다.
+이번 2주는 AI가 게임 개발의 일부를 돕는 수준을 넘어, 기획을 실제 결과물로 변환하는 제작 파이프라인 전체에 참여할 수 있는지를 확인한 시간이었다. `LAST MAG`은 그 실험이 실제로 플레이할 수 있는 결과물까지 이어졌다는 기록이다.
