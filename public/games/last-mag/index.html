@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,16 +52,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGLRelease_0.1.20.loader.js";
+      var loaderUrl = buildUrl + "/WebGLRelease_0.1.21.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/WebGLRelease_0.1.20.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGLRelease_0.1.20.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGLRelease_0.1.20.wasm.unityweb",
+        dataUrl: buildUrl + "/WebGLRelease_0.1.21.data.unityweb",
+        frameworkUrl: buildUrl + "/WebGLRelease_0.1.21.framework.js.unityweb",
+        codeUrl: buildUrl + "/WebGLRelease_0.1.21.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Unity Technologies",
         productName: "LAST MAG",
-        productVersion: "0.1.20",
+        productVersion: "0.1.21",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
         //    alert("error " + err + " occurred at line " + line);
@@ -104,8 +104,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "1280px";
-        canvas.style.height = "720px";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
