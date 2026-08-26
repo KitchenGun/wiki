@@ -9,9 +9,16 @@ import { projects } from '../data/projects';
     <h1 class="cyber-title mt-3 text-4xl font-black">Selected work</h1>
     <div class="mt-8 grid gap-4 md:grid-cols-2">
       {projects.map((project) => (
-        <article class="cyber-card p-5">
+        <article class:list={["cyber-card relative p-5", { "cursor-pointer": project.href }]}>
+          {project.href && (
+            <a
+              class="absolute inset-0 z-10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400"
+              href={project.href}
+              aria-label={`${project.title} 프로젝트 열기`}
+            />
+          )}
           <p class="cyber-meta text-xs font-medium">{project.status}</p>
-          <h2 class="cyber-entry-link mt-2 text-xl font-semibold">
+          <h2 class="cyber-entry-link relative z-20 mt-2 text-xl font-semibold">
             {project.href ? <a href={project.href}>{project.displayTitle ?? project.title}</a> : project.displayTitle ?? project.title}
           </h2>
           {project.role && (
