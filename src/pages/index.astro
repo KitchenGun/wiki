@@ -71,7 +71,9 @@ const { Content } = await render(home);
       {projects.slice(0, 3).map((project) => (
         <article class="cyber-card p-4">
           <p class="cyber-meta text-xs font-medium">{project.status}</p>
-          <h3 class="cyber-entry-link mt-2 font-semibold">{project.displayTitle ?? project.title}</h3>
+          <h3 class="cyber-entry-link mt-2 font-semibold">
+            {project.href ? <a href={project.href}>{project.displayTitle ?? project.title}</a> : project.displayTitle ?? project.title}
+          </h3>
           <p class="cyber-copy mt-2 text-sm leading-6">{project.description}</p>
         </article>
       ))}
