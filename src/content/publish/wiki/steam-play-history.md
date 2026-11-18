@@ -39,3 +39,7 @@ PC에서 디비전 2를 총 683시간 플레이했습니다. 2026년 11월 18일
 | Fallout 4 | 오픈 월드 액션 RPG | 425시간 57분 | 2026.11 |
 
 2026년 11월 18일 PC에 저장된 Steam 기록을 기준으로 정리했습니다. 마지막 플레이는 해당 PC에 기록된 월이며, 카운터 스트라이크의 시간은 같은 Steam 항목을 사용하는 CS:GO와 CS2를 구분하지 않은 값입니다.
+
+### KitchenGun의 Steam 돌아보기
+
+[2022년 Steam 돌아보기](https://store.steampowered.com/yearinreview/76561198074015441/2022?l=koreana) · [2023년 Steam 돌아보기](https://store.steampowered.com/yearinreview/76561198074015441/2023?l=koreana) · [2024년 Steam 돌아보기](https://store.steampowered.com/yearinreview/76561198074015441/2024) · [2025년 Steam 돌아보기](https://store.steampowered.com/yearinreview/76561198074015441/2025)
